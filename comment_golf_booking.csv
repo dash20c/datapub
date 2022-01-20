@@ -1,0 +1,3347 @@
+,table_name,column_name,column_comment
+0,Ad_wideAngle,seq,
+1,Ad_wideAngle,resSeq,
+2,Ad_wideAngle,targetCnt,
+3,Ad_wideAngle,sendCnt,
+4,Ad_wideAngle,source,
+5,Ad_wideAngle,regDate,
+6,AdminBoard,seq,
+7,AdminBoard,category,카테고리 코드
+8,AdminBoard,boardTitle,제목
+9,AdminBoard,boardContent,게시물 내용
+10,AdminBoard,isTargetGolfInfo,"특정 골프장 노출 여부 (0:사용, 1:비사용), 비사용인 경우에 전체 노출"
+11,AdminBoard,targetGolfInfoSeq,특정 노출 골프장
+12,AdminBoard,isContentTop,"게시물 상단 노출 여부(0: 사용, 1: 비사용)"
+13,AdminBoard,regAdminUserSeq,작성자 시퀀스
+14,AdminBoard,isDeleted,"삭제 여부 (0: 삭제, 1: 비삭제)"
+15,AdminBoard,regDate,
+16,AdminBoard,editDate,
+17,AdminGroup,seq,관리자그룹 고유번호
+18,AdminGroup,groupName,관리자그룹 이름
+19,AdminGroup,groupType,"대상(0:본사, 1:골프장)"
+20,AdminGroup,status,"상태(0: 사용, 1: 미사용, 2:삭제)"
+21,AdminGroup,regDate,등록일
+22,AdminGroup,regID,등록아이디
+23,AdminGroup,editDate,수정일
+24,AdminGroup,editID,수정아이디
+25,AdminGroupMenu,seq,관리자그룹메뉴 고유번호
+26,AdminGroupMenu,groupSeq,관리자그룹 고유번호
+27,AdminGroupMenu,menuSeq,그룹소유 메뉴
+28,AdminGroupMenu,menuAuth,"메뉴권한(0:전체, 1:읽기)"
+29,AdminGroupMenu,status,"상태(0: 사용, 1: 미사용)"
+30,AdminGroupMenu,regDate,가입일
+31,AdminLog,seq,
+32,AdminLog,adminUserId,
+33,AdminLog,Url,
+34,AdminLog,actionType,"s-검색, v-뷰, i-등록, u-수정, d-삭제, c-변경"
+35,AdminLog,keyword,
+36,AdminLog,remark,
+37,AdminLog,adminUserIP,
+38,AdminLog,regDate,
+39,AdminMenu,seq,메뉴 고유번호
+40,AdminMenu,depth1,상위 메뉴번호
+41,AdminMenu,depth2,
+42,AdminMenu,depth3,
+43,AdminMenu,menuName,메뉴명
+44,AdminMenu,menuURL,메뉴URL
+45,AdminMenu,status,"상태(0: 정상, 1: 비노출)"
+46,AdminMenu,roleType,"권한타입(ROLE_ 0:본사, 1:제휴사)"
+47,AdminMenu,editID,수정아이디
+48,AdminMenu,editDate,수정일
+49,AdminMenu,appType,앱타입(0: 골프예약. 1: 스마트관제)
+50,AdminUser,seq,관리자 고유번호
+51,AdminUser,adminID,이메일아이디
+52,AdminUser,password,비밀번호
+53,AdminUser,adminName,adminName 암호화
+54,AdminUser,department,department 암호화
+55,AdminUser,phoneNum,phoneNum 암호화
+56,AdminUser,golfSeq,골프장시퀀스(0:본사)
+57,AdminUser,groupSeq,관리자그룹 고유번호
+58,AdminUser,passFailCnt,비밀번호 실패횟수
+59,AdminUser,status,"상태 (0:정상, 1:미인증, 2: 미사용)"
+60,AdminUser,regID,등록아이디
+61,AdminUser,regDate,등록일
+62,AdminUser,editID,수정아이디
+63,AdminUser,editDate,수정일
+64,AdminUser,lastLoginDate,마지막 로그인 날짜
+65,AdminUser,agency,대행사
+66,AdminUser,adminNameEnc,adminNameEnc 암호화
+67,AdminUser,departmentEnc,departmentEnc 암호화
+68,AdminUser,phoneNumEnc,phoneNumEnc 암호화
+69,AdminUser,searchAdminName,searchAdminName 암호화
+70,AdminUser,encriptYN,암호화 여부
+71,AdminUser,passwordEditDate,패스워드 변경일
+72,AdminUser,allowIPs,허용아이피s
+73,AdminUser,exceldownYN,엑셀다운로드
+74,BooKTimeGreenFeeHIstory,seq,
+75,BooKTimeGreenFeeHIstory,bookSeq,
+76,BooKTimeGreenFeeHIstory,beforeGreenFee,
+77,BooKTimeGreenFeeHIstory,afterGreenFee,
+78,BooKTimeGreenFeeHIstory,regDate,
+79,BookFee,seq,부킹시퀀스
+80,BookFee,golfInfoSeq,골프장시퀀스
+81,BookFee,golfInfoName,골프장명
+82,BookFee,bookName,이벤트
+83,BookFee,bookSDate,부킹일자
+84,BookFee,bookEDate,부킹일자
+85,BookFee,bookSTime,부킹타임
+86,BookFee,bookETime,부킹타임
+87,BookFee,courseName,코스명
+88,BookFee,courseSeq,코스seq
+89,BookFee,weekBit,요일Bit
+90,BookFee,holidayBit,공휴일Bit
+91,BookFee,greenFeeNO,상품 정가
+92,BookFee,greenFeeDC,상품 판매가
+93,BookFee,visitorCnt,내장인원 Erp기본 4인
+94,BookFee,paymentMethod,"결제방식(PP:선결제,OS:현장결제)"
+95,BookFee,paymentOption,결제방식(이벤트)
+96,BookFee,purchaseFee,매입금액
+97,BookFee,regDate,등록일
+98,BookFee,regID,등록ID
+99,BookFee,status,"0:정상,1:삭제,2:차단"
+100,BookFee,holeCnt,홀정보
+101,BookFee,feeType,"적용조건 0:조건없음, 1:임박기간, 2:예약시점"
+102,BookFee,feeApproach,임박일자
+103,BookFee,revsdate,예약시작일
+104,BookFee,revedate,예약종료일
+105,BookFee,revstime,예약시작시간
+106,BookFee,revetime,예약종료시간
+107,BookFee,feeGubun,요금 관리 구분(0:요금 / 1:휴장처리[해당 날짜] / 2:비연동처리[날짜+시간])
+108,BookFee,maxVisitorCnt,최대 내장인원 (기본값 4인)
+109,BookFeeTmp,seq,부킹시퀀스
+110,BookFeeTmp,golfInfoSeq,골프장시퀀스
+111,BookFeeTmp,golfInfoName,골프장명
+112,BookFeeTmp,bookName,이벤트
+113,BookFeeTmp,bookSDate,부킹일자
+114,BookFeeTmp,bookEDate,부킹일자
+115,BookFeeTmp,bookSTime,부킹타임
+116,BookFeeTmp,bookETime,부킹타임
+117,BookFeeTmp,courseName,
+118,BookFeeTmp,courseSeq,
+119,BookFeeTmp,weekBit,요일Bit
+120,BookFeeTmp,holidayBit,공휴일Bit
+121,BookFeeTmp,greenFeeNO,상품 정가
+122,BookFeeTmp,greenFeeDC,상품 판매가
+123,BookFeeTmp,visitorCnt,내장인원 Erp기본 4인
+124,BookFeeTmp,paymentMethod,"결제방식(PP:선결제,OS:현장결제)"
+125,BookFeeTmp,paymentOption,결제방식(이벤트)
+126,BookFeeTmp,purchaseFee,매입금액
+127,BookFeeTmp,regDate,등록일
+128,BookFeeTmp,regID,등록ID
+129,BookFeeTmp,feeType,"적용조건 0:조건없음, 1:임박기간, 2:예약시점"
+130,BookFeeTmp,feeApproach,임박일자
+131,BookFeeTmp,revsdate,예약시작일
+132,BookFeeTmp,revedate,예약종료일
+133,BookFeeTmp,revstime,예약시작시간
+134,BookFeeTmp,revetime,예약종료시간
+135,BookFeeTmp,holeCnt,홀정보
+136,BookFeeTmp,feeGubun,요금 관리 구분(0:요금 / 1:휴장처리[해당 날짜] / 2:비연동처리[날짜+시간])
+137,BookFeeTmp,maxVisitorCnt,최대 내장인원 (기본값 4인)
+138,BookTime,seq,부킹시퀀스
+139,BookTime,golfInfoSeq,골프장시퀀스
+140,BookTime,golfInfoName,골프장명
+141,BookTime,bookName,상품명(기본 그린피)
+142,BookTime,bookDate,부킹일자
+143,BookTime,bookTime,부킹타임
+144,BookTime,CourseName,부킹코스
+145,BookTime,CourseSeq,부킹코스시퀀스
+146,BookTime,bookType,"1 : 일반 , 2: 얼리버드"
+147,BookTime,greenFeeNO,상품 정가
+148,BookTime,greenFeeDC,상품 판매가
+149,BookTime,digitTime,"수치화타임(1:새벽, 2:오전,4:오후,8:야간)"
+150,BookTime,digitGreenFee,"수치화가격(1: ~90000, 2:9~150000,4:15~200000,8:20~)"
+151,BookTime,digitWeekDay,"1:주중,2:주말"
+152,BookTime,reserveApplyDT,예약 가능일
+153,BookTime,reserveCloseDT,예약 종료일
+154,BookTime,reserveCancelDT,취소가능일시
+155,BookTime,isDisplay,노출여부
+156,BookTime,isDisplayFee,결제금액노출
+157,BookTime,isReservation,"예약가능여부 (A:가능, Y:예약중, N:예약불가)"
+158,BookTime,isErp,ERP연동여부
+159,BookTime,visitorCnt,내장인원 Erp기본 4인
+160,BookTime,maxVisitorCnt,최대 내장인원(기본값 4)
+161,BookTime,holeCnt,
+162,BookTime,paymentMethod,"결제방식(PP:선결제,OS:현장결제)"
+163,BookTime,paymentOption,이벤트
+164,BookTime,purchaseFee,매입금액
+165,BookTime,regDate,등록일
+166,BookTime,regID,등록ID
+167,BookTime,editDate,수정일
+168,BookTime,editID,수정ID
+169,BookTime,etcParams,
+170,BookTime,discountRate,
+171,BookTime,holeCD,
+172,BookTime,agencyCode,에이전시 코드
+173,BookTime,etcParam2,예비컬럼
+174,BookTime,caddyYN,캐디여부
+175,BookTimeComp,seq,
+176,BookTimeComp,bookSeq,
+177,BookTimeComp,isComp,
+178,BookTimeComp,regDate,
+179,BookTimeComp,regID,
+180,BookTimeComp,editDate,
+181,BookTimeComp,editID,
+182,BookTimeHistory,seq,부킹시퀀스
+183,BookTimeHistory,golfInfoSeq,골프장시퀀스
+184,BookTimeHistory,golfInfoName,골프장명
+185,BookTimeHistory,bookName,상품명(기본 그린피)
+186,BookTimeHistory,bookDate,부킹일자
+187,BookTimeHistory,bookTime,부킹타임
+188,BookTimeHistory,CourseName,부킹코스
+189,BookTimeHistory,CourseSeq,부킹코스시퀀스
+190,BookTimeHistory,bookType,"1 : 일반 , 2: 얼리버드"
+191,BookTimeHistory,greenFeeNO,상품 정가
+192,BookTimeHistory,greenFeeDC,상품 판매가
+193,BookTimeHistory,digitTime,수치화타임
+194,BookTimeHistory,digitGreenFee,수치화가격
+195,BookTimeHistory,digitWeekDay,"1:주중,2:주말"
+196,BookTimeHistory,reserveApplyDT,예약 가능일
+197,BookTimeHistory,reserveCloseDT,예약 종료일
+198,BookTimeHistory,reserveCancelDT,취소가능일시
+199,BookTimeHistory,isDisplay,노출여부
+200,BookTimeHistory,isDisplayFee,결제금액노출
+201,BookTimeHistory,isReservation,"예약가능여부 (A:가능, Y:예약중, N:예약불가)"
+202,BookTimeHistory,isErp,ERP연동여부
+203,BookTimeHistory,visitorCnt,내장인원 Erp기본 4인
+204,BookTimeHistory,holeCnt,
+205,BookTimeHistory,paymentMethod,"결제방식(PP:선결제,OS:현장결제)"
+206,BookTimeHistory,paymentOption,
+207,BookTimeHistory,purchaseFee,매입금액
+208,BookTimeHistory,regDate,등록일
+209,BookTimeHistory,regID,등록ID
+210,BookTimeHistory,editDate,수정일
+211,BookTimeHistory,editID,수정ID
+212,BookTimeHistory,etcParams,
+213,BookTimeHistory,discountRate,
+214,BookTimeHistory,holeCD,
+215,BookTimeHistory,agencyCode,에이전시 코드
+216,BookTimeHistory,etcParam2,예비컬럼
+217,BookTimeHistory,caddyYN,캐디여부
+218,BookTimeHistory,maxVisitorCnt,최대 내장인원(기본값 4)
+219,BookTimeHistoryA,seq,부킹시퀀스
+220,BookTimeHistoryA,golfInfoSeq,골프장시퀀스
+221,BookTimeHistoryA,golfInfoName,골프장명
+222,BookTimeHistoryA,bookName,상품명(기본 그린피)
+223,BookTimeHistoryA,bookDate,부킹일자
+224,BookTimeHistoryA,bookTime,부킹타임
+225,BookTimeHistoryA,CourseName,부킹코스
+226,BookTimeHistoryA,CourseSeq,부킹코스시퀀스
+227,BookTimeHistoryA,isReservation,"예약가능여부 (A:가능, Y:예약중, N:예약불가)"
+228,BookTimeHistoryA,regDate,
+229,BookTimeHistoryA,editDate,
+230,BookTimePlayerInfo,seq,
+231,BookTimePlayerInfo,resSeq,예약시퀀스
+232,BookTimePlayerInfo,resTimeSeq,예약타임시퀀스
+233,BookTimePlayerInfo,userID,
+234,BookTimePlayerInfo,uuid,골프부킹 사용자 카카오 고유값
+235,BookTimePlayerInfo,nickName,nickName 암호화
+236,BookTimePlayerInfo,thumbnailImgUrl,
+237,BookTimePlayerInfo,owner,
+238,BookTimePlayerInfo,isGrade,"승급 여부 기본 결제 1 결제 이후 동반자 0 (true:가능,false:불가능)"
+239,BookTimePlayerInfo,isPayment,"결제 여부 기본 결제 1 결제 이후 동반자 0 (true:가능,false:불가능)"
+240,BookTimePlayerInfo,regDate,
+241,BookTimePlayerInfo,status,
+242,BookTimePlayerInfo,editDate,
+243,BookTimePlayerInfo,nickNameEnc,nickNameEnc 암호화
+244,BookTimePlayerInfo,encriptYN,암호화 여부
+245,BookTimePlayerInfoNonUser,seq,
+246,BookTimePlayerInfoNonUser,resSeq,예약시퀀스
+247,BookTimePlayerInfoNonUser,resTimeSeq,예약타임시퀀스
+248,BookTimePlayerInfoNonUser,userID,
+249,BookTimePlayerInfoNonUser,uuid,골프부킹 사용자 카카오 고유값
+250,BookTimePlayerInfoNonUser,nickName,nickName 암호화
+251,BookTimePlayerInfoNonUser,thumbnailImgUrl,
+252,BookTimePlayerInfoNonUser,owner,
+253,BookTimePlayerInfoNonUser,isGrade,"승급 여부 기본 결제 1 결제 이후 동반자 0 (true:가능,false:불가능)"
+254,BookTimePlayerInfoNonUser,isPayment,"결제 여부 기본 결제 1 결제 이후 동반자 0 (true:가능,false:불가능)"
+255,BookTimePlayerInfoNonUser,regDate,
+256,BookTimePlayerInfoNonUser,status,
+257,BookTimePlayerInfoNonUser,editDate,
+258,BookTimePlayerInfoNotDisplay,seq,
+259,BookTimePlayerInfoNotDisplay,userID,
+260,BookTimePlayerInfoNotDisplay,resSeq,
+261,BookTimePlayerInfoNotDisplay,passUser,
+262,BookTimePlayerInfoNotDisplay,remark,
+263,BookTimePlayerInfoNotDisplay,regDate,
+264,BookTimeStatus,seq,
+265,BookTimeStatus,golfInfoSeq,
+266,BookTimeStatus,bookDate,
+267,BookTimeStatus,timeCnt,
+268,BookTimeStatus,regDate,
+269,BookTimeStatus,editDate,
+270,BookTimeTmp,seq,부킹시퀀스
+271,BookTimeTmp,golfInfoSeq,골프장시퀀스
+272,BookTimeTmp,golfInfoName,골프장명
+273,BookTimeTmp,bookType,
+274,BookTimeTmp,bookName,상품명(기본 그린피)
+275,BookTimeTmp,bookDate,부킹일자
+276,BookTimeTmp,bookTime,부킹타임
+277,BookTimeTmp,CourseName,부킹코스
+278,BookTimeTmp,CourseSeq,부킹코스시퀀스
+279,BookTimeTmp,greenFeeNO,상품 정가
+280,BookTimeTmp,greenFeeDC,상품 판매가
+281,BookTimeTmp,reserveApplyDT,예약 가능일
+282,BookTimeTmp,reserveCloseDT,예약 종료일
+283,BookTimeTmp,reserveCancelDT,취소가능일시
+284,BookTimeTmp,isDisplay,
+285,BookTimeTmp,isDisplayFee,결제금액노출
+286,BookTimeTmp,visitorCnt,내장인원 Erp기본 4인
+287,BookTimeTmp,holeCnt,
+288,BookTimeTmp,paymentMethod,"결제방식(PP:선결제,OS:현장결제)"
+289,BookTimeTmp,paymentOption,
+290,BookTimeTmp,purchaseFee,매입금액
+291,BookTimeTmp,regDate,등록일
+292,BookTimeTmp,regID,등록ID
+293,BookTimeTmp,discountRate,
+294,BookTimeTmp,agencyCode,에이전시 코드
+295,BookTimeTmp,etcParam2,예비컬럼
+296,BookTimeTmp,caddyYN,캐디여부
+297,BookTimeTmp,maxVisitorCnt,최대 내장인원(기본값 4)
+298,BookTime_20201125,seq,부킹시퀀스
+299,BookTime_20201125,golfInfoSeq,골프장시퀀스
+300,BookTime_20201125,golfInfoName,골프장명
+301,BookTime_20201125,bookName,상품명(기본 그린피)
+302,BookTime_20201125,bookDate,부킹일자
+303,BookTime_20201125,bookTime,부킹타임
+304,BookTime_20201125,CourseName,부킹코스
+305,BookTime_20201125,CourseSeq,부킹코스시퀀스
+306,BookTime_20201125,bookType,"1 : 일반 , 2: 얼리버드"
+307,BookTime_20201125,greenFeeNO,상품 정가
+308,BookTime_20201125,greenFeeDC,상품 판매가
+309,BookTime_20201125,digitTime,"수치화타임(1:새벽, 2:오전,4:오후,8:야간)"
+310,BookTime_20201125,digitGreenFee,"수치화가격(1: ~90000, 2:9~150000,4:15~200000,8:20~)"
+311,BookTime_20201125,digitWeekDay,"1:주중,2:주말"
+312,BookTime_20201125,reserveApplyDT,예약 가능일
+313,BookTime_20201125,reserveCloseDT,예약 종료일
+314,BookTime_20201125,reserveCancelDT,취소가능일시
+315,BookTime_20201125,isDisplay,노출여부
+316,BookTime_20201125,isDisplayFee,결제금액노출
+317,BookTime_20201125,isReservation,"예약가능여부 (A:가능, Y:예약중, N:예약불가)"
+318,BookTime_20201125,isErp,ERP연동여부
+319,BookTime_20201125,visitorCnt,내장인원 Erp기본 4인
+320,BookTime_20201125,holeCnt,
+321,BookTime_20201125,paymentMethod,"결제방식(PP:선결제,OS:현장결제)"
+322,BookTime_20201125,paymentOption,이벤트
+323,BookTime_20201125,purchaseFee,매입금액
+324,BookTime_20201125,regDate,등록일
+325,BookTime_20201125,regID,등록ID
+326,BookTime_20201125,editDate,수정일
+327,BookTime_20201125,editID,수정ID
+328,BookTime_20201125,etcParams,
+329,BookTime_20201125,discountRate,
+330,BookTime_20201125,holeCD,
+331,BookTime_20201125,agencyCode,에이전시 코드
+332,BookTime_20201125,etcParam2,예비컬럼
+333,BookTime_20201125,caddyYN,캐디여부
+334,ConsultBestReply,bestSeq,답변번호
+335,ConsultBestReply,templateCode,문의타입
+336,ConsultBestReply,subject,베스트답변제목
+337,ConsultBestReply,contents,베스트답변내용
+338,ConsultBestReply,regId,등록자
+339,ConsultBestReply,regDate,등록일자
+340,ConsultBestReply,editId,수정자
+341,ConsultBestReply,editDate,수정일자
+342,ConsultFile,fileSeq,파일번호
+343,ConsultFile,consultSeq,상담번호
+344,ConsultFile,regId,등록Id
+345,ConsultFile,files,파일
+346,ConsultFile,fileName,파일이름
+347,ConsultInfo,consultSeq,상담번호
+348,ConsultInfo,consultType,"상담타입(0:예약문의, 1:결제/환불/캐시, 2:취소문의, 3:기타문의)"
+349,ConsultInfo,subject,제목
+350,ConsultInfo,contents,내용
+351,ConsultInfo,phone,핸드폰번호
+352,ConsultInfo,email,이메일
+353,ConsultInfo,agree,선택약관YN
+354,ConsultInfo,regId,등록 Id
+355,ConsultInfo,regDate,등록날짜
+356,ConsultInfo,manageId,담당Id
+357,ConsultInfo,endDate,완료날짜
+358,ConsultInfo,status,"처리상태(0:미처리, 1:중간답변, 2:완료)"
+359,ConsultInfo,searchPhone,핸드폰번호 암호화
+360,ConsultInfo,appVersion,앱버전
+361,ConsultInfo,osVersion,OS버전
+362,ConsultInfo,modelName,모델명
+363,ConsultReplyInfo,replySeq,답변번호
+364,ConsultReplyInfo,consultSeq,상담번호
+365,ConsultReplyInfo,replyMidContents,답변내용(중간)
+366,ConsultReplyInfo,replyContents,답변내용(최종)
+367,ConsultReplyInfo,regId,등록Id
+368,ConsultReplyInfo,regDate,등록날짜
+369,ConsultReport,seq,시퀀스
+370,ConsultReport,reportDate,통계날짜
+371,ConsultReport,manageId,담당자ID
+372,ConsultReport,acceptCnt,접수건수(전일 18:00 ~ 당일 18:00 접수)
+373,ConsultReport,finishCnt,처리건수(당일 09:00 ~ 당일 18:00 처리(근무시간))
+374,ConsultReport,rate,처리율
+375,ConsultReport,averageTime1,평균처리시간(1차답변)
+376,ConsultReport,averageTimne2,평균처리시간(2차답변)
+377,ConsultReport,regDate,등록날짜
+378,ConsultShareInfo,shareSeq,배분번호
+379,ConsultShareInfo,shareDate,배분날짜
+380,ConsultShareInfo,shareType,"배분타입(0:오토, 1:수동)"
+381,ConsultShareInfo,manageId,담당Id
+382,ConsultShareInfo,shareRate,배분율
+383,ConsultShareInfo,regId,등록Id
+384,ConsultShareInfo,regDate,
+385,ConsultTemplateInfo,templateType,"템플릿타입(0:문의, 1:답변)"
+386,ConsultTemplateInfo,templateCode,템플릿코드
+387,ConsultTemplateInfo,subject,제목
+388,ConsultTemplateInfo,contents,내용
+389,ConsultTemplateInfo,regId,등록Id
+390,ConsultTemplateInfo,regDate,등록날짜
+391,ConsultTemplateInfo,editId,수정Id
+392,ConsultTemplateInfo,editDate,수정날짜
+393,ConsultTemplateInfo,typeOrder,순서
+394,ConsultTransferHistory,transferSeq,이관번호
+395,ConsultTransferHistory,consultSeq,상담번호
+396,ConsultTransferHistory,consultType,"상담타입(0:예약문의, 1:결제/환불/캐시, 2:취소문의, 3:기타문의)"
+397,ConsultTransferHistory,bfManageId,전담당자
+398,ConsultTransferHistory,afManageId,현담당자
+399,ConsultTransferHistory,transferDate,이관일자
+400,ConsultTransferHistory,regId,상담등록ID
+401,CrossCheck,seq,
+402,CrossCheck,status,"0: 기본, 1: 처리완료"
+403,CrossCheck,golfInfoSeq,골프장시퀀스
+404,CrossCheck,golfInfoName,골프장명
+405,CrossCheck,type,크로스체크 AlertMessageType 참조
+406,CrossCheck,resSeq,예약seq
+407,CrossCheck,userId,
+408,CrossCheck,bookDate,부킹일자
+409,CrossCheck,bookTime,부킹타임
+410,CrossCheck,bookName,예약자명 암호화
+411,CrossCheck,bookContact,예약자연락처 암호화
+412,CrossCheck,courseSeq,코스seq
+413,CrossCheck,courseName,코스명
+414,CrossCheck,regDate,등록일
+415,CrossCheck,adminID,처리ID
+416,CrossCheck,adminDate,처리일
+417,CrossCheck,adminMemo,처리메모
+418,CrossCheck,erpBookTime,티타임이 다를때 사용
+419,CrossCheck,erpCourseName,코스가 다를때 사용
+420,CrossCheck,erpUserName,ERP 예약자명 암호화
+421,CrossCheck,erpUserContact,ERP 예약자연락처 암호화
+422,CrossCheck,caution,크로스체크 Caution 참조
+423,CrossCheck,encryptYN,
+424,EVENT_20190410_Promotion1_ReservationInfo,resSeq,예약번호
+425,EVENT_20190410_Promotion1_ReservationInfo,userID,회원번호
+426,EVENT_20190410_Promotion1_ReservationInfo,regDate,
+427,EVENT_20190410_Promotion1_ReservationInfo,editDate,
+428,EVENT_20190410_Promotion1_UserInfo,userID,회원번호
+429,EVENT_20190410_Promotion1_UserInfo,name,이름
+430,EVENT_20190410_Promotion1_UserInfo,addr1,주소
+431,EVENT_20190410_Promotion1_UserInfo,addr2,상세주소
+432,EVENT_20190410_Promotion1_UserInfo,zipcode,우편번호
+433,EVENT_20190410_Promotion1_UserInfo,company,
+434,EVENT_20190410_Promotion1_UserInfo,contact,연락처
+435,EVENT_20190410_Promotion1_UserInfo,deliveryYN,배송상태
+436,EVENT_20190410_Promotion1_UserInfo,regDate,
+437,EVENT_20190410_Promotion1_UserInfo,editDate,
+438,EVENT_20191007_Promotion_KakaoT_DriverCoupon,tCouponNumber,카카오T쿠폰번호
+439,EVENT_20191007_Promotion_KakaoT_DriverCoupon,appUserId,발급한 사용자 아이디
+440,EVENT_20191007_Promotion_KakaoT_DriverCoupon,resSeq,예약번호
+441,EVENT_20191007_Promotion_KakaoT_DriverCoupon,useYN,
+442,EVENT_20191007_Promotion_KakaoT_DriverCoupon,limitDate,쿠폰 사용 만료일
+443,EVENT_20191007_Promotion_KakaoT_DriverCoupon,regDate,
+444,EVENT_20191007_Promotion_KakaoT_DriverCoupon,editDate,
+445,EVENT_20191007_Promotion_UserInfo,userID,회원번호
+446,EVENT_20191007_Promotion_UserInfo,golfInfoName,골프장명
+447,EVENT_20191007_Promotion_UserInfo,golfInfoSeq,골프장번호
+448,EVENT_20191007_Promotion_UserInfo,latitude,좌표
+449,EVENT_20191007_Promotion_UserInfo,longitude,좌표
+450,EVENT_20191007_Promotion_UserInfo,name,이름
+451,EVENT_20191007_Promotion_UserInfo,addr1,주소
+452,EVENT_20191007_Promotion_UserInfo,addr2,상세주소
+453,EVENT_20191007_Promotion_UserInfo,zipcode,우편번호
+454,EVENT_20191007_Promotion_UserInfo,contact,연락처
+455,EVENT_20191007_Promotion_UserInfo,contactNum,
+456,EVENT_20191007_Promotion_UserInfo,receiveYN,
+457,EVENT_20191007_Promotion_UserInfo,version,
+458,EVENT_20191007_Promotion_UserInfo,regDate,
+459,EVENT_20191007_Promotion_UserInfo,editDate,
+460,EVENT_20191007_Promotion_UserInvite,userID,
+461,EVENT_20191007_Promotion_UserInvite,receiverID,
+462,EVENT_20191007_Promotion_UserInvite,status,
+463,EVENT_20191007_Promotion_UserInvite,getYN,
+464,EVENT_20191007_Promotion_UserInvite,regDate,
+465,EVENT_20191007_Promotion_UserInvite,editDate,
+466,EVENT_20191010_Promotion_GolfClub,clubCode,동호회코드
+467,EVENT_20191010_Promotion_GolfClub,clubName,동호회 이름
+468,EVENT_20191010_Promotion_GolfClub,clubMasterId,동호회 마스터 아이디(appUserId)
+469,EVENT_20191010_Promotion_GolfClub,clubMasterNicName,동호회 마스터 닉네임
+470,EVENT_20191010_Promotion_GolfClub,clubMasterContact,동호회 마스터 연락처
+471,EVENT_20191010_Promotion_GolfClub,clubContext,현수막 내용
+472,EVENT_20191010_Promotion_GolfClub,status,"동호회 상태 (0: 비활성, 1: 활성화)"
+473,EVENT_20191010_Promotion_GolfClub,regDate,
+474,EVENT_20191010_Promotion_GolfClubFreebieInfo,seq,
+475,EVENT_20191010_Promotion_GolfClubFreebieInfo,clubCode,클럽코드
+476,EVENT_20191010_Promotion_GolfClubFreebieInfo,freebieCode,"경품에 따른 동일한 배송지 사용 코드(R1:라운드3건, R2:라운드10건, R3:라운드15건)"
+477,EVENT_20191010_Promotion_GolfClubFreebieInfo,nextFreebieYN,다음 경품때 사용여부(Y/N)
+478,EVENT_20191010_Promotion_GolfClubFreebieInfo,userName,받는사람 이름
+479,EVENT_20191010_Promotion_GolfClubFreebieInfo,userContact,받는사람 연락처
+480,EVENT_20191010_Promotion_GolfClubFreebieInfo,addr1,주소
+481,EVENT_20191010_Promotion_GolfClubFreebieInfo,addr2,주소 상세
+482,EVENT_20191010_Promotion_GolfClubFreebieInfo,zipCode,우편번호
+483,EVENT_20191010_Promotion_GolfClubFreebieInfo,isPrivateInfo,개인정보 수집/이용 동의 여부
+484,EVENT_20191010_Promotion_GolfClubFreebieInfo,talkSendYN,챗봇 이벤트 톡 발송 여부(Y/N)
+485,EVENT_20191010_Promotion_GolfClubFreebieInfo,talkMessageSendYN,챗봇 이벤트 톡 메시지 발송 여부 (Y/N)
+486,EVENT_20191010_Promotion_GolfClubFreebieInfo,regDate,
+487,EVENT_20191010_Promotion_GolfClubFreebieInfo,editDate,
+488,EVENT_20191010_Promotion_GolfClubPoint,seq,
+489,EVENT_20191010_Promotion_GolfClubPoint,clubCode,동호회 코드
+490,EVENT_20191010_Promotion_GolfClubPoint,userId,적립자 회원번호
+491,EVENT_20191010_Promotion_GolfClubPoint,reservationNumber,예약번호
+492,EVENT_20191010_Promotion_GolfClubPoint,resType,예약 타입
+493,EVENT_20191010_Promotion_GolfClubPoint,amount,결제 금액
+494,EVENT_20191010_Promotion_GolfClubPoint,status,"적립상태(적립대기, 적립완료, 적립취소)"
+495,EVENT_20191010_Promotion_GolfClubPoint,regDate,
+496,EVENT_20191010_Promotion_GolfClubPoint,completeDate,적립 완료일
+497,EVENT_20191010_Promotion_GolfClubPoint,cancelDate,적립취소일
+498,EVENT_20191010_Promotion_GolfClubPoint,cancelMemo,취소 사유
+499,EVENT_20191210_Promotion_KakaoT_DriverCoupon,couponNumber,
+500,EVENT_20191210_Promotion_KakaoT_DriverCoupon,appUserId,
+501,EVENT_20191210_Promotion_KakaoT_DriverCoupon,userYN,
+502,EVENT_20191210_Promotion_KakaoT_DriverCoupon,regDate,
+503,EVENT_20191210_Promotion_KakaoT_DriverCoupon,editDate,
+504,EVENT_20200302_Promotion_SrixonBarCode,barCode,스릭슨 바코드
+505,EVENT_20200302_Promotion_SrixonBarCode,appUserId,사용한 사용자 아이디
+506,EVENT_20200302_Promotion_SrixonBarCode,useYN,"사용여부 (Y:사용, N:비사용)"
+507,EVENT_20200302_Promotion_SrixonBarCode,regDate,
+508,EVENT_20200302_Promotion_SrixonBarCode,editDate,
+509,EVENT_20200302_Promotion_SrixonUserInfo,seq,
+510,EVENT_20200302_Promotion_SrixonUserInfo,appUserId,참여한 사용자 아이디
+511,EVENT_20200302_Promotion_SrixonUserInfo,userName,사용자 이름
+512,EVENT_20200302_Promotion_SrixonUserInfo,phoneNumber,연락처
+513,EVENT_20200302_Promotion_SrixonUserInfo,eventTermsYN,이벤트 약관 동의 여부
+514,EVENT_20200302_Promotion_SrixonUserInfo,weekComplate,"주차당첨(1,2,3,4)"
+515,EVENT_20200302_Promotion_SrixonUserInfo,weekComplateAdminId,주차 당첨 처리한 관리자 아이디
+516,EVENT_20200302_Promotion_SrixonUserInfo,regDate,
+517,EVENT_20200302_Promotion_SrixonUserInfo,editDate,
+518,EVENT_20200414_Vote,name,
+519,EVENT_20200414_Vote,nameKR,
+520,EVENT_20200414_Vote,voteCount,
+521,EVENT_20200414_VoteUser,userID,
+522,EVENT_20200414_VoteUser,voteName,
+523,EVENT_20200414_VoteUser,isShare,"공유여부(0: 함, 1: 안함)"
+524,EVENT_20200414_VoteUser,status,
+525,EVENT_20200414_VoteUser,voteDate,
+526,EVENT_20200414_VoteUser,shareDate,
+527,EVENT_20200414_VoteUser,prize,당첨 정보
+528,EVENT_20200515_Promotion_Cadillac,seq,
+529,EVENT_20200515_Promotion_Cadillac,userID,회원번호
+530,EVENT_20200515_Promotion_Cadillac,userName,사용자 이름
+531,EVENT_20200515_Promotion_Cadillac,birthday,생년월일
+532,EVENT_20200515_Promotion_Cadillac,gender,"1:남자,2:여자"
+533,EVENT_20200515_Promotion_Cadillac,userContact,연락처
+534,EVENT_20200515_Promotion_Cadillac,addr1,주소1
+535,EVENT_20200515_Promotion_Cadillac,addr2,주소2 - 상세
+536,EVENT_20200515_Promotion_Cadillac,zipCode,우편번호(이벤트 응모페이지에서는사용안함)
+537,EVENT_20200515_Promotion_Cadillac,resSeq,응모한 예약 번호
+538,EVENT_20200515_Promotion_Cadillac,carModel,"응모 차량(1: XT5, 2: XT6, 3:CT6, 4: ESCALADE)"
+539,EVENT_20200515_Promotion_Cadillac,status,"이벤트 상태값(E:완료, C:취소)"
+540,EVENT_20200515_Promotion_Cadillac,terms1YN,차량 시승 관련 안내 약관 동의 여부
+541,EVENT_20200515_Promotion_Cadillac,terms2YN,개인 정보 수집 및 이용 동의 약관
+542,EVENT_20200515_Promotion_Cadillac,terms3YN,개인정보 처리업무 위탁에 대한 동의
+543,EVENT_20200515_Promotion_Cadillac,marketingYN,개인정보의 마케팅 및 광고 활용 동의
+544,EVENT_20200515_Promotion_Cadillac,regDate,
+545,EVENT_20200515_Promotion_Cadillac,eidtDate,
+546,EVENT_20200903_Promotion_R,userID,
+547,EVENT_20200903_Promotion_R,resSeq,
+548,EVENT_20200903_Promotion_R,deliveryStatus,"배송상태, 0: 배송전, 1: 배송중, 2: 배송완료"
+549,EVENT_20200903_Promotion_R,regDate,
+550,EVENT_20200903_Promotion_R,editDate,
+551,EVENT_20200903_Promotion_R,status,0: 정상
+552,EVENT_20200903_Promotion_R,resSeqExtra,
+553,EVENT_20200921_Autumn,userID,
+554,EVENT_20200921_Autumn,resSeq,
+555,EVENT_20200921_Autumn,regDate,
+556,EVENT_20200921_Autumn,editDate,
+557,EVENT_20200921_Autumn,status,0: 정상
+558,EVENT_20210707_BookTimeApply,userID,
+559,EVENT_20210707_BookTimeApply,giftType,"당첨타입(1:커피, 2: 4인 그린피)"
+560,EVENT_20210707_BookTimeApply,status,"상태(0: 사용, 1: 비사용)"
+561,EVENT_20210707_BookTimeApply,regDate,
+562,EVENT_20210707_BookTimeApply,editDate,
+563,EVENT_UserIdentityVerification,UserID,
+564,EVENT_UserIdentityVerification,isCash,
+565,EVENT_UserIdentityVerification,status,"R : 대기 , E : 완료, F : 실패"
+566,EVENT_UserIdentityVerification,regDate,
+567,EVENT_UserIdentityVerification,editDate,
+568,EVENT_WiseSaying,seq,
+569,EVENT_WiseSaying,userID,
+570,EVENT_WiseSaying,userName,글쓴이(임의입력가능)
+571,EVENT_WiseSaying,wisesaying,명언
+572,EVENT_WiseSaying,recommendCount,추천수
+573,EVENT_WiseSaying,version,"투표까지 포함한 전체 회차 : v1, v2..."
+574,EVENT_WiseSaying,regDate,등록일
+575,EVENT_WiseSaying,regID,등록ID
+576,EVENT_WiseSaying,editDate,수정일
+577,EVENT_WiseSaying,editID,수정ID
+578,EVENT_WiseSaying,status,"0: 사용, 1: 미사용, 2: 관리자 차단"
+579,EVENT_WiseSaying,blockDate,차단일
+580,EVENT_WiseSaying,blockID,차단자(관리자)
+581,EVENT_WiseSaying,voteCount,투표수
+582,EVENT_WiseSaying,isVote,"0: 투표대상, 1:비대상"
+583,EVENT_WiseSaying_Meta,code,메타 정보 코드
+584,EVENT_WiseSaying_Meta,name,메타이름
+585,EVENT_WiseSaying_Meta,content,메타내용
+586,EVENT_WiseSaying_Meta,status,"상태(0:사용,1:미사용)"
+587,EVENT_WiseSaying_Meta,version,"버전별 메타 적용 위함, 0이면 전체 적용"
+588,EVENT_WiseSaying_Meta,etc1,
+589,EVENT_WiseSaying_Meta,etc2,
+590,EVENT_WiseSaying_Meta,etc3,
+591,EVENT_WiseSaying_Meta,lvl,"정렬순서, depth 등의 목적"
+592,EVENT_WiseSaying_Vote,seq,
+593,EVENT_WiseSaying_Vote,wiseSayingSeq,명언Seq
+594,EVENT_WiseSaying_Vote,type,"0: 추천, 1: 투표"
+595,EVENT_WiseSaying_Vote,userID,
+596,EVENT_WiseSaying_Vote,regDate,등록일
+597,EVENT_WiseSaying_Vote,regID,등록ID
+598,EVENT_WiseSaying_Vote,editDate,수정일
+599,EVENT_WiseSaying_Vote,editID,수정ID
+600,EVENT_WiseSaying_Vote,status,"0: 안함, 1: 함"
+601,ErpConfig,seq,
+602,ErpConfig,golfInfoSeq,골프장시퀀스
+603,ErpConfig,golfInfoName,골프장명
+604,ErpConfig,erp_group,"(1~4:정상, 5:비정상 9:제휴안함, 20:비실시간, 10:연동안함, 11: 티타임 미사용)"
+605,ErpConfig,erp_code,erp회사 및 버전코드
+606,ErpConfig,erp_version,
+607,ErpConfig,erp_driver,
+608,ErpConfig,erp_url,erp 부킹리스트 api
+609,ErpConfig,erp_book_url,erp 부킹 api
+610,ErpConfig,erp_cancel_url,erp 부킹 취소 api
+611,ErpConfig,erp_paymt_url, erp 요금 코드 api
+612,ErpConfig,erp_lock_url,ERP 라커 발급 URL
+613,ErpConfig,erp_id,
+614,ErpConfig,erp_pw,
+615,ErpConfig,erp_potal,erp 포털 코드
+616,ErpConfig,note,
+617,ErpConfig,auth_key,
+618,ErpConfig,erpBookUpdateYN,예약정보 변경 가능 여부 (Y: 변경 가능 / N: 변경 불가)
+619,ErpConfig,pricefeedback,예약시 가격 피드백
+620,ErpConfig,feedDay,
+621,ErpConfig,eventOption,
+622,ErpConfig,saleFee,
+623,ErpConfig,weekVisitorCnt,
+624,ErpConfig,weekendVisitorCnt,
+625,ErpConfig,eventMethod,
+626,ErpConfig,eventHoleCnt,
+627,ErpConfig,erp_error_code,
+628,ErpConfig,hasFee,"그린피 연동 여부(0: 연동, 10:연동안함)"
+629,ErpConfig,golfCode,
+630,ErpConfig,resultUrl,로그인후 이동url
+631,ErpConfig,pageType,"홈페이지연동타입(H:홈페이지,R:예약,J:가입)"
+632,ErpStatus,golfInfoSeq,
+633,ErpStatus,golfInfoName,
+634,ErpStatus,tryCnt,
+635,ErpStatus,totalCnt,
+636,ErpStatus,editDate,
+637,EtcAgencyList,seq,
+638,EtcAgencyList,name,name 암호화
+639,EtcAgencyList,contact,contact 암호화
+640,EtcAgencyList,remark,비고
+641,EtcAgencyList,status,"0:사용, 1:미사용"
+642,EtcAgencyList,agencyType,
+643,EtcAgencyList,regID,최초등록자
+644,EtcAgencyList,regDate,
+645,EtcAgencyList,editID,수정ID
+646,EtcAgencyList,editDate,
+647,EtcAgencyList,bookSeq,노쇼 bookTime
+648,EtcAgencyList,nameEnc,nameEnc 암호화
+649,EtcAgencyList,contactEnc,contactEnc 암호화
+650,EtcAgencyList,encriptYN,암호화 여부
+651,EtcAgencyList,searchName,searchName 암호화
+652,EtcAgencyList,searchContact,searchContact 암호화
+653,EtcAirline,seq,
+654,EtcAirline,name,항공사 이름
+655,EtcAirline,nameEn,
+656,EtcAirline,icon,항공사 아이콘
+657,EtcAirline,image1,이미지1
+658,EtcAirline,image2,이미지2
+659,EtcAirline,image3,이미지3
+660,EtcAirline,image4,이미지4
+661,EtcAirline,image5,이미지5
+662,EtcAirline,status,"상태(0:사용,1:미사용)"
+663,EtcAirline,airlineCode,항공사 코드(OZ: 아시아나 등)
+664,EtcAlimtalkGuideHistory,seq,
+665,EtcAlimtalkGuideHistory,resSeq,현재 쓰이진 않음
+666,EtcAlimtalkGuideHistory,smsType,"1 : 취소문의 후 부재, 2 : 부재중"
+667,EtcAlimtalkGuideHistory,contents,
+668,EtcAlimtalkGuideHistory,userName,userName 암호화
+669,EtcAlimtalkGuideHistory,userContact,userContact 암호화
+670,EtcAlimtalkGuideHistory,remark,
+671,EtcAlimtalkGuideHistory,regDate,
+672,EtcAlimtalkGuideHistory,regID,
+673,EtcAlimtalkGuideHistory,userNameEnc,userNameEnc 암호화
+674,EtcAlimtalkGuideHistory,userContactEnc,userContactEnc 암호화
+675,EtcAlimtalkGuideHistory,encriptYN,암호화 여부
+676,EtcAlimtalkSchedule,seq,
+677,EtcAlimtalkSchedule,resSeq,예약시퀀스
+678,EtcAlimtalkSchedule,send_time,발송요청시간
+679,EtcAlimtalkSchedule,dest_phone,dest_phone 암호화
+680,EtcAlimtalkSchedule,send_subject,제목
+681,EtcAlimtalkSchedule,msg_body,내용
+682,EtcAlimtalkSchedule,template_code,템플릿코드
+683,EtcAlimtalkSchedule,send_yn,
+684,EtcAlimtalkSchedule,button_contents,
+685,EtcAlimtalkSchedule,regDate,
+686,EtcAlimtalkSchedule,editDate,
+687,EtcAlimtalkSchedule,errorCode,
+688,EtcAlimtalkSchedule,sendType,"1:알림톡,2:선톡"
+689,EtcAlimtalkSchedule,request_time,
+690,EtcAlimtalkSchedule,dest_phoneEnc,dest_phoneEnc 암호화
+691,EtcAlimtalkSchedule,encriptYN,암호화 여부
+692,EtcApiContentsCaching,seq,
+693,EtcApiContentsCaching,codemst,
+694,EtcApiContentsCaching,code,
+695,EtcApiContentsCaching,contents,
+696,EtcApiContentsCaching,remark,
+697,EtcApiContentsCaching,regDate,
+698,EtcApiContentsCaching,editDate,
+699,EtcAppDBVersion,seq,
+700,EtcAppDBVersion,code,"구분코드(0:메뉴, 1:권역, 2: 골프장정보 … )"
+701,EtcAppDBVersion,codeName,코드설명
+702,EtcAppDBVersion,version,코드별 버전
+703,EtcAppDBVersion,comment,설명
+704,EtcAppDBVersion,status,"상태코드(0:사용, 1:미사용, 2: 삭제)"
+705,EtcAppDBVersion,compulsion,강제 업데이트 여부
+706,EtcAppDBVersion,editDate,
+707,EtcAppDBVersion,editID,
+708,EtcBanner,seq,
+709,EtcBanner,baSeq,배너구좌시퀀스
+710,EtcBanner,bannerType,
+711,EtcBanner,publishType,"개시타입(1:앱, 2:관리자)"
+712,EtcBanner,name,배너명
+713,EtcBanner,imageUrl,배너이미지
+714,EtcBanner,isAlways,"0 : 항시 , 1 : 기간"
+715,EtcBanner,sdate,배너 개시 시작일
+716,EtcBanner,edate,배너 개시 종료일
+717,EtcBanner,target,"_blink,_self 등"
+718,EtcBanner,link,배너 클릭시 이동 url
+719,EtcBanner,noshow,"보지않기(0:오늘하루, 1:다시)"
+720,EtcBanner,bannerDescription,배너 설명
+721,EtcBanner,clickCnt,배너 클릭 횟수
+722,EtcBanner,status,
+723,EtcBanner,sorting,
+724,EtcBanner,regDate,
+725,EtcBanner,regID,
+726,EtcBanner,editDate,
+727,EtcBanner,editID,
+728,EtcBanner,campaignSeq,캠페인태그 시퀀스
+729,EtcBanner,encordingYN,
+730,EtcBanner,bannerTitle,
+731,EtcBanner,bannerSubTitle,
+732,EtcBanner,bannerAdPrice,
+733,EtcBanner,bannerContentsType,
+734,EtcBanner,movieUrl,
+735,EtcBanner,buttonName,
+736,EtcBanner,showButton,
+737,EtcBanner,bannerAdPriceOver,광고 금액 비고
+738,EtcBanner,adver,광고주
+739,EtcBanner,agency,광고주
+740,EtcBanner,bannerAdCodst,광고원가
+741,EtcBanner,bannerAdDisRate,광고할인율
+742,EtcBannerAccount,seq,
+743,EtcBannerAccount,publishType,1:앱 / 2:관리자
+744,EtcBannerAccount,accountName,배너구좌명
+745,EtcBannerAccount,imgWidth,배너 사이즈
+746,EtcBannerAccount,imgHeight,배너 사이즈
+747,EtcBannerAccount,bannerType,"0:슬라이드형, 1:단일형, 2:리스트형, 3:순환형"
+748,EtcBannerAccount,bannerTypeName,
+749,EtcBannerAccount,status,"0: 사용 , 1 :미사용"
+750,EtcBannerAccount,regDate,
+751,EtcBannerAccount,accountCode,
+752,EtcCampaignTag,seq,
+753,EtcCampaignTag,name,
+754,EtcCampaignTag,status,
+755,EtcCampaignTag,regDate,
+756,EtcCampaignTag,editDate,
+757,EtcCancelFailed,seq,
+758,EtcCancelFailed,resSeq,예약시퀀스
+759,EtcCancelFailed,resTimeSeq,예약티타임시퀀스
+760,EtcCancelFailed,paymentSeq,결제시퀀스
+761,EtcCancelFailed,failType,ERP/PAY/CASH/COUPON 실패타입
+762,EtcCancelFailed,resultMsg,api 호출 message
+763,EtcCancelFailed,remark,비고
+764,EtcCancelFailed,regDate,
+765,EtcCancelFailed,isTry,재시도 여부 완료시 Y
+766,EtcCancelFailed,editDate,
+767,EtcCancelFailedHistory,seq,
+768,EtcCancelFailedHistory,resSeq,예약시퀀스
+769,EtcCancelFailedHistory,resTimeSeq,예약티타임시퀀스
+770,EtcCancelFailedHistory,paymentSeq,결제시퀀스
+771,EtcCancelFailedHistory,failType,ERP/PAY/CASH/COUPON
+772,EtcCancelFailedHistory,resultMsg,
+773,EtcCancelFailedHistory,remark,
+774,EtcCancelFailedHistory,regDate,
+775,EtcCharacterInfo,seq,
+776,EtcCharacterInfo,name,캐릭터명
+777,EtcCharacterInfo,nameEn,캐릭터영문명
+778,EtcCharacterInfo,preferPrice,
+779,EtcCharacterInfo,digitPrice,"1:저가,2:고가,4:가성비"
+780,EtcCharacterInfo,preferDay,
+781,EtcCharacterInfo,digitDay,"1:평일,2:주말"
+782,EtcCharacterInfo,preferTime,
+783,EtcCharacterInfo,digitTime,"1:새벽,2:야간,4:오전&오후"
+784,EtcCommonCode,codeMst,마스터코드
+785,EtcCommonCode,MstName,마스터코드명
+786,EtcCommonCode,code,코드
+787,EtcCommonCode,name,코드명
+788,EtcCommonCode,remark,약관 필수여부
+789,EtcCommonCode,status,가입폼 노출여부
+790,EtcCommonCode,lvl,
+791,EtcCouponMst,seq,
+792,EtcCouponMst,status,"상태(0:사용가능,1:사용중지, 2:삭제)"
+793,EtcCouponMst,couponName,쿠폰명
+794,EtcCouponMst,discountPay,할인금액
+795,EtcCouponMst,couponCnt,쿠폰갯수
+796,EtcCouponMst,couponNotice,쿠폰 사용조건(안내)
+797,EtcCouponMst,getCnt,발급갯수
+798,EtcCouponMst,golfInfoSeq,사용처 0:전체
+799,EtcCouponMst,weekBit,사용요일(&)
+800,EtcCouponMst,isDate,"N:마스터에기간없음, Y:기간지정"
+801,EtcCouponMst,subDate,지급일로 부터 x일간 유효
+802,EtcCouponMst,sDate,유효 시작일
+803,EtcCouponMst,eDate,유효 종료일
+804,EtcCouponMst,isBookTime,"N:전체, Y:특정티타임조건있음"
+805,EtcCouponMst,sBookTime,사용가능 시작티타임
+806,EtcCouponMst,eBookTime,사용가능 종료티타임
+807,EtcCouponMst,isDuplication,"N:중복없음, Y:중복가능"
+808,EtcCouponMst,isEvent,Y:이벤트용 (일반다운로드 불가)
+809,EtcCouponMst,isPayMethod,"K:카카오페이전용, I:이니시스전용"
+810,EtcCouponMst,isPaymentMethod,"PP:선결제, OS:현장결제"
+811,EtcCouponMst,isHost,"0 본사, 1 골프장"
+812,EtcCouponMst,isPlatform,"빈값:전체, app: 앱전용"
+813,EtcCouponMst,regDate,등록일
+814,EtcCouponMst,regID,등록ID
+815,EtcCouponMst,editDate,수정일
+816,EtcCouponMst,editID,수정ID
+817,EtcCouponMst,sBookDate,사용가능 부킹일자
+818,EtcCouponMst,eBookDate,사용가능 부킹일자
+819,EtcCouponRandom,seq,지류 쿠폰
+820,EtcCouponRandom,subSeq,서브Seq
+821,EtcCouponRandom,status,"상태(0:사용가능,1:사용중지,2:사용,3:다운가능)"
+822,EtcCouponRandom,userID,회원ID
+823,EtcCouponRandom,couponRandom,쿠폰난수
+824,EtcCouponRandom,couponName,쿠폰명
+825,EtcCouponRandom,couponNotice,쿠폰 사용조건(안내)
+826,EtcCouponRandom,discountPay,할인금액
+827,EtcCouponRandom,golfInfoSeq,사용처 0:전체
+828,EtcCouponRandom,sDate,유효 시작일
+829,EtcCouponRandom,eDate,유효 종료일
+830,EtcCouponRandom,isBookTime,"N:전체, Y:특정티타임조건있음"
+831,EtcCouponRandom,sBookTime,사용가능 시작티타임
+832,EtcCouponRandom,eBookTime,사용가능 종료티타임
+833,EtcCouponRandom,isPayMethod,
+834,EtcCouponRandom,isPaymentMethod,
+835,EtcCouponRandom,isHost,
+836,EtcCouponRandom,regDate,등록일
+837,EtcCouponRandom,regID,등록ID
+838,EtcCouponRandom,useDate,사용일
+839,EtcCouponRandom,sBookDate,사용가능 부킹일자
+840,EtcCouponRandom,eBookDate,사용가능 부킹일자
+841,EtcCouponRandom,weekBit,유효 요일(&)
+842,EtcCouponRandom,isPlatform,"빈값: 전체, app: 앱전용"
+843,EtcCouponSub,seq,
+844,EtcCouponSub,mstSeq,마스터Seq
+845,EtcCouponSub,status,"상태(0:사용가능,1:사용중지,2:사용)"
+846,EtcCouponSub,method,"지급방식(0:다운로드, 1:자동지급, 2:쿠폰번호)"
+847,EtcCouponSub,targetType,"발급대상(0:무기명,1:전체,2:선택)"
+848,EtcCouponSub,getCnt,발급갯수
+849,EtcCouponSub,giveCnt,지급갯수
+850,EtcCouponSub,useCnt,사용갯수
+851,EtcCouponSub,regDate,등록일
+852,EtcCouponSub,regID,등록ID
+853,EtcCouponSub,editDate,수정일
+854,EtcCouponSub,editID,수정ID
+855,EtcDayBookTimeSnapshopByGolfInfo,seq,
+856,EtcDayBookTimeSnapshopByGolfInfo,snapShotDate,yyyyMMdd
+857,EtcDayBookTimeSnapshopByGolfInfo,type,"1 : RegDate 기준 , 2 : openDate 기준"
+858,EtcDayBookTimeSnapshopByGolfInfo,golfInfoSeq,골프장 시퀀스
+859,EtcDayBookTimeSnapshopByGolfInfo,golfInfoName,
+860,EtcDayBookTimeSnapshopByGolfInfo,timeCnt,총 타임수
+861,EtcDayBookTimeSnapshopByGolfInfo,ableTimeCnt,예약 가능 타임수
+862,EtcDayBookTimeSnapshopByGolfInfo,regDate,
+863,EtcDayBookTimeSnapshot,seq,
+864,EtcDayBookTimeSnapshot,snapShotDate,날짜
+865,EtcDayBookTimeSnapshot,totalCnt,총 티타임
+866,EtcDayBookTimeSnapshot,digitTime1,티타임 새벽
+867,EtcDayBookTimeSnapshot,digitTime2,티타임 오전
+868,EtcDayBookTimeSnapshot,digitTime4,티타임 오후
+869,EtcDayBookTimeSnapshot,digitTime8,티타임 야간
+870,EtcDayBookTimeSnapshot,ableResCnt,예약 가능 총 티타임
+871,EtcDayBookTimeSnapshot,ableResDigitTime1,예약 가능 티타임 새벽
+872,EtcDayBookTimeSnapshot,ableResDigitTime2,예약 가능 티타임 오전
+873,EtcDayBookTimeSnapshot,ableResDigitTime4,예약 가능 티타임 오후
+874,EtcDayBookTimeSnapshot,ableResDigitTime8,예약 가능 티타임 야간
+875,EtcDayBookTimeSnapshot,regDate,
+876,EtcDayUserSnapshot,seq,
+877,EtcDayUserSnapshot,snapShotDate,날짜
+878,EtcDayUserSnapshot,userplatform,플랫폼
+879,EtcDayUserSnapshot,totalCnt,총 회원수
+880,EtcDayUserSnapshot,activeCnt,정상회원
+881,EtcDayUserSnapshot,sacedeCnt,탈퇴회원
+882,EtcDayUserSnapshot,sleepCnt,휴면회원
+883,EtcDayUserSnapshot,regDate,
+884,EtcExcelDownHistory,seq,
+885,EtcExcelDownHistory,adminID,발송자 ID
+886,EtcExcelDownHistory,destEmail,받는 사람 Email
+887,EtcExcelDownHistory,locationUrl,다운로드 url위치
+888,EtcExcelDownHistory,parameter,파라미터
+889,EtcExcelDownHistory,rows,조회 데이터 수
+890,EtcExcelDownHistory,regDate,발송일자
+891,EtcExcelDownHistory,remark,사유
+892,EtcFaq,seq,
+893,EtcFaq,title,faq 명
+894,EtcFaq,category,faq 카테고리
+895,EtcFaq,contents,faq 내용
+896,EtcFaq,status,"0:사용중 , 1: 미사용"
+897,EtcFaq,orderNum,
+898,EtcFaq,frequently,0:.. 1:자주사용하는.
+899,EtcFaq,regDate,
+900,EtcFaq,regID,
+901,EtcFaq,editDate,
+902,EtcFaq,editID,
+903,EtcFcmPush,seq,
+904,EtcFcmPush,fcmKey,
+905,EtcFcmPush,golfInfoSeq,
+906,EtcFcmPush,pushType,"A : 전체, B : 골프장별, C : 광고"
+907,EtcFcmPush,platform,"1 : AOS, 2 : IOS, 3 : 전체"
+908,EtcFcmPush,sendType,"A : 즉시 발송, B : 지정일 발송"
+909,EtcFcmPush,sendDate,yyyyMMddHHmm
+910,EtcFcmPush,areaCodes,
+911,EtcFcmPush,option1,"A:회원전체,B : 지역선택, C : 직접입력, D: 예약일자 ,E:부킹일자 F: 골프장반경 G: 제휴골프장신청"
+912,EtcFcmPush,option2,Y : 이번달 예약자 제외
+913,EtcFcmPush,bSdate,
+914,EtcFcmPush,bEdate,
+915,EtcFcmPush,round,
+916,EtcFcmPush,subject,
+917,EtcFcmPush,title,
+918,EtcFcmPush,contents,
+919,EtcFcmPush,linkType,"A : 앱링크, B : 해시태기,  C: 티타임, D : 골프장 공지사항, E: :  직접 입력"
+920,EtcFcmPush,appLinkType,
+921,EtcFcmPush,hashSeq,
+922,EtcFcmPush,dateApply,Y : 날짜 지정여부
+923,EtcFcmPush,targetDate,앱링크 지정일자
+924,EtcFcmPush,callUrl,
+925,EtcFcmPush,status,"W: 작성중 , R : 대기, I : 진행중. C: 취소 , E : 완료"
+926,EtcFcmPush,targetCnt,대상자
+927,EtcFcmPush,successAOSCnt,AOS 발송 성공 CNT
+928,EtcFcmPush,successIOSCnt,IOS 발송 성공 CNT
+929,EtcFcmPush,clickAOSCnt,
+930,EtcFcmPush,clickIOSCnt,
+931,EtcFcmPush,gkey,
+932,EtcFcmPush,regDate,
+933,EtcFcmPush,regID,
+934,EtcFcmPush,editDate,
+935,EtcFcmPush,editID,
+936,EtcFcmPush,advertisingYN,
+937,EtcFcmPushApp,seq,
+938,EtcFcmPushApp,userID,
+939,EtcFcmPushApp,pushType,"J : 조인 1~6, A1~5 : 사전예약"
+940,EtcFcmPushApp,title,
+941,EtcFcmPushApp,contents,
+942,EtcFcmPushApp,linkType,"A : 앱링크, B : 해시태그,  C: 티타임, D : 골프장 공지사항, E: :  직접 입력"
+943,EtcFcmPushApp,appLinkType,
+944,EtcFcmPushApp,hashSeq,
+945,EtcFcmPushApp,dateApply,Y : 날짜 지정여부
+946,EtcFcmPushApp,targetDate,앱링크 지정일자
+947,EtcFcmPushApp,callUrl,
+948,EtcFcmPushApp,status,"W: 작성중 , R : 대기, I : 진행중. C: 취소 , E : 완료"
+949,EtcFcmPushApp,regDate,
+950,EtcFcmPushApp,golfInfoSeq,
+951,EtcFcmPushApp,bookDate,
+952,EtcFcmPushApp,resSeq,
+953,EtcFcmPushApp,etc1,
+954,EtcFcmPushApp,etc2,
+955,EtcFcmPushApp,etc3,
+956,EtcFcmPushTestUser,seq,
+957,EtcFcmPushTestUser,name,name 암호화
+958,EtcFcmPushTestUser,contact,contact 암호화
+959,EtcFcmPushTestUser,regDate,
+960,EtcFcmPushTestUser,regID,
+961,EtcFcmPushTestUser,editDate,
+962,EtcFcmPushTestUser,editID,
+963,EtcFcmPushTestUser,nameEnc,nameEnc 암호화
+964,EtcFcmPushTestUser,contactEnc,contactEnc 암호화
+965,EtcFcmPushTestUser,encriptYN,암호화 여부
+966,EtcFcmPushTestUser,searchrName,searchName 암호화
+967,EtcFcmPushTestUser,searchContact,searchContact 암호화
+968,EtcFcmPushUser,seq,
+969,EtcFcmPushUser,gkey,
+970,EtcFcmPushUser,userID,
+971,EtcFcmPushUser,userPlatform,
+972,EtcFcmPushUser,regDate,
+973,EtcFcmPushUser_backup,seq,
+974,EtcFcmPushUser_backup,gkey,
+975,EtcFcmPushUser_backup,userID,
+976,EtcFcmPushUser_backup,userPlatform,
+977,EtcFcmPushUser_backup,regDate,
+978,EtcFcmSendHistory,seq,
+979,EtcFcmSendHistory,title,
+980,EtcFcmSendHistory,contents,
+981,EtcFcmSendHistory,platform,
+982,EtcFcmSendHistory,target,
+983,EtcFcmSendHistory,remark,
+984,EtcFcmSendHistory,gkey,
+985,EtcFcmSendHistory,priority,
+986,EtcFcmSendHistory,callUrl,
+987,EtcFcmSendHistory,multicast_id,
+988,EtcFcmSendHistory,success,
+989,EtcFcmSendHistory,failure,
+990,EtcFcmSendHistory,status,
+991,EtcFcmSendHistory,regdate,
+992,EtcFcmSendHistory,regID,
+993,EtcFcmSendTemp,seq,
+994,EtcFcmSendTemp,gKey,send 그룹키
+995,EtcFcmSendTemp,userID,
+996,EtcFcmSendTemp,sendYN,
+997,EtcFcmSendTemp,regDate,
+998,EtcFcmSendTemp,editDate,
+999,EtcFriendAddFailed,userID,
+1000,EtcFriendAddFailed,processYN,배치 실행여부
+1001,EtcFriendAddFailed,regDate,
+1002,EtcGolfInfoNoticeHistory,seq,
+1003,EtcGolfInfoNoticeHistory,golfInfoSeq,
+1004,EtcGolfInfoNoticeHistory,contents,
+1005,EtcGolfInfoNoticeHistory,status,
+1006,EtcGolfInfoNoticeHistory,regID,
+1007,EtcGolfInfoNoticeHistory,regDate,
+1008,EtcGolfNotice,seq,
+1009,EtcGolfNotice,golfInfoSeq,
+1010,EtcGolfNotice,contents,
+1011,EtcGolfNotice,status,
+1012,EtcGolfNotice,regID,
+1013,EtcGolfNotice,regDate,
+1014,EtcGolfNotice,editID,
+1015,EtcGolfNotice,editDate,
+1016,EtcGolfNotice,eventContents,이벤트내용
+1017,EtcGolfNotice,eventStatus,
+1018,EtcGolfNotice,eventSdate,이벤트시작
+1019,EtcGolfNotice,eventEdate,이벤트끝
+1020,EtcGolfNotice,eventAlwaysYN,이벤트상시
+1021,EtcGolfNotice,noticeSdate,
+1022,EtcGolfNotice,noticeEdate,
+1023,EtcGolfNotice,noticeAlwaysYN,
+1024,EtcGrade,type,"0:본사,1:골프장"
+1025,EtcGrade,level,레벨
+1026,EtcGrade,gradeName,등급명
+1027,EtcGrade,ruleVisit,등급기준-방문횟수
+1028,EtcGrade,rulePay,등급기준-결제금액
+1029,EtcGrade,discountPay,할인금액
+1030,EtcGrade,status,"상태 (0:사용, 1:미사용)"
+1031,EtcGuideFile,guideSeq,가이드seq
+1032,EtcGuideFile,num,구분내 순서
+1033,EtcGuideFile,fileURL,이미지 경로
+1034,EtcGuideFile,fileSize,
+1035,EtcGuideFile,status,"사용여부(0:사용, 1:미사용, 2:삭제)"
+1036,EtcGuideFile,editID,
+1037,EtcGuideFile,editDate,
+1038,EtcGuideMst,seq,
+1039,EtcGuideMst,status,"0: 사용 , 1 :미사용"
+1040,EtcGuideMst,publishType,1:앱 / 2:관리자
+1041,EtcGuideMst,guideType,"0:스와이프형, 1:단일형, 2:랜덤형, 3:리스트형"
+1042,EtcGuideMst,guideTypeName,구좌명
+1043,EtcGuideMst,guideName,가이드명
+1044,EtcGuideMst,guideDesc,가이드설명
+1045,EtcGuideMst,isAlways,"0 : 항시 , 1 : 기간"
+1046,EtcGuideMst,sdate,배너 개시 시작일
+1047,EtcGuideMst,edate,배너 개시 종료일
+1048,EtcGuideMst,noshow,"보지않기(0:오늘하루, 1:다시)"
+1049,EtcGuideMst,clickCnt,클릭수
+1050,EtcGuideMst,regDate,
+1051,EtcGuideMst,regID,
+1052,EtcGuideMst,editDate,
+1053,EtcGuideMst,editID,
+1054,EtcHoliday,seq,
+1055,EtcHoliday,holiday,휴일일자
+1056,EtcHoliday,holidayYear,년도
+1057,EtcHoliday,holidayName,휴일명
+1058,EtcHoliday,status,"구분코드(0:사용, 1:미사용, 2: 삭제)"
+1059,EtcHoliday,appVersion,앱 로컬 데이터 버전
+1060,EtcHoliday,editDate,
+1061,EtcHoliday,editID,수정ID
+1062,EtcJoinFeeHistory,seq,
+1063,EtcJoinFeeHistory,joinFee,
+1064,EtcJoinFeeHistory,remark,
+1065,EtcJoinFeeHistory,regID,
+1066,EtcJoinFeeHistory,regDate,
+1067,EtcLocationDistance,seq,
+1068,EtcLocationDistance,srcSigunguSeq,시작 동
+1069,EtcLocationDistance,destSigunguSeq,
+1070,EtcLocationDistance,totalDistance,
+1071,EtcLocationDistance,totaltime,
+1072,EtcLogMainGolf,golfInfoSeq,골프장시퀀스
+1073,EtcLogMainGolf,tryCnt,하루동안 로그횟수
+1074,EtcLogMainGolf,logType,로그타입
+1075,EtcLogMainGolf,logDate,로그일자
+1076,EtcMainPopupMst,seq,
+1077,EtcMainPopupMst,status,"0: 사용 , 1 :미사용"
+1078,EtcMainPopupMst,title,
+1079,EtcMainPopupMst,imgUrl,
+1080,EtcMainPopupMst,contents,
+1081,EtcMainPopupMst,buttonType,1:기본버튼
+1082,EtcMainPopupMst,buttonName,
+1083,EtcMainPopupMst,callUrl,
+1084,EtcMainPopupMst,regDate,
+1085,EtcMainPopupMst,regID,
+1086,EtcMainPopupMst,editDate,
+1087,EtcMainPopupMst,editID,
+1088,EtcMainPopupMst,type,"0:아이디별, 1:전체"
+1089,EtcMainPopupSub,mstSeq,
+1090,EtcMainPopupSub,userID,
+1091,EtcMainPopupSub,status,"0 : 진행중. 1: 취소 , 2 : 완료"
+1092,EtcMainPopupSub,regDate,
+1093,EtcMainPopupSub,resSeq,
+1094,EtcMainPopupSub,etc1,
+1095,EtcMainPopupSub,etc2,
+1096,EtcMainPopupSub,etc3,
+1097,EtcSchool,seq,
+1098,EtcSchool,type,초중고대 -> EtcCommonCode에 있음
+1099,EtcSchool,schoolSeq,
+1100,EtcSchool,schoolName,
+1101,EtcSchool,region,
+1102,EtcSchool,address,
+1103,EtcSchool,link,
+1104,EtcSchool,schoolGubun,"e.g) 일반고, 특성화고, 자율형사립, 특수목적고"
+1105,EtcSchool,schoolType,"e.g) 일반고, 직업교육, 자율고, 외국어국제계열"
+1106,EtcSchool,estType,"e.g) 사립, 국립"
+1107,EtcSchool,status,"상태(0:사용,1:미사용)"
+1108,EtcSchool,regDate,
+1109,EtcSchool,editDate,
+1110,EtcSchool,gubun,커리어넷의 학교 구분값
+1111,EtcSchool,isManual,수동등록여부 Y: 수동 N: 배치로 등록
+1112,EtcStatus,seq,
+1113,EtcStatus,code,
+1114,EtcStatus,status,
+1115,EtcStatus,statusMessage,
+1116,EtcStatus,remark,
+1117,EtcStatus,url,
+1118,EtcTag,seq,seq
+1119,EtcTag,code,"구분(1:선호,2:해쉬태그,3:후기,4:골프장(인기)태그)"
+1120,EtcTag,tagType,태그구분(가격대/시간/요일등 - code 1사용)
+1121,EtcTag,prefer,"성향(저가,고가,가성비 등 - code 1사용)"
+1122,EtcTag,tagName,태그명
+1123,EtcTag,tagValue,code 1 사용
+1124,EtcTag,adminOnly,관리자전용(Y/N)
+1125,EtcTag,popular,이달의 인기태그 순서
+1126,EtcTag,imgUrl,이미지경로
+1127,EtcTag,status,"0:사용, 1:미사용, 2: 삭제"
+1128,EtcTag,sorting,선호정보/해쉬태그 등 순서
+1129,EtcTag,isMainDisplay,메인페이지 게시여부
+1130,EtcTag,mainDisplayStatus,메인페이지 게시 상태
+1131,EtcTag,regID,
+1132,EtcTag,regDate,
+1133,EtcTag,editID,수정아이디
+1134,EtcTag,editDate,수정일자
+1135,EtcTag,imageUrl,
+1136,EtcTag,synonym,동의어
+1137,EtcUserCashSaveInfo,seq,
+1138,EtcUserCashSaveInfo,userID,
+1139,EtcUserCashSaveInfo,resSeq,예약시퀀스
+1140,EtcUserCashSaveInfo,paymentSeq,결제시퀀스
+1141,EtcUserCashSaveInfo,orderNumber,결제상품번호
+1142,EtcUserCashSaveInfo,cashSave,결제 캐시
+1143,EtcUserCashSaveInfo,regDate,
+1144,EtcUserEventCash,seq,
+1145,EtcUserEventCash,userID,
+1146,EtcUserEventCash,golfInfoSeq,"이벤트 골프장 ( 0 : 본사, 0 이상 골프장 시퀀스)"
+1147,EtcUserEventCash,resSeq,예약번호(0 : 예약번호 없음)
+1148,EtcUserEventCash,eventName,
+1149,EtcUserEventCash,cash,
+1150,EtcUserEventCash,regDate,
+1151,EtcUserEventCash,cashSaveYN,적립여부
+1152,EtcUserEventCash,cashSaveDate,적립일
+1153,EtcUserEventCash,orderNumber,주문번호
+1154,EtcUserEventCashMst,seq,
+1155,EtcUserEventCashMst,golfInfoSeq,"이벤트 골프장 ( 0 : 본사, 0 이상 골프장 시퀀스)"
+1156,EtcUserEventCashMst,eventName,
+1157,EtcUserEventCashMst,eventCode,
+1158,EtcUserEventCashMst,cash,
+1159,EtcUserEventCashMst,regDate,
+1160,EtcUserEventCashMst,adminUserId,관리자 아이디
+1161,EventCaddieInfo,userID,회원번호
+1162,EventCaddieInfo,status,"0:사용중 , 1: 미사용"
+1163,EventCaddieInfo,golfInfoName,골프장명
+1164,EventCaddieInfo,golfInfoSeq,골프장번호
+1165,EventCaddieInfo,name,이름
+1166,EventCaddieInfo,contact,연락처
+1167,EventCaddieInfo,contactNum,추천코드
+1168,EventCaddieInfo,userCnt,가입자수
+1169,EventCaddieInfo,qrUrl,qr정보
+1170,EventCaddieInfo,receiveYN,이벤트 정보 수신 동의
+1171,EventCaddieInfo,version,
+1172,EventCaddieInfo,regDate,
+1173,EventCaddieInfo,editDate,
+1174,EventCaddieInviteInfo,userID,회원번호
+1175,EventCaddieInviteInfo,inviteID,초대받은회원
+1176,EventCaddieInviteInfo,cashYN,캐시지급여부
+1177,EventCaddieInviteInfo,regDate,
+1178,EventCaddieMst,seq,
+1179,EventCaddieMst,status,"0:사용중 , 1: 미사용"
+1180,EventCaddieMst,golfInfoName,골프장명
+1181,EventCaddieMst,golfInfoSeq,골프장번호
+1182,EventCaddieMst,sdate,이벤트 시작일
+1183,EventCaddieMst,edate,이벤트 종료일
+1184,EventCaddieMst,caddieCnt,캐디수
+1185,EventCaddieMst,userCnt,가입자수
+1186,EventCaddieMst,regDate,
+1187,EventCaddieMst,regID,
+1188,EventCaddieMst,editDate,
+1189,EventCaddieMst,editID,
+1190,EventCoupon,seq,
+1191,EventCoupon,couponName,쿠폰명
+1192,EventCoupon,couponCode,쿠폰코드
+1193,EventCoupon,userID,할당된 유저
+1194,EventCoupon,event,사용한 이벤트
+1195,EventCoupon,regDate,등록일(관리자)
+1196,EventCoupon,regID,등록ID(관리자)
+1197,EventCoupon,editDate,수정일(관리자)
+1198,EventCoupon,editID,수정ID(관리자)
+1199,EventCoupon,assignDate,쿠폰 배정일
+1200,EventCoupon,assignID,배정ID(어드민)
+1201,EventCoupon,status,"0: 미배정, 1: 배정(미사용), 2: 배정(사용)"
+1202,EventCoupon,useDate,쿠폰 사용일
+1203,EventCoupon,sDate,유효시작일
+1204,EventCoupon,eDate,유효종료일
+1205,EventCoupon,golfInfoSeq,
+1206,EventCoupon,resSeq,
+1207,EventCoupon,resTimeSeq,
+1208,EventCoupon,etc1,
+1209,EventCoupon,etc2,
+1210,EventCoupon,etc3,
+1211,EventGolfInfo,seq,
+1212,EventGolfInfo,status,"0:사용중 , 1: 미사용"
+1213,EventGolfInfo,eventName,이벤트 명
+1214,EventGolfInfo,golfInfoName,골프장 명
+1215,EventGolfInfo,golfInfoSeq,골프장 seq
+1216,EventGolfInfo,sdate,이벤트 시작일
+1217,EventGolfInfo,edate,이벤트 종료일
+1218,EventGolfInfo,clickCnt,클릭횟수
+1219,EventGolfInfo,imageType,"1:대표이미지,2:직접등록,3:색상"
+1220,EventGolfInfo,bgColor,색상 bg
+1221,EventGolfInfo,estatus,"엠블럼사용 0 :사용, 1:미사용"
+1222,EventGolfInfo,ebgColor,엠블럼 bg
+1223,EventGolfInfo,eText,엠블럼 문구
+1224,EventGolfInfo,titleColor,타이틀 색상
+1225,EventGolfInfo,subTitle,서브타이틀
+1226,EventGolfInfo,title,타이틀
+1227,EventGolfInfo,dateText,기간 문구
+1228,EventGolfInfo,linkType,링크타입
+1229,EventGolfInfo,linkURL,링크
+1230,EventGolfInfo,imgURL,이미지url
+1231,EventGolfInfo,regDate,
+1232,EventGolfInfo,regID,
+1233,EventGolfInfo,editDate,
+1234,EventGolfInfo,editID,
+1235,EventInfo,seq,
+1236,EventInfo,publishType,"1:앱,  2:관리자"
+1237,EventInfo,eventMstSeq,"1:쿠폰다운, 2:.."
+1238,EventInfo,eventThumbnailUrl,이벤트 이미지
+1239,EventInfo,title,이벤트 명
+1240,EventInfo,contents,이벤트 내용
+1241,EventInfo,sdate,이벤트 시작일
+1242,EventInfo,edate,이벤트 종료일
+1243,EventInfo,clickCnt,클릭횟수
+1244,EventInfo,eventUrl,이벤트 url
+1245,EventInfo,status,"0:사용중 , 1: 미사용"
+1246,EventInfo,regDate,
+1247,EventInfo,regID,
+1248,EventInfo,editDate,
+1249,EventInfo,editID,
+1250,EventInfo,edateWords,종료일문구
+1251,EventRide,seq,
+1252,EventRide,eventSDate,이벤트시작일
+1253,EventRide,userID,회원번호
+1254,EventRide,userName,사용자 이름
+1255,EventRide,birthday,생년월일
+1256,EventRide,gender,"1:남자,2:여자"
+1257,EventRide,userContact,연락처
+1258,EventRide,addr1,주소1
+1259,EventRide,addr2,주소2 - 상세
+1260,EventRide,zipCode,우편번호(이벤트 응모페이지에서는사용안함)
+1261,EventRide,resSeq,응모한 예약 번호
+1262,EventRide,carModel,응모 차량
+1263,EventRide,status,"이벤트 상태값(E:완료, C:취소)"
+1264,EventRide,terms1YN,차량 시승 관련 안내 약관 동의 여부
+1265,EventRide,terms2YN,개인 정보 수집 및 이용 동의 약관
+1266,EventRide,terms3YN,개인정보 처리업무 위탁에 대한 동의
+1267,EventRide,marketingYN,개인정보의 마케팅 및 광고 활용 동의
+1268,EventRide,etc1,예비
+1269,EventRide,regDate,
+1270,EventRide,eidtDate,
+1271,EventRouletteGift,seq,
+1272,EventRouletteGift,mstSeq,
+1273,EventRouletteGift,status,"0:사용중 , 1: 미사용"
+1274,EventRouletteGift,giftName,경품명
+1275,EventRouletteGift,giftCnt,경품갯수
+1276,EventRouletteGift,getCnt,경품당첨갯수
+1277,EventRouletteGift,chanceRate,당첨확률
+1278,EventRouletteGift,regDate,
+1279,EventRouletteGift,regID,
+1280,EventRouletteMst,seq,
+1281,EventRouletteMst,status,"0:사용중 , 1: 미사용"
+1282,EventRouletteMst,eventName,이벤트 명
+1283,EventRouletteMst,sdate,이벤트 시작일
+1284,EventRouletteMst,edate,이벤트 종료일
+1285,EventRouletteMst,userCnt,참여자수
+1286,EventRouletteMst,entryCnt,응모권수
+1287,EventRouletteMst,entryUseCnt,사용응모권수
+1288,EventRouletteMst,prizeCnt,당첨자수
+1289,EventRouletteMst,regDate,
+1290,EventRouletteMst,regID,
+1291,EventRouletteMst,editDate,
+1292,EventRouletteMst,editID,
+1293,EventRouletteMst,evType,
+1294,EventRouletteQuiz,seq,
+1295,EventRouletteQuiz,mstSeq,
+1296,EventRouletteQuiz,status,"0:사용중 , 1: 미사용"
+1297,EventRouletteQuiz,QuizName,질문
+1298,EventRouletteQuiz,QuizList,질문지
+1299,EventRouletteQuiz,regDate,
+1300,EventRouletteQuiz,regID,
+1301,EventRouletteUser,seq,
+1302,EventRouletteUser,mstSeq,
+1303,EventRouletteUser,userID,
+1304,EventRouletteUser,status,"0:사용중 , 1: 미사용, 2: 사용완료"
+1305,EventRouletteUser,bringPoint,응모권수/포인트
+1306,EventRouletteUser,bringDetail,"발행 내용 0:출석 , 1:퀴즈"
+1307,EventRouletteUser,regDate,
+1308,EventRouletteUser,regID,
+1309,EventRouletteUserGift,seq,
+1310,EventRouletteUserGift,mstSeq,
+1311,EventRouletteUserGift,userSeq,
+1312,EventRouletteUserGift,userID,
+1313,EventRouletteUserGift,status,"0:사용중 , 1: 미사용"
+1314,EventRouletteUserGift,giftSeq,상품 seq
+1315,EventRouletteUserGift,giftName,경품명
+1316,EventRouletteUserGift,regDate,
+1317,EventRouletteUserGift,regID,
+1318,GolfCourse,seq,
+1319,GolfCourse,golfInfoSeq,골프장번호
+1320,GolfCourse,courseCode,코스코드
+1321,GolfCourse,courseName,코스명
+1322,GolfCourse,nextName,다음코스명
+1323,GolfCourse,coureseIntro,코스소개
+1324,GolfCourse,status,사용여부
+1325,GolfCourseHole,golfInfoSeq,골프장번호
+1326,GolfCourseHole,courseSeq,코스번호
+1327,GolfCourseHole,code,구분(1~9)
+1328,GolfCourseHole,holeIntro,홀소개
+1329,GolfCourseHole,holeTarget,홀공략
+1330,GolfCourseHole,droneUrl,드론영상url
+1331,GolfCourseHole,droneUrl1Time,첫구간의시간
+1332,GolfCourseHole,droneUrl2Time,첫구간의시간
+1333,GolfCourseHole,droneUrl3Time,첫구간의시간
+1334,GolfCourseHole,droneUrl4Time,첫구간의시간
+1335,GolfCourseInfo,seq,
+1336,GolfCourseInfo,golfCourse,
+1337,GolfCourseInfo,company,
+1338,GolfCourseInfo,operationType,
+1339,GolfCourseInfo,status,
+1340,GolfCourseInfo,membershipType,
+1341,GolfCourseInfo,holeCount,
+1342,GolfCourseInfo,privateHoleCount,
+1343,GolfCourseInfo,publicHoleCount,
+1344,GolfCourseInfo,region,
+1345,GolfCourseInfo,city,
+1346,GolfCourseInfo,address,
+1347,GolfCourseInfo,approvalYear,
+1348,GolfCourseInfo,registrationYear,
+1349,GolfCourseInfo,latitude,
+1350,GolfCourseInfo,longitude,
+1351,GolfCourseInfo,weekGreenFee,주중그린피
+1352,GolfCourseInfo,weekendGreenFee,주말그린피
+1353,GolfCourseInfo,cartFee,카트피
+1354,GolfCourseInfo,reserveApplyDT,
+1355,GolfCourseInfo,reserveApplyTime,
+1356,GolfCourseInfo,reserveCloseDT,
+1357,GolfCourseInfo,reserveCloseTime,
+1358,GolfCourseInfo,reserveCancelDT,
+1359,GolfCourseInfo,reserveCancelTime,
+1360,GolfCourseLen,golfInfoSeq,골프장번호
+1361,GolfCourseLen,courseSeq,코스코드
+1362,GolfCourseLen,num,
+1363,GolfCourseLen,divide,구분
+1364,GolfCourseLen,hole1Len,1~9홀 길이
+1365,GolfCourseLen,hole2Len,
+1366,GolfCourseLen,hole3Len,
+1367,GolfCourseLen,hole4Len,
+1368,GolfCourseLen,hole5Len,
+1369,GolfCourseLen,hole6Len,
+1370,GolfCourseLen,hole7Len,
+1371,GolfCourseLen,hole8Len,
+1372,GolfCourseLen,hole9Len,
+1373,GolfCourseLen,totalLen,토탈
+1374,GolfCourseLen,baseTee,
+1375,GolfCourseView,seq,
+1376,GolfCourseView,golfInfoSeq,골프장번호
+1377,GolfCourseView,courseCode,코스코드
+1378,GolfCourseView,courseName,코스명
+1379,GolfCourseView,nextName,다음코스명
+1380,GolfCourseView,coureseIntro,코스소개
+1381,GolfCourseView,status,사용여부
+1382,GolfCourseView,nextName2,다음코스명
+1383,GolfDeviceManager,deviceId,
+1384,GolfDeviceManager,deviceType,디바이스타입(0:태블릿)
+1385,GolfDeviceManager,status,"상태(0: 사용, 1:비사용)"
+1386,GolfDeviceManager,golfInfoSeq,골프장 번호
+1387,GolfDeviceManager,bigo,비고
+1388,GolfDeviceManager,regDate,
+1389,GolfDeviceManager,editDate,
+1390,GolfDiaryConvertCourse,seq,
+1391,GolfDiaryConvertCourse,courseSeq,
+1392,GolfDiaryConvertCourse,golfInfoSeq,
+1393,GolfDiaryConvertCourse,courseName_diary,
+1394,GolfDiaryConvertCourse,courseName_booking,
+1395,GolfDiaryConvertGolf,seq,
+1396,GolfDiaryConvertGolf,golfInfoSeq,
+1397,GolfDiaryConvertGolf,golfname_diary,
+1398,GolfDiaryConvertGolf,golfname_booking,
+1399,GolfDiaryHoleInfo_V2,seq,
+1400,GolfDiaryHoleInfo_V2,golfInfoSeq,
+1401,GolfDiaryHoleInfo_V2,golfInfoName,
+1402,GolfDiaryHoleInfo_V2,courseSeq,
+1403,GolfDiaryHoleInfo_V2,courseName,
+1404,GolfDiaryHoleInfo_V2,num,
+1405,GolfDiaryHoleInfo_V2,divide,
+1406,GolfDiaryHoleInfo_V2,hole1len,
+1407,GolfDiaryHoleInfo_V2,hole2len,
+1408,GolfDiaryHoleInfo_V2,hole3len,
+1409,GolfDiaryHoleInfo_V2,hole4len,
+1410,GolfDiaryHoleInfo_V2,hole5len,
+1411,GolfDiaryHoleInfo_V2,hole6len,
+1412,GolfDiaryHoleInfo_V2,hole7len,
+1413,GolfDiaryHoleInfo_V2,hole8len,
+1414,GolfDiaryHoleInfo_V2,hole9len,
+1415,GolfDiaryRound,UserRoundId,
+1416,GolfDiaryRound,userID,
+1417,GolfDiaryRound,golfInfoSeq,
+1418,GolfDiaryRound,golfInfoName,
+1419,GolfDiaryRound,bookDate,
+1420,GolfDiaryRound,bookTime,
+1421,GolfDiaryRound,outCourseSeq,
+1422,GolfDiaryRound,outCourseName,
+1423,GolfDiaryRound,inCourseSeq,
+1424,GolfDiaryRound,inCourseName,
+1425,GolfDiaryRound,teeName,
+1426,GolfDiaryRound,roundName,
+1427,GolfDiaryRound,baseScore,
+1428,GolfDiaryRound,totalScore,
+1429,GolfDiaryRound,status,"R 준비 , E : 완료 , F : 실패"
+1430,GolfDiaryRound,roundStatus,
+1431,GolfDiaryScore,seq,
+1432,GolfDiaryScore,UserRoundId,
+1433,GolfDiaryScore,lvl,
+1434,GolfDiaryScore,holeNo,
+1435,GolfDiaryScore,baseScore,
+1436,GolfDiaryScore,score,
+1437,GolfDiaryScore,putting,
+1438,GolfDiaryScore,fairway,
+1439,GolfInfo,seq,골프장seq
+1440,GolfInfo,golfInfoName,골프장명
+1441,GolfInfo,status,"상태(0:사용,1:미사용)"
+1442,GolfInfo,partnerStatus,"제휴상태(0:제휴,1:미제휴)"
+1443,GolfInfo,courseStatus,"코스노출상태(0:사용,1:미사용)"
+1444,GolfInfo,couponStatus,"쿠폰사용여부(0:사용,1:미사용)"
+1445,GolfInfo,cashStatus,"캐시사용여부(0:사용,1:미사용)"
+1446,GolfInfo,gradeStatus,"등급사용여부(0:사용,1:미사용)"
+1447,GolfInfo,cashSave,
+1448,GolfInfo,appVersion,앱 로컬데이터 버전
+1449,GolfInfo,partnerType,"제휴타입(A1,B2...)"
+1450,GolfInfo,allTimeType,"모든 티타임 타입(A1,B2...)"
+1451,GolfInfo,nameType,골프장명분류(컨트리클럽..)
+1452,GolfInfo,nameInformal,골프장명(약식)
+1453,GolfInfo,synonym,동의어
+1454,GolfInfo,groupGolfSeq,병설동일골프장seq
+1455,GolfInfo,address,주소
+1456,GolfInfo,addressGibun,주소
+1457,GolfInfo,addressShort,주소
+1458,GolfInfo,latitude,좌표(x)
+1459,GolfInfo,longitude,좌표(y)
+1460,GolfInfo,area1,대표권역1
+1461,GolfInfo,area2,대표권역2
+1462,GolfInfo,membershipType,"분류(0:회원제, 1:대중제, 2:병설)"
+1463,GolfInfo,holeCount,규모
+1464,GolfInfo,golfLength,전장
+1465,GolfInfo,phoneNum,전화번호
+1466,GolfInfo,faxNum,팩스번호
+1467,GolfInfo,reserveNum,예약실번호
+1468,GolfInfo,homepage,홈페이지주소
+1469,GolfInfo,ICInfo,인근IC정보
+1470,GolfInfo,partnerDate,제휴일자
+1471,GolfInfo,editID,수정ID
+1472,GolfInfo,editDate,수정일자
+1473,GolfInfo,regDate,등록일자
+1474,GolfInfo,lockStatus,"비대면 라커 사용 여부 (0:사용, 1: 비사용)"
+1475,GolfInfo,lockDistance,비대면 라커 자동 발급 거리(미터)
+1476,GolfInfo,golfJoinStatus,"골프장 조인 가능 여부(0:가능, 1:불가)"
+1477,GolfInfo,resChangeStatus,"예약변경가능여부(0:활성화,1:비활성화)"
+1478,GolfInfo,impdReqStatus,"임박취소신청가능여부(0:활성화,1:비활성화)"
+1479,GolfInfo,bookTimePushStatus,"티타임 PUSH 상태(0: 활성화, 1: 비활성화)"
+1480,GolfInfo,bookTimeApplyStatus,"티타임 청약 상태(0: 활성화, 1: 비활성화)"
+1481,GolfInfo,bookTimeCallPushStatus,"전화 알림 사용 여부(0:활성화, 1: 비활성화)"
+1482,GolfInfo,checkInCode,"체크인 사용 여부(0: 사용안함, 1:모두사용, 2: GPS, 3: QR만)"
+1483,GolfInfo,checkInHandStatus,"손바닥 인증 사용 여부(0:사용, 1: 비사용)"
+1484,GolfInfo,checkInQRResetTime,"체크인 QR코드 갱신 시간, 단위 초단위 (기본 15초)"
+1485,GolfInfo,checkInGuideMsg,체크인 가이드 메시지
+1486,GolfInfo,placeID,카카오맵 장소ID
+1487,GolfInfoArea,seq,
+1488,GolfInfoArea,golfInfoSeq,
+1489,GolfInfoArea,code,"권역코드(0:대표권역, 1:1차 ~ )"
+1490,GolfInfoArea,area1Code,권역 1차 seq
+1491,GolfInfoArea,area2Code,권역 2차 seq
+1492,GolfInfoArea,editDate,
+1493,GolfInfoArea,editID,
+1494,GolfInfoBookTimePush,seq,
+1495,GolfInfoBookTimePush,golfInfoSeq,골프장seq
+1496,GolfInfoBookTimePush,status,"사용여부(0:사용, 1:미사용)"
+1497,GolfInfoBookTimePush,weekBit,요일Bit
+1498,GolfInfoBookTimePush,sTime,연동시작시간
+1499,GolfInfoBookTimePush,eTime,연동종료시간
+1500,GolfInfoBookTimePush,sendDate,발송일자
+1501,GolfInfoBookTimePush,regID,등록ID
+1502,GolfInfoBookTimePush,regDate,등록일자
+1503,GolfInfoBookTimePush,weekType,"주중-0: 없음, 1: 일자, 2: 요일, 3: 주차로 설정, 4: 직접입력"
+1504,GolfInfoBookTimePush,weekDayBit,주중-요일Bit
+1505,GolfInfoBookTimePush,weekDay,주중-며칠전
+1506,GolfInfoBookTimePush,week,주중-몇주전
+1507,GolfInfoBookTimePush,weekText,주중-직접입력
+1508,GolfInfoBookTimePush,weekTime,주중-연동시간 HHmm
+1509,GolfInfoBookTimePush,holyType,"주말-0: 없음, 1: 일자, 2: 요일, 3: 주차로 설정, 4: 직접입력"
+1510,GolfInfoBookTimePush,holyDayBit,주말-요일Bit
+1511,GolfInfoBookTimePush,holyDay,주말-며칠전
+1512,GolfInfoBookTimePush,holyWeek,주말-몇주전
+1513,GolfInfoBookTimePush,holyText,주말-직접입력
+1514,GolfInfoBookTimePush,holyTime,주말-연동시간 HHmm
+1515,GolfInfoBookTimePush,editID,
+1516,GolfInfoBookTimePush,editDate,
+1517,GolfInfoBreak,golfInfoSeq,골프장seq
+1518,GolfInfoBreak,code,구분(0 만 사용중)
+1519,GolfInfoBreak,num,구분내 순서
+1520,GolfInfoBreak,breakContent,
+1521,GolfInfoBreak,breakPay,
+1522,GolfInfoBreak,reservStop,
+1523,GolfInfoBreak,status,"사용여부(0:사용, 1:미사용)"
+1524,GolfInfoBreak,editID,수정ID
+1525,GolfInfoBreak,editDate,수정일자
+1526,GolfInfoCalculate,golfInfoSeq,
+1527,GolfInfoCalculate,standard,"정산대상 0:대상아님, 1:정률제, 2:정액제"
+1528,GolfInfoCalculate,money,정산금액
+1529,GolfInfoCalculate,calculateType,"0 : 월정산 , 1 : 지정일정산"
+1530,GolfInfoCalculate,sdate,정산시작일
+1531,GolfInfoCalculate,edate,정산종료일
+1532,GolfInfoCalculate,editDate,
+1533,GolfInfoDepositChargeHistory,seq,
+1534,GolfInfoDepositChargeHistory,golfInfoSeq,
+1535,GolfInfoDepositChargeHistory,chargeType,"0: 충전, 1 : 차감"
+1536,GolfInfoDepositChargeHistory,balance,충전/차감금액
+1537,GolfInfoDepositChargeHistory,remark,비고
+1538,GolfInfoDepositChargeHistory,regdate,
+1539,GolfInfoDepositChargeHistory,regID,
+1540,GolfInfoDepositdBalance,golfInfoSeq,
+1541,GolfInfoDepositdBalance,balance,예치금
+1542,GolfInfoDepositdBalance,regDate,
+1543,GolfInfoDepositdBalance,regID,
+1544,GolfInfoDepositdBalance,editDate,
+1545,GolfInfoDepositdBalance,editID,
+1546,GolfInfoFile,golfInfoSeq,골프장seq
+1547,GolfInfoFile,code,"구분(0:제휴,1:대표(얼리),2:대표(추천/태그A),3:전경, 4:영상, 5:대표(태그B), c_XX:코스전경, y_XX_홀:야디지북) - 로고/맵은 스테틱"
+1548,GolfInfoFile,num,구분내 순서
+1549,GolfInfoFile,fileURL,이미지 경로
+1550,GolfInfoFile,fileSize,
+1551,GolfInfoFile,status,"사용여부(0:사용, 1:미사용, 2:삭제)"
+1552,GolfInfoFile,editID,
+1553,GolfInfoFile,editDate,
+1554,GolfInfoGrade,golfInfoSeq,
+1555,GolfInfoGrade,reviewCnt,평가수
+1556,GolfInfoGrade,avgStarScore,평점
+1557,GolfInfoGrade,green,잔디
+1558,GolfInfoGrade,scene,경치
+1559,GolfInfoGrade,food,음식
+1560,GolfInfoGrade,facility,시설
+1561,GolfInfoGrade,caddie,캐디
+1562,GolfInfoGrade,editDate,
+1563,GolfInfoInternal,golfInfoSeq,골프장번호
+1564,GolfInfoInternal,remark,특이사항
+1565,GolfInfoInternal,etc,
+1566,GolfInfoManager,golfInfoSeq,골프장seq
+1567,GolfInfoManager,code,"구분(0:본사,1:골프,2:관리자)"
+1568,GolfInfoManager,num,구분내 순서
+1569,GolfInfoManager,managerName,managerName 암호화
+1570,GolfInfoManager,managerEmail,managerEmail 암호화
+1571,GolfInfoManager,managerPosition,managerPosition 암호화
+1572,GolfInfoManager,managerTitle,managerTitle 암호화
+1573,GolfInfoManager,managerPhone,managerPhone 암호화
+1574,GolfInfoManager,etcParam,
+1575,GolfInfoManager,managerNameEnc,managerNameEnc 암호화
+1576,GolfInfoManager,managerEmailEnc,managerEmailEnc 암호화
+1577,GolfInfoManager,managerPositionEnc,managerPositionEnc 암호화
+1578,GolfInfoManager,managerTitleEnc,managerTitleEnc 암호화
+1579,GolfInfoManager,managerPhoneEnc,managerPhoneEnc 암호화
+1580,GolfInfoManager,encriptYN,암호화 여부
+1581,GolfInfoManager,searchManagerEmail,searchManagerEmail 암호화
+1582,GolfInfoManagerChannelUser,golfInfoSeq,골프장 번호
+1583,GolfInfoManagerChannelUser,num,순서
+1584,GolfInfoManagerChannelUser,phoneNumber,가입자 휴대폰 번호
+1585,GolfInfoManagerChannelUser,chanelid,채널 회원가입시 아이디
+1586,GolfInfoManagerChannelUser,status,"계정상태(0:정상, 1: 삭제, 2: 휴먼)"
+1587,GolfInfoManagerChannelUser,regDate,등록일
+1588,GolfInfoManagerChannelUser,authBtnClickDate,인증버튼 클릭 시간(YYYYMMDDHHmm)
+1589,GolfInfoManagerChannelUser,authDate,인증 시간
+1590,GolfInfoManagerChannelUser,searchPhoneNumber,검색용 폰번호
+1591,GolfInfoPartner,golfInfoSeq,골프장seq
+1592,GolfInfoPartner,corporateName,corporateName 암호화
+1593,GolfInfoPartner,corporateNum,corporateNum 암호화
+1594,GolfInfoPartner,representativeName,representativeName 암호화
+1595,GolfInfoPartner,partnerDate,제휴시작일
+1596,GolfInfoPartner,bankName,bankName 암호화
+1597,GolfInfoPartner,bankNum,bankNum 암호화
+1598,GolfInfoPartner,bankHolder,bankHolder 암호화
+1599,GolfInfoPartner,etcInfo,기타정보
+1600,GolfInfoPartner,editID,수정ID
+1601,GolfInfoPartner,editDate,수정일자
+1602,GolfInfoPartner,corporateNameEnc,corporateNameEnc 암호화
+1603,GolfInfoPartner,corporateNumEnc,corporateNumEnc 암호화
+1604,GolfInfoPartner,representativeNameEnc,representativeNameEnc 암호화
+1605,GolfInfoPartner,bankNameEnc,bankNameEnc 암호화
+1606,GolfInfoPartner,bankNumEnc,bankNumEnc 암호화
+1607,GolfInfoPartner,bankHolderEnc,bankHolderEnc 암호화
+1608,GolfInfoPartner,encriptYN,암호화 여부
+1609,GolfInfoPurchase,seq,
+1610,GolfInfoPurchase,golfInfoSeq,골프장seq
+1611,GolfInfoPurchase,status,"사용여부(0:사용, 1:미사용)"
+1612,GolfInfoPurchase,purchaseSdate,매입시작일
+1613,GolfInfoPurchase,purchaseEdate,매입종료일
+1614,GolfInfoPurchase,regID,등록ID
+1615,GolfInfoPurchase,regDate,등록일자
+1616,GolfInfoReservationConfig,seq,
+1617,GolfInfoReservationConfig,golfInfoSeq,골프장 번호
+1618,GolfInfoReservationConfig,status,상태(0: 활성화 / 1: 비활성화)
+1619,GolfInfoReservationConfig,configType,설정 타입(1: 예약시 체크)
+1620,GolfInfoReservationConfig,startDate,시작일(YYYYMMDD)
+1621,GolfInfoReservationConfig,endDate,종료일(YYYYMMDD)
+1622,GolfInfoReservationConfig,minVisitorCnt,최소 내장 인원
+1623,GolfInfoReservationConfig,maxVisitorCnt,최대 내장인원
+1624,GolfInfoReservationConfig,erpVisitorCnt,ERP 반영 최소 내장 인원
+1625,GolfInfoReservationConfig,errMessageCode,에러메시지코드
+1626,GolfInfoReservationConfig,regDate,
+1627,GolfInfoReservationConfig,regID,
+1628,GolfInfoReservationConfig,editDate,
+1629,GolfInfoReservationConfig,editID,
+1630,GolfInfoReservationConfig,remark,비고
+1631,GolfInfoReservationConfig,startTime,시작시간
+1632,GolfInfoReservationConfig,endTime,종료시간
+1633,GolfInfoReservationJob,seq,
+1634,GolfInfoReservationJob,golfInfoSeq,골프장 관리 번호
+1635,GolfInfoReservationJob,status,"자동 취소 작업 상태 값 (0: 완료, 1: 작업 대기, 2: 취소, 3: 실패)"
+1636,GolfInfoReservationJob,jobType,"취소 타입 (0: 임박취소 취소,1: 기상 악화 취소시 자동 취소, 2: 모두 취소)"
+1637,GolfInfoReservationJob,bookDate,취소 날짜
+1638,GolfInfoReservationJob,timeType,"시간 구분(0:일부시간, 1: 해당일전체)"
+1639,GolfInfoReservationJob,startTime,취소 가능 시작 시간
+1640,GolfInfoReservationJob,endTime,취소 가능 종료 시간
+1641,GolfInfoReservationJob,messageSendDate,메시지 발송 예정 시간
+1642,GolfInfoReservationJob,requestDate,작업 시작 시간
+1643,GolfInfoReservationJob,completeDate,작업 완료 시간
+1644,GolfInfoReservationJob,regDate,
+1645,GolfInfoReservationJob,regId,등록자 아이디
+1646,GolfInfoReservationJob,bookEndDate,
+1647,GolfInfoReservationJob,bookDateType,"날짜타입(0: 오늘,1: 내일, 2: 기간별)"
+1648,GolfInfoReservationJobLog,seq,
+1649,GolfInfoReservationJobLog,golfInfoSeq,골프장 관리 번호
+1650,GolfInfoReservationJobLog,jobSeq,작업 번호
+1651,GolfInfoReservationJobLog,preJobText,이전 작업 이력
+1652,GolfInfoReservationJobLog,editJobText,변경 작업 이력
+1653,GolfInfoReservationJobLog,regDate,
+1654,GolfInfoReservationJobLog,regId,작업자 아이디
+1655,GolfInfoReservationJobLog,regIdType,"등록자 아이디 타입(0: 골프장 담당자, 1: 운영관리자)"
+1656,GolfInfoReservationJobLog,statusTemp,"임박 취소 상태값(0: 완료, 1: 작업 대기, 2: 취소, 3: 실패)"
+1657,GolfInfoRestaurant,seq,
+1658,GolfInfoRestaurant,golfInfoSeq,골프장seq
+1659,GolfInfoRestaurant,place_name,
+1660,GolfInfoRestaurant,address_name,
+1661,GolfInfoRestaurant,place_url,
+1662,GolfInfoRestaurant,category_name,
+1663,GolfInfoRestaurant,phone,
+1664,GolfInfoRestaurant,distance,
+1665,GolfInfoServiceStatus,golfInfoSeq,골프장SEQ
+1666,GolfInfoServiceStatus,smartGolfYN,카카오골프 스마트관제 사용 여부
+1667,GolfInfoServiceStatus,checkInHPBannerYN,비회원체크인시 홈페이지배너 사용여부
+1668,GolfInfoServiceStatus,golfFoodViewYN,골프장 식당 메뉴 노출 여부
+1669,GolfInfoServiceStatus,checkInWebBannerSDate,체크인 웹배너 노출 시작일
+1670,GolfInfoServiceStatus,checkInWebBannerEDate,체크인 웹배너 노출 종료일
+1671,GolfInfoServiceStatus,checkInWebBannerText,체크인 웹배너 문구
+1672,GolfInfoServiceStatus,golfConciergeViewYN,골프장 관리자 청약현황 노출여부
+1673,GolfInfoServiceStatus,reservationInfo,홈페이지 예약안내
+1674,GolfInfoSimilar,seq,
+1675,GolfInfoSimilar,golfInfoSeq,골프장seq
+1676,GolfInfoSimilar,similarSeq,비슷한 골프장seq
+1677,GolfInfoSimilar,editDate,수정일자
+1678,GolfInfoSimilar,editID,수정ID
+1679,GolfInfoTag,seq,
+1680,GolfInfoTag,golfInfoSeq,골프장seq
+1681,GolfInfoTag,tagSeq,태그seq
+1682,GolfInfoTag,regDate,수정일자
+1683,GolfInfoTag,regID,수정ID
+1684,GolfInfoTour,seq,
+1685,GolfInfoTour,golfInfoSeq,골프장seq
+1686,GolfInfoTour,tourYear,개최년도
+1687,GolfInfoTour,tourCode,협회code
+1688,GolfInfoTour,tourName,대회명
+1689,GolfInfoTour,editDate,수정일자
+1690,GolfInfoTour,editID,수정ID
+1691,GolfInfoUse,golfInfoSeq,골프장번호
+1692,GolfInfoUse,bookType,"상품구분(1:일반, 2:얼리)"
+1693,GolfInfoUse,greenFeeWeek,비회원 그린피 주중
+1694,GolfInfoUse,greenFeeSat,비회원 그린피 토요일
+1695,GolfInfoUse,greenFeeSun,비회원 그린피 일요일
+1696,GolfInfoUse,greenFeeHoly,비회원 그린피 공휴일
+1697,GolfInfoUse,cartFee,카트피
+1698,GolfInfoUse,cartFeeText,
+1699,GolfInfoUse,caddieFee,캐디피
+1700,GolfInfoUse,caddieFeeText,캐디피 설명
+1701,GolfInfoUse,weekReserveDay,평일 예약가능기간 일
+1702,GolfInfoUse,weekReserveDays,평일 예약가능기간 요일
+1703,GolfInfoUse,weekReserveHour,평일 예약가능기간 시
+1704,GolfInfoUse,weekReserveMin,평일 예약가능기간 분
+1705,GolfInfoUse,weekReserveEndDay,평일 예약가능기간끝 일
+1706,GolfInfoUse,weekReserveEndHour,평일 예약가능기간끝 시
+1707,GolfInfoUse,weekReserveEndMin,평일 예약가능기간끝 분
+1708,GolfInfoUse,holyReserveDay,주말 예약가능기간 일
+1709,GolfInfoUse,holyReserveDays,주말 예약가능기간 요일
+1710,GolfInfoUse,holyReserveHour,주말 예약가능기간 시
+1711,GolfInfoUse,holyReserveMin,주말 예약가능기간 분
+1712,GolfInfoUse,holyReserveEndDay,주말 예약가능기간끝 일
+1713,GolfInfoUse,holyReserveEndHour,주말 예약가능기간끝 시
+1714,GolfInfoUse,holyReserveEndMin,주말 예약가능기간끝 분
+1715,GolfInfoUse,weekCancelDay,평일 예약취소일시 일
+1716,GolfInfoUse,weekCancelHour,평일 예약취소일시 시
+1717,GolfInfoUse,weekCancelMin,평일 예약취소일시 분
+1718,GolfInfoUse,holyCancelDay,주말 예약취소일시 일
+1719,GolfInfoUse,holyCancelHour,주말 예약취소일시 시
+1720,GolfInfoUse,holyCancelMin,주말 예약취소일시 분
+1721,GolfInfoUse,calculate,정산정보
+1722,GolfInfoUseTagCount,seq,
+1723,GolfInfoUseTagCount,golfInfoSeq,골프장시퀀스
+1724,GolfInfoUseTagCount,tagSeq,태그시퀀스
+1725,GolfInfoUseTagCount,cnt,태그매칭횟수
+1726,GolfInfoUseTagCount,regDate,
+1727,GolfInfoUseTagCount,editDate,
+1728,GolfInfoUser,seq,
+1729,GolfInfoUser,golfInfoSeq,
+1730,GolfInfoUser,userID,
+1731,GolfInfoUser,sigunguSeq,
+1732,GolfInfoUser,marketingYN,
+1733,GolfInfoUser,status,
+1734,GolfInfoUser,regDate,
+1735,GolfInfoUser,editDate,
+1736,GolfInfoUserTerm,seq,
+1737,GolfInfoUserTerm,golfInfoSeq,
+1738,GolfInfoUserTerm,userID,
+1739,GolfInfoUserTerm,marketingYN,
+1740,GolfInfoUserTerm,regDate,
+1741,GolfInfoWeather,seq,
+1742,GolfInfoWeather,golfInfoSeq,골프장seq
+1743,GolfInfoWeather,weatherDate,예보일자
+1744,GolfInfoWeather,weatherDateTime,예보일자
+1745,GolfInfoWeather,weatherTemp_min,최저기온
+1746,GolfInfoWeather,weatherTemp_max,최고기온
+1747,GolfInfoWeather,weatherTemp_main,날씨정보
+1748,GolfInfoWeather,weatherTemp_desc,날씨상세
+1749,GolfInfoWeather,weatherTemp_icon,날씨아이콘
+1750,GolfInfoWeather,editDate,수정일자
+1751,GolfInfoWeather2,seq,
+1752,GolfInfoWeather2,golfInfoSeq,
+1753,GolfInfoWeather2,fcdate,
+1754,GolfInfoWeather2,time06wd,
+1755,GolfInfoWeather2,time09wd,
+1756,GolfInfoWeather2,time12wd,
+1757,GolfInfoWeather2,time15wd,
+1758,GolfInfoWeather2,time18wd,
+1759,GolfInfoWeather2,time21wd,
+1760,GolfInfoWeather2,time06pop,
+1761,GolfInfoWeather2,time09pop,
+1762,GolfInfoWeather2,time12pop,
+1763,GolfInfoWeather2,time15pop,
+1764,GolfInfoWeather2,time18pop,
+1765,GolfInfoWeather2,time21pop,
+1766,GolfInfoWeather2,time06t3h,
+1767,GolfInfoWeather2,time09t3h,
+1768,GolfInfoWeather2,time12t3h,
+1769,GolfInfoWeather2,time15t3h,
+1770,GolfInfoWeather2,time18t3h,
+1771,GolfInfoWeather2,time21t3h,
+1772,GolfInfoWeather2,regDate,
+1773,GolfInfoWeather2,editeDate,
+1774,GolfOverseasTourArea,seq,
+1775,GolfOverseasTourArea,parentSeq,부모 seq
+1776,GolfOverseasTourArea,code,"(1:1차, 2:2차, 3:3차)"
+1777,GolfOverseasTourArea,area1Name,1차
+1778,GolfOverseasTourArea,area2Name,2차
+1779,GolfOverseasTourArea,area3Name,3차
+1780,GolfOverseasTourArea,cityGroup,소속된 지역들
+1781,GolfOverseasTourArea,status,"상태(0:사용,1:미사용)"
+1782,GolfOverseasTourArea,appVersion,
+1783,GolfOverseasTourArea,sort,
+1784,GolfOverseasTourArea,countryName,
+1785,GolfOverseasTourConsult,seq,
+1786,GolfOverseasTourConsult,productSeq,상품 seq
+1787,GolfOverseasTourConsult,consultStatus,"상담여부(0:대기,1:완료,2:상담중)"
+1788,GolfOverseasTourConsult,reservationStatus,"예약여부(0:대기,1:완료)"
+1789,GolfOverseasTourConsult,userID,고객 이메일 아이디
+1790,GolfOverseasTourConsult,userName,userName 암호화
+1791,GolfOverseasTourConsult,userContact,userContact 암호화
+1792,GolfOverseasTourConsult,visitorCnt,인원
+1793,GolfOverseasTourConsult,requestDate,상담요청일시
+1794,GolfOverseasTourConsult,scheduleSeq,스케줄 seq
+1795,GolfOverseasTourConsult,price,금액
+1796,GolfOverseasTourConsult,year,년
+1797,GolfOverseasTourConsult,month,월
+1798,GolfOverseasTourConsult,day,일
+1799,GolfOverseasTourConsult,version,버전
+1800,GolfOverseasTourConsult,regDate,등록일
+1801,GolfOverseasTourConsult,regID,등록ID
+1802,GolfOverseasTourConsult,editDate,수정일
+1803,GolfOverseasTourConsult,editID,수정ID
+1804,GolfOverseasTourConsult,finalDepartureDate,확정출발일
+1805,GolfOverseasTourConsult,finalVisitorCnt,확정인원
+1806,GolfOverseasTourConsult,finalPrice,최종상품가
+1807,GolfOverseasTourConsult,commission,커미션(%)
+1808,GolfOverseasTourConsult,agency,대행사
+1809,GolfOverseasTourConsult,userNameEnc,userNameEnc 암호화
+1810,GolfOverseasTourConsult,userContactEnc,userContactEnc 암호화
+1811,GolfOverseasTourConsult,encriptYN,암호화 여부
+1812,GolfOverseasTourConsultResultHistory,seq,
+1813,GolfOverseasTourConsultResultHistory,productSeq,상품 seq
+1814,GolfOverseasTourConsultResultHistory,consultSeq,상담 seq
+1815,GolfOverseasTourConsultResultHistory,memo,관리자 메모
+1816,GolfOverseasTourConsultResultHistory,name,관리자명
+1817,GolfOverseasTourConsultResultHistory,contact,관리자연락처
+1818,GolfOverseasTourConsultResultHistory,regDate,등록일
+1819,GolfOverseasTourConsultResultHistory,regID,등록ID
+1820,GolfOverseasTourConsultResultHistory,editDate,수정일
+1821,GolfOverseasTourConsultResultHistory,editID,수정ID
+1822,GolfOverseasTourConsultResultHistory,oldConsultStatus,이전 상담여부
+1823,GolfOverseasTourConsultResultHistory,newConsultStatus,새 상담여부
+1824,GolfOverseasTourConsultResultHistory,oldReservationStatus,이전 예약여부
+1825,GolfOverseasTourConsultResultHistory,newReservationStatus,새 예약여부
+1826,GolfOverseasTourConsultResultHistory,oldFinalVisitorCnt,이전 확정인원
+1827,GolfOverseasTourConsultResultHistory,newFinalVisitorCnt,새 확정인원
+1828,GolfOverseasTourConsultResultHistory,oldFinalPrice,이전 최종상품가
+1829,GolfOverseasTourConsultResultHistory,newFinalPrice,새 최종상품가
+1830,GolfOverseasTourConsultResultHistory,oldCommission,이전 커미션(%)
+1831,GolfOverseasTourConsultResultHistory,newCommission,새 커미션(%)
+1832,GolfOverseasTourEtc,seq,
+1833,GolfOverseasTourEtc,type,타입
+1834,GolfOverseasTourEtc,name,이름
+1835,GolfOverseasTourEtc,content,내용
+1836,GolfOverseasTourEtc,status,"상태(0:사용,1:미사용)"
+1837,GolfOverseasTourEtc,productSeq,
+1838,GolfOverseasTourEtc,value1,
+1839,GolfOverseasTourEtc,value2,
+1840,GolfOverseasTourEtc,value3,
+1841,GolfOverseasTourEtc,value4,
+1842,GolfOverseasTourEtc,value5,
+1843,GolfOverseasTourEtc,regDate,
+1844,GolfOverseasTourEtc,regID,
+1845,GolfOverseasTourEtc,editDate,
+1846,GolfOverseasTourEtc,editID,
+1847,GolfOverseasTourProduct,seq,
+1848,GolfOverseasTourProduct,productName,상품명
+1849,GolfOverseasTourProduct,sort,정렬순서 for 사용자
+1850,GolfOverseasTourProduct,area1,area1차
+1851,GolfOverseasTourProduct,area2,area2차
+1852,GolfOverseasTourProduct,area3,area3차
+1853,GolfOverseasTourProduct,status,"상태(0:사용,1:미사용)"
+1854,GolfOverseasTourProduct,airlineIn,공항in
+1855,GolfOverseasTourProduct,airlineOut,공항out
+1856,GolfOverseasTourProduct,imageThumbnail,썸네일 이미지
+1857,GolfOverseasTourProduct,imageTitle,타이틀 이미지
+1858,GolfOverseasTourProduct,pointStatus,"포인트 사용여부(0:사용,1:미사용)"
+1859,GolfOverseasTourProduct,pointHtml,포인트HTML
+1860,GolfOverseasTourProduct,golfInfoStatus,"골프장소개 사용여부(0:사용,1:미사용)"
+1861,GolfOverseasTourProduct,golfInfoHtml,골프장소개HTML
+1862,GolfOverseasTourProduct,hotelInfoStatus,"호텔소개 사용여부(0:사용,1:미사용)"
+1863,GolfOverseasTourProduct,hotelInfoHtml,호텔소개HTML
+1864,GolfOverseasTourProduct,essentialTourInfoStatus,"필수관광정보 사용여부(0:사용,1:미사용)"
+1865,GolfOverseasTourProduct,essentialTourInfoHtml,필수관광정보HTML
+1866,GolfOverseasTourProduct,optionalTourInfoStatus,"선택관광정보 사용여부(0:사용,1:미사용)"
+1867,GolfOverseasTourProduct,optionalTourInfoHtml,선택관광정보HTML
+1868,GolfOverseasTourProduct,includeInfoStatus,"포함사항  사용여부(0:사용,1:미사용)"
+1869,GolfOverseasTourProduct,includeInfoHtml,포함사항HTML
+1870,GolfOverseasTourProduct,excludeInfoStatus,"불포함사항 사용여부(0:사용,1:미사용)"
+1871,GolfOverseasTourProduct,excludeInfoHtml,불포함사항HTML
+1872,GolfOverseasTourProduct,optionalChargeStatus,"선택경비 사용여부(0:사용,1:미사용)"
+1873,GolfOverseasTourProduct,optionalChargeHtml,선택경비HTML
+1874,GolfOverseasTourProduct,noteStatus,"예약유의사항 사용여부(0:사용,1:미사용)"
+1875,GolfOverseasTourProduct,noteHtml,예약유의사항HTML
+1876,GolfOverseasTourProduct,regDate,등록일
+1877,GolfOverseasTourProduct,regID,등록ID
+1878,GolfOverseasTourProduct,editDate,수정일
+1879,GolfOverseasTourProduct,editID,수정ID
+1880,GolfOverseasTourProduct,agency,대행사
+1881,GolfOverseasTourProductSchedule,seq,
+1882,GolfOverseasTourProductSchedule,productSeq,상품 seq
+1883,GolfOverseasTourProductSchedule,scheduleSetSeq,상품 일정 셋트 seq
+1884,GolfOverseasTourProductSchedule,year,년
+1885,GolfOverseasTourProductSchedule,month,월
+1886,GolfOverseasTourProductSchedule,day,일
+1887,GolfOverseasTourProductSchedule,price,가격
+1888,GolfOverseasTourProductSchedule,sort,정렬순서
+1889,GolfOverseasTourProductSchedule,memo,
+1890,GolfOverseasTourProductSchedule,status,"상태(0:사용,1:미사용)"
+1891,GolfOverseasTourProductSchedule,regDate,등록일
+1892,GolfOverseasTourProductSchedule,regID,등록ID
+1893,GolfOverseasTourProductSchedule,editDate,수정일
+1894,GolfOverseasTourProductSchedule,editID,수정ID
+1895,GolfOverseasTourProductScheduleSet,seq,
+1896,GolfOverseasTourProductScheduleSet,productSeq,상품 seq
+1897,GolfOverseasTourProductScheduleSet,sort,정렬순서
+1898,GolfOverseasTourProductScheduleSet,status,"상태(0:사용,1:미사용)"
+1899,GolfOverseasTourProductScheduleSet,regDate,등록일
+1900,GolfOverseasTourProductScheduleSet,regID,등록ID
+1901,GolfOverseasTourProductScheduleSet,editDate,수정일
+1902,GolfOverseasTourProductScheduleSet,editID,수정ID
+1903,GolfSimilarity,golfInfoSeq,
+1904,GolfSimilarity,golfInfoSeq2,
+1905,GolfSimilarity,similarity,
+1906,GolfSimilarity,regDate,
+1907,GolfSimilarity,editDate,
+1908,JoinCancellation,seq,seq
+1909,JoinCancellation,userID,아이디
+1910,JoinCancellation,penaltyStartDate,패널티기간시작
+1911,JoinCancellation,penaltyEndDate,패널티기간끝
+1912,JoinCancellation,penaltyCode,"위약구분 0:무단,1:임박취소,2:매너불량,3기타"
+1913,JoinCancellation,status,"0:적용,1:해지"
+1914,JoinCancellation,cancelDate,
+1915,JoinCancellation,cancelID,
+1916,JoinCancellation,remark,비고
+1917,JoinCancellation,regID,등록자아이디
+1918,JoinCancellation,regDate,등록날자
+1919,JoinCancellation,editID,수정자아이디
+1920,JoinCancellation,editDate,수정날자
+1921,JoinInviteReport,seq,
+1922,JoinInviteReport,joinRoomSeq,조인방번호
+1923,JoinInviteReport,userID,방장 UserID
+1924,JoinInviteReport,inviteUserID,초대 UserID
+1925,JoinInviteReport,status,"상태(0:사용, 1:미사용)"
+1926,JoinInviteReport,regDay,등록일
+1927,JoinInviteReport,regDate,등록일
+1928,JoinMemberReview,seq,
+1929,JoinMemberReview,joinRoomSeq,조인방번호
+1930,JoinMemberReview,userID,방장 UserID
+1931,JoinMemberReview,reviewUserID,평가 UserID
+1932,JoinMemberReview,status,"상태(0:사용, 1:미사용)"
+1933,JoinMemberReview,reviewCode,"상태(0:좋아요, 1:보통, 2:별로)"
+1934,JoinMemberReview,nextJoinStatus,"상태(0:만날래, 1:안만날래)"
+1935,JoinMemberReview,regDate,등록일
+1936,JoinOutReport,seq,
+1937,JoinOutReport,joinRoomSeq,조인방번호
+1938,JoinOutReport,userID,방장 UserID
+1939,JoinOutReport,outUserID,강퇴 UserID
+1940,JoinOutReport,status,"상태(0:사용, 1:미사용)"
+1941,JoinOutReport,reason,신고사유
+1942,JoinOutReport,regDate,등록일
+1943,JoinOutReport,outType,"신고 타입(0:조인방강퇴, 1:라운드신고, 2: 관리자신고)"
+1944,JoinOutReportBoard,seq,
+1945,JoinOutReportBoard,joinRoomSeq,조인방 번호
+1946,JoinOutReportBoard,boardSeq,조인방 게시글 번호
+1947,JoinOutReportBoard,userID,신고한 userID
+1948,JoinOutReportBoard,outType,"신고 타입(0:유저 신고, ..)"
+1949,JoinOutReportBoard,status,"상태(0:사용, 1:미사용)"
+1950,JoinOutReportBoard,reason,신고사유
+1951,JoinOutReportBoard,regDate,등록일
+1952,JoinPointLog,seq,
+1953,JoinPointLog,userID,아이디
+1954,JoinPointLog,status,"상태(0:노출, 1:미노출)"
+1955,JoinPointLog,joinPoint,증감포인트
+1956,JoinPointLog,point,증감포인트
+1957,JoinPointLog,pointDes,사유
+1958,JoinPointLog,regDate,등록일
+1959,JoinRoom,seq,
+1960,JoinRoom,userID,아이디
+1961,JoinRoom,status,"상태(0:노출, 1:미노출, 2:완료, 3:삭제, 4:만료-server처리,5:예약진행중)"
+1962,JoinRoom,joinName,방명
+1963,JoinRoom,joinDes,설명
+1964,JoinRoom,golfInfoSeq,골프장seq
+1965,JoinRoom,golfInfoName,골프장명
+1966,JoinRoom,area1,지역1차
+1967,JoinRoom,area2,지역2차
+1968,JoinRoom,priceLow,가격대
+1969,JoinRoom,priceHigh,가격대
+1970,JoinRoom,expireDate,만료일
+1971,JoinRoom,bookDate,티타임날짜
+1972,JoinRoom,bookTimeBit,티타임시간&
+1973,JoinRoom,strokeLow,타수 (상관없음 : 0 )
+1974,JoinRoom,strokeHigh,타수
+1975,JoinRoom,paymentType,"결제방식(0:1빵, 1:방장쏜다, 2:방장우선)"
+1976,JoinRoom,companionType,"동반자조건(0:성별무관, 1:커플, 2:남자, 3:여자)"
+1977,JoinRoom,selectTag,라운드성향
+1978,JoinRoom,ageRange,연령
+1979,JoinRoom,regDate,등록일
+1980,JoinRoom,editDate,수정일
+1981,JoinRoom,channel_url,채팅방url
+1982,JoinRoomBoard,seq,
+1983,JoinRoomBoard,joinRoomSeq,조인방번호
+1984,JoinRoomBoard,userID,
+1985,JoinRoomBoard,status,"상태(0:노출, 1:미노출, 2:삭제)"
+1986,JoinRoomBoard,boardSeq,seq
+1987,JoinRoomBoard,isNotice,공지사항 여부 YN
+1988,JoinRoomBoard,contents,내용
+1989,JoinRoomBoard,regDate,등록일
+1990,JoinRoomBoard,editDate,수정일
+1991,JoinRoomBoard,adminID,관리자 처리 시 관리자 ID
+1992,JoinRoomLog,seq,
+1993,JoinRoomLog,joinRoomSeq,조인방 번호
+1994,JoinRoomLog,logType,"로그타입(1: 조인방 상태변경(노출),  2: 조인방 상태변경(미노출), 3: 조인방 생성, 4:조인방수정, 5:조인방 삭제)"
+1995,JoinRoomLog,logText,로그 내역
+1996,JoinRoomLog,remark,비고
+1997,JoinRoomLog,regId,등록한 사용자 아이디
+1998,JoinRoomLog,regIdType,"사용자 아이디 타입(0: 사용자아이디, 1: 관리자 아이디)"
+1999,JoinRoomLog,regDate,등록일
+2000,JoinRoomMember,seq,
+2001,JoinRoomMember,joinRoomSeq,조인방번호
+2002,JoinRoomMember,userID,멤버 UserID
+2003,JoinRoomMember,nickName,nickName 암호화
+2004,JoinRoomMember,isOwner,"방장여부(0:방장, 1:참여자)"
+2005,JoinRoomMember,status,"멤버 상태(0:참여, 1:취소,2:강퇴, 3:초대)"
+2006,JoinRoomMember,regDate,등록일
+2007,JoinRoomMember,editDate,상태수정일
+2008,JoinRoomMember,driveEndTimeRegDate,출발지 공유 시점
+2009,JoinRoomMember,driveEndTimeEditDate,도착시간 갱신일
+2010,JoinRoomMember,driveEndTime,도착까지 남은 시간(분)
+2011,JoinRoomMember,driveEndStatus,"출발지 공유 상태값(E:종료, W:진행중)"
+2012,JoinRoomMember,nickNameEnc,nickNameEnc 암호화
+2013,JoinRoomMember,encriptYN,암호화 여부
+2014,JoinRoomViewLog,seq,
+2015,JoinRoomViewLog,joinRoomSeq,조인방 번호
+2016,JoinRoomViewLog,userID,사용자 아이디
+2017,JoinRoomViewLog,regDate,접근 시간
+2018,LocationCodeArea,seq,
+2019,LocationCodeArea,code,"(1:1차, 2:2차)"
+2020,LocationCodeArea,area1Name,1차 권역명
+2021,LocationCodeArea,area2Name,권역명
+2022,LocationCodeArea,cityGroup,소속된 지역들
+2023,LocationCodeArea,status,"상태(0:사용,1:미사용)"
+2024,LocationCodeArea,appVersion,
+2025,LocationDistance,seq,
+2026,LocationDistance,golfinfoSeq,골프장시퀀스
+2027,LocationDistance,sigunguSeq,시군구시퀀스
+2028,LocationDistance,weekType,"0:주중, 1:주말/공휴일"
+2029,LocationDistance,totalDistance,소요거리정보
+2030,LocationDistance,totalTime,소요시간
+2031,LocationDistance,status,"0:사용중, 1: 미사용"
+2032,LocationSido,seq,
+2033,LocationSido,name,
+2034,LocationSigungu,seq,
+2035,LocationSigungu,address,주소정보
+2036,LocationSigungu,name,동네명
+2037,LocationSigungu,latitude,위도
+2038,LocationSigungu,longitude,경도
+2039,LocationSigungu,status,
+2040,LocationSigungu,appVersion,
+2041,LocationSigungu,baseSeq,
+2042,LocationSigunguBase,seq,
+2043,LocationSigunguBase,sidoSeq,
+2044,LocationSigunguBase,name,
+2045,LocationSigunguBase_20191211,seq,
+2046,LocationSigunguBase_20191211,name,
+2047,LocationSigungu_20191211,seq,
+2048,LocationSigungu_20191211,address,주소정보
+2049,LocationSigungu_20191211,name,동네명
+2050,LocationSigungu_20191211,latitude,위도
+2051,LocationSigungu_20191211,longitude,경도
+2052,LocationSigungu_20191211,status,
+2053,LocationSigungu_20191211,appVersion,
+2054,LocationSigungu_20191211,baseSeq,
+2055,MKT_AreaCodeMapping,areaCode,
+2056,MKT_AreaCodeMapping,sigunguSeq,
+2057,MKT_Image,seq,
+2058,MKT_Image,imageGubun,
+2059,MKT_Image,imageName,
+2060,MKT_Image,imageUrl,
+2061,MKT_Image,sampleImageUrl,
+2062,MKT_Image,textjson,
+2063,MKT_Image,status,
+2064,MKT_Image,regDate,
+2065,MKT_Message,seq,
+2066,MKT_Message,messageKey,
+2067,MKT_Message,msgMonth,
+2068,MKT_Message,host,"0 : 본사, 1 : 골프장"
+2069,MKT_Message,golfInfoSeq,
+2070,MKT_Message,title,
+2071,MKT_Message,contents,
+2072,MKT_Message,buttons,버튼 JSON
+2073,MKT_Message,imageUrl,
+2074,MKT_Message,option1,"A: 내장객 , B: 지역선택, C: 대상자 직업입력,D : 회원전체, E : 골프장 직접선택, F :주변회원"
+2075,MKT_Message,option2,"1 : 남성, 2 : 여성"
+2076,MKT_Message,option3,Y : 이번달 예약자 제외
+2077,MKT_Message,option4,Y : 대상자 수 제한
+2078,MKT_Message,round,반경
+2079,MKT_Message,areaCodes,option1 이 B일경우 지역선택
+2080,MKT_Message,gkey,대상자 키
+2081,MKT_Message,limitCnt,option4 대상자제한이 Y인경우
+2082,MKT_Message,targetCnt,
+2083,MKT_Message,successCnt,
+2084,MKT_Message,failedCnt,
+2085,MKT_Message,clickCnt,
+2086,MKT_Message,sendType,"A  :  등록완료일로 부터 1일 뒤 발송, B: 지정일 발송"
+2087,MKT_Message,sendDate,yyyyMMddHHmm
+2088,MKT_Message,status,"W : 작성중, R : 발송 대기, E : 발송완료, C : 발송취소,I : 발송중"
+2089,MKT_Message,imageType,
+2090,MKT_Message,regDate,
+2091,MKT_Message,regID,
+2092,MKT_Message,editDate,
+2093,MKT_Message,editID,
+2094,MKT_MessageChargeHistory,seq,
+2095,MKT_MessageChargeHistory,golfinfoSeq,
+2096,MKT_MessageChargeHistory,chargeOption,
+2097,MKT_MessageChargeHistory,chargeType,"0: 충전, 1 : 차감"
+2098,MKT_MessageChargeHistory,chargeCnt,
+2099,MKT_MessageChargeHistory,regDate,
+2100,MKT_MessageChargeHistory,regID,
+2101,MKT_MessageLimit,seq,
+2102,MKT_MessageLimit,golfInfoSeq,
+2103,MKT_MessageLimit,msgMonth,yyyyMM
+2104,MKT_MessageLimit,visitorLimit,내장객 한도
+2105,MKT_MessageLimit,visitorCnt,내장객 발송횟수
+2106,MKT_MessageLimit,nearUserLimit,주변회원 한도
+2107,MKT_MessageLimit,nearUserCnt,주변회원 발송횟수
+2108,MKT_MessageLimit,regDate,
+2109,MKT_MessageLimit,editDate,
+2110,MKT_MessageLimitRule,seq,
+2111,MKT_MessageLimitRule,partnerType,
+2112,MKT_MessageLimitRule,visitorLimit,
+2113,MKT_MessageLimitRule,nearUserLimit,
+2114,MKT_MessageLimitRule,status,"0 : 사용중 , 1 : 비사용(히스토리)"
+2115,MKT_MessageLimitRule,regDate,
+2116,MKT_MessageLimitRule,regID,
+2117,MKT_TestSend,seq,
+2118,MKT_TestSend,mktMessageSeq,
+2119,MKT_TestSend,phoneNumber,PhoneNumber 암호화
+2120,MKT_TestSend,regDate,
+2121,MKT_TestSend,PhoneNumberEnc,PhoneNumberEnc 암호화
+2122,MKT_TestSend,encriptYN,암호화 여부
+2123,MKT_UserBlock,userID,
+2124,MKT_UserBlock,golfInfoSeq,
+2125,MKT_UserBlock,status,"0 차단, 1 : 해지"
+2126,MKT_UserBlock,regDate,
+2127,MKT_UserBlock,editDate,
+2128,MKT_UserSend,userID,
+2129,MKT_UserSend,msgMonth,
+2130,MKT_UserSend,weekCnt1,주중 발송횟수 주 2회 이하 (본사제외) - 매주 초기화
+2131,MKT_UserSend,weekCnt2,
+2132,MKT_UserSend,weekCnt3,
+2133,MKT_UserSend,weekCnt4,
+2134,MKT_UserSend,weekCnt5,
+2135,MKT_UserSend,weekCnt6,
+2136,MKT_UserSend,monthCnt,월 발송횟수 주 3회 이하 (본사제외) - 매달 초기화
+2137,MKT_UserSend,totalCnt,본사 포함 총 발송횟수
+2138,MKT_UserSend,regDate,
+2139,MKT_UserSend,editDate,
+2140,MKT_UserTemp,seq,
+2141,MKT_UserTemp,gkey,
+2142,MKT_UserTemp,userID,
+2143,MKT_UserTemp,regDate,
+2144,NoticeInfo,seq,
+2145,NoticeInfo,publishType,"1:앱, 2:관리자"
+2146,NoticeInfo,category,카테고리
+2147,NoticeInfo,title,제목
+2148,NoticeInfo,contents,내용
+2149,NoticeInfo,clickCnt,클릭횟수
+2150,NoticeInfo,status,"0:사용, 1:미사용"
+2151,NoticeInfo,regDate,
+2152,NoticeInfo,regID,
+2153,NoticeInfo,editDate,
+2154,NoticeInfo,editID,
+2155,PayReservationTemp,seq,
+2156,PayReservationTemp,reservationSeq,
+2157,PayReservationTemp,TID,
+2158,PayReservationTemp,regDate,
+2159,PaymentCardInfo,seq,
+2160,PaymentCardInfo,paymentSeq,
+2161,PaymentCardInfo,cardInfo,
+2162,PaymentCardInfo,regDate,
+2163,PaymentInfo,seq,
+2164,PaymentInfo,golfInfoSeq,골프장시퀀스
+2165,PaymentInfo,resSeq,예약시퀀스
+2166,PaymentInfo,resTimeSeq,예약타임시퀀스
+2167,PaymentInfo,userID,고객이메일아이디
+2168,PaymentInfo,uuid,
+2169,PaymentInfo,resStatus,실제 동반여부(사용여부 아직)
+2170,PaymentInfo,paymentStatus,"결제상태(W:결제대기,Y:결제완료,C:결제취소,CP:부분결제취소,H:홀정산,F:결제실패)"
+2171,PaymentInfo,originalAmount,원 결제 금액
+2172,PaymentInfo,userGrade,결제당시 등급
+2173,PaymentInfo,userGradeSaleFee,결제당시 등급할인
+2174,PaymentInfo,usePoint,사용포인트
+2175,PaymentInfo,couponSeq,쿠폰시퀀스
+2176,PaymentInfo,couponName,쿠폰명
+2177,PaymentInfo,couponFee,쿠폰할인 금액
+2178,PaymentInfo,couponHost,쿠폰발급 주체(0 :본사 1:골프장)
+2179,PaymentInfo,amount,결제금액
+2180,PaymentInfo,restAmount,최종 결제 잔액
+2181,PaymentInfo,pgType,"PG사(iniPay:이니시스,kakaopay:카카오페이)"
+2182,PaymentInfo,TID,PG사 결제 트랜잭션 아이디
+2183,PaymentInfo,pgCardCode,PG사 카드 구분(이니시스)
+2184,PaymentInfo,pgMethodType,결제방법
+2185,PaymentInfo,pgCardName,결제카드명
+2186,PaymentInfo,reqestDate,결제요청일자
+2187,PaymentInfo,completeDate,결제완료일자
+2188,PaymentInfo,cancelAmount,결제 취소/환불 금액
+2189,PaymentInfo,penaltyAmount,위약금
+2190,PaymentInfo,cancelPoint,환불포인트
+2191,PaymentInfo,cancelDate,취소/환불 일자
+2192,PaymentInfo,cancelTID,PG사 취소/환불 트랜잭션 아이디
+2193,PaymentInfo,holeout,홀정산
+2194,PaymentInfo,orderNumber,결제상품번호
+2195,PaymentInfo,resType,
+2196,PaymentInfo,resultCode,결제 실패시 실패코드
+2197,PaymentInfo,resultMsg,결제 실패시 실패 메세지
+2198,PaymentInfo,refundType1,"환불구분(그린피,카트피,세금,그린피_카트피,그린피+카트피+세금)"
+2199,PaymentInfo,refundAmount1,환불금액
+2200,PaymentInfo,refundType2,"환불구분(그린피,카트피,세금,그린피_카트피,그린피+카트피+세금)"
+2201,PaymentInfo,refundAmount2,환불금액
+2202,PaymentInfo,refundType3,"환불구분(그린피,카트피,세금,그린피_카트피,그린피+카트피+세금)"
+2203,PaymentInfo,refundAmount3,환불금액
+2204,PaymentInfo,cashSave,적립 포인트
+2205,PaymentInfo,cashSaveYN,적립 여부
+2206,PaymentInfo,cashSaveDate,
+2207,PaymentInfo,platform,"IOS:아이폰, AOS: 안드로이드, CHAT:챗봇"
+2208,PaymentInfo,resMethod,
+2209,PaymentInfo,joinFee,
+2210,PaymentInfo,refundStatus,
+2211,PaymentKakaoTemp,paymentSeq,
+2212,PaymentKakaoTemp,tid,
+2213,PaymentKakaoTemp,payUrl,
+2214,PaymentKakaoTemp,regDate,
+2215,PlusFriendInfo,seq,
+2216,PlusFriendInfo,id,
+2217,PlusFriendInfo,ft_event,
+2218,PlusFriendInfo,id_type,
+2219,PlusFriendInfo,plus_friend_public_id,
+2220,PlusFriendInfo,ft_timestamp,
+2221,PlusFriendInfo,regDate,
+2222,PlusFriendInfo,editDate,
+2223,ReportGolfInfoType,golfInfoSeq,골프장seq
+2224,ReportGolfInfoType,partnershipType,
+2225,ReportGolfInfoType,openDate,
+2226,ReservationCancelInfo,resSeq,예약번호
+2227,ReservationCancelInfo,userID,사용자아이디
+2228,ReservationCancelInfo,cancelType,"취소타입(0: 일반취소, 1: 임박취소)"
+2229,ReservationCancelInfo,cancelCode,"취소 요청 코드 (C1: 단순변심, C2:개인사정, C3:기상악화)"
+2230,ReservationCancelInfo,cancelMessage,취소 메시지(cancelCode가 기타인경우)
+2231,ReservationCancelInfo,cancelStatus,"최종 취소 승인 상태  (1: 정상취소처리, 2: 취소 요청, 3: 취소거부)"
+2232,ReservationCancelInfo,cancelProcCode,"취소 처리 코드(0:일반,1: 기상악화 자동취소, 2: 전체 취소[자동취소])"
+2233,ReservationCancelInfo,timeoutCancelRegDate,취소 요청 시간
+2234,ReservationCancelInfo,timeoutCancelCompleteDate,최종 취소 승인 시간
+2235,ReservationCancelInfo,golfManagerId,골프장 담당자 아이디
+2236,ReservationCancelInfo,managerCompleteDate,골프장 담당자 처리 날짜
+2237,ReservationCancelInfo,managerCompleteCode,"골프장 담당자 승인 코드 (0:대기, 1:승인, 2: 거부,3: 자동 취소 처리, 4: 관리자 툴 취소 처리, 5: 처리지연,6:수수료 없이 취소 처리 승인)"
+2238,ReservationCancelInfo,adminManagerId,관리자 아이디
+2239,ReservationCancelInfo,adminCompleteDate,관리자 처리 날짜
+2240,ReservationCancelInfo,adminCompleteCode,"관리자 승인 코드 (0:대기, 1:승인, 2: 거부,3: 자동 취소 처리, 4: 관리자 툴 취소 처리)"
+2241,ReservationCancelInfo,isErpCancel,"erp 처리 여부 (0:erp 처리, 1: erp 처리안함)"
+2242,ReservationCancelInfo,erpCancelResult,erp에서 넘어온 코드값
+2243,ReservationCancelReason,resSeq,
+2244,ReservationCancelReason,code,EtcCommonCode
+2245,ReservationCancelReason,remark,code명
+2246,ReservationCancelReason,regDate,
+2247,ReservationCancelReason,regID,
+2248,ReservationConsignmentInfo,seq,
+2249,ReservationConsignmentInfo,resSeq,
+2250,ReservationConsignmentInfo,userName,
+2251,ReservationConsignmentInfo,userContact,
+2252,ReservationConsignmentInfo,remark,
+2253,ReservationConsignmentInfo,regDate,
+2254,ReservationConsignmentInfo,regID,
+2255,ReservationErpCancelFailed,resSeq,예약번호
+2256,ReservationErpCancelFailed,erpMsg,
+2257,ReservationErpCancelFailed,confirmYN,
+2258,ReservationErpCancelFailed,remark,
+2259,ReservationErpCancelFailed,lastSendDate,
+2260,ReservationErpCancelFailed,confirmID,
+2261,ReservationErpCancelFailed,confirmDate,
+2262,ReservationErpCancelFailed,regdate,
+2263,ReservationExternalInfo,seq,
+2264,ReservationExternalInfo,golfInfoSeq,골프장 번호
+2265,ReservationExternalInfo,resKey,ERP 예약건 인증키
+2266,ReservationExternalInfo,bookDate,부킹일
+2267,ReservationExternalInfo,bookTime,부킹시간
+2268,ReservationExternalInfo,courseName,코스명
+2269,ReservationExternalInfo,erpCourseCode,ERP 코스 코드
+2270,ReservationExternalInfo,greenFeeNO,그린피 가격
+2271,ReservationExternalInfo,holeCnt,홀 정보
+2272,ReservationExternalInfo,eventOption,이벤트명
+2273,ReservationExternalInfo,bookSeq,BookTime SEQ
+2274,ReservationExternalInfo,resSeq,우리쪽 예약건인 경우에 데이터 넣기
+2275,ReservationExternalInfo,status,"상태(E:정상, C:취소, F:실패)"
+2276,ReservationExternalInfo,completeDate,요청날짜
+2277,ReservationExternalInfo,cancelDate,예약 취소일자
+2278,ReservationExternalInfo,requestDate,요청일시
+2279,ReservationExternalInfo,resUserName,예약자명(암호화)
+2280,ReservationExternalInfo,resUserContact,예약자 연락처(암호화)
+2281,ReservationExternalInfo,searchResUserName,검색용 예약자명
+2282,ReservationExternalInfo,searchResUserContact,검색용 예약자 연락처
+2283,ReservationExternalInfoERPTMP,seq,
+2284,ReservationExternalInfoERPTMP,resKey,ERP 예약건 인증키
+2285,ReservationExternalInfoERPTMP,bookDate,부킹일
+2286,ReservationExternalInfoERPTMP,bookTime,부킹시간
+2287,ReservationExternalInfoERPTMP,erpCourseCode,ERP 코스 코드
+2288,ReservationExternalInfoERPTMP,greenFeeNO,그린피 가격
+2289,ReservationExternalInfoERPTMP,holeCnt,홀 정보
+2290,ReservationExternalInfoERPTMP,status,"상태(E:정상, C:취소, F:실패)"
+2291,ReservationExternalInfoERPTMP,completeDate,요청날짜
+2292,ReservationExternalInfoERPTMP,resUserName,예약자명(암호화)
+2293,ReservationExternalInfoERPTMP,resUserContact,예약자 연락처(암호화)
+2294,ReservationExternalInfoERPTMP,golfCode,골프장 코드
+2295,ReservationInfo,seq,
+2296,ReservationInfo,golfInfoSeq,골프장 시퀀스
+2297,ReservationInfo,userID,고객 이메일 아이디
+2298,ReservationInfo,userName,userName 암호화
+2299,ReservationInfo,userContact,userContact 암호화
+2300,ReservationInfo,amount,총 예약 금액
+2301,ReservationInfo,resType,"예약타입(Y:다중결제,H:현장결제,J:전액결제,N:N빵결제)"
+2302,ReservationInfo,status,"예약상태(E:완료,C:취소,I진행중[N빵시],F:예약실패,W:결제진행중[N빵제외 일정시간뒤 F로 전환])"
+2303,ReservationInfo,portalCode,포탈코드(타포탈허용)
+2304,ReservationInfo,requestDate,예약요청일시
+2305,ReservationInfo,cancelDate,취소일시
+2306,ReservationInfo,completeDate,완료일시
+2307,ReservationInfo,isConsignment,수동예약
+2308,ReservationInfo,platform,"IOS:아이폰, AOS: 안드로이드, CHAT:챗봇"
+2309,ReservationInfo,waitingTime,
+2310,ReservationInfo,resMethod,
+2311,ReservationInfo,joinRoomSeq,
+2312,ReservationInfo,joinFee,
+2313,ReservationInfo,userNameEnc,userNameEnc 암호화
+2314,ReservationInfo,userContactEnc,userContactEnc 암호화
+2315,ReservationInfo,encriptYN,암호화 여부
+2316,ReservationInfo,searchUserName,searchUserName 암호화
+2317,ReservationInfo,searchUserContact,searchUserContact 암호화
+2318,ReservationInfoLog,seq,
+2319,ReservationInfoLog,resSeq,예약번호
+2320,ReservationInfoLog,logType,타입(1: 예약변경)
+2321,ReservationInfoLog,newResSeq,신규 예약번호
+2322,ReservationInfoLog,userID,사용자 아이디
+2323,ReservationInfoLog,regDate,
+2324,ReservationInfoLog,logDetailText,로그 상세
+2325,ReservationInfoLog,status,"로그상태 (W:대기, E:완료)"
+2326,ReservationInfoMemo,seq,
+2327,ReservationInfoMemo,resSeq,예약번호
+2328,ReservationInfoMemo,keyword,메모
+2329,ReservationInfoMemo,regID,
+2330,ReservationInfoMemo,regDate,
+2331,ReservationLocker,seq,
+2332,ReservationLocker,resSeq,예약번호
+2333,ReservationLocker,userID,회원번호
+2334,ReservationLocker,sendType,"발송 타입(A:알림톡, S:선톡)"
+2335,ReservationLocker,isGpsLocation,"GPS 데이터 수신 여부(0:수신, 1: 미수신)"
+2336,ReservationLocker,golfInfoSeq,골프장 번호
+2337,ReservationLocker,regDate,데이터 등록일
+2338,ReservationLocker,talkSendDate,
+2339,ReservationLocker,lockerKey,라커키
+2340,ReservationLocker,lockerRoomType,"발급받은 라커 성별(0:성별없음, 1: 남, 2: 여)"
+2341,ReservationLocker,lockerKeyUseNum,해당 라커 사용 횟수
+2342,ReservationLocker,lockerRegDate,라커키 발급된 시간
+2343,ReservationLocker,status,"상태(E:정상, C:취소, F:실패)"
+2344,ReservationLocker,checkOutDate,고객이 체크 아웃한 시간(임시)
+2345,ReservationLocker,distance,마지막 GPS와 골프장 간의 거리
+2346,ReservationLocker,gpsLocationEditDate,GPS 거리 갱신 시간
+2347,ReservationLocker,erpErrorMsg,라커 발급 실패시 ERP 에러 메시지
+2348,ReservationLocker,serviceVer,"체크인 서비스 버전(1: 자동 발급 버전, 2: 수동 발급 버전)"
+2349,ReservationLocker,checkInType,체크인 타입(라커 발급 타입) - GPS / QR
+2350,ReservationLockerNonUser,seq,
+2351,ReservationLockerNonUser,resExternalSeq,타포탈예약SEQ
+2352,ReservationLockerNonUser,userID,아이디
+2353,ReservationLockerNonUser,ownerYN,"예약자 여부(Y: 예약자, N:동반자)"
+2354,ReservationLockerNonUser,uuid,골프부킹 사용자 카카오 고유값
+2355,ReservationLockerNonUser,nameTag,사용자 네임택
+2356,ReservationLockerNonUser,userName,userName 암호화
+2357,ReservationLockerNonUser,userContact,userContact 암호화
+2358,ReservationLockerNonUser,gender,"성별(0 : 없음 , 1:남자, 2:여자)"
+2359,ReservationLockerNonUser,userNickName,userNickName 암호화
+2360,ReservationLockerNonUser,thumbnailImgUrl,썸네일
+2361,ReservationLockerNonUser,searchUserName,
+2362,ReservationLockerNonUser,searchUserContact,
+2363,ReservationLockerNonUser,sendType,"발송 타입(A:알림톡, S:선톡)"
+2364,ReservationLockerNonUser,isGpsLocation,"GPS 데이터 수신 여부(0:수신, 1: 미수신)"
+2365,ReservationLockerNonUser,regDate,데이터 등록일
+2366,ReservationLockerNonUser,talkSendDate,
+2367,ReservationLockerNonUser,status,"상태(E:정상, W:대기, C:취소, F:실패)"
+2368,ReservationLockerNonUser,lockerKey,라커키
+2369,ReservationLockerNonUser,lockerKeyUseNum,"라커 사용 번호(일부 ERP업체마다 다름, 끝자리 한자리는 라커 사용번호)"
+2370,ReservationLockerNonUser,lockerRoomType,"라커 룸 구분(1: 남자, 2:여자)"
+2371,ReservationLockerNonUser,lockerRegDate,라커키 발급된 시간
+2372,ReservationLockerNonUser,checkOutDate,고객이 체크 아웃한 시간(임시)
+2373,ReservationLockerNonUser,distance,마지막 GPS와 골프장 간의 거리
+2374,ReservationLockerNonUser,gpsLocationEditDate,GPS 거리 갱신 시간
+2375,ReservationLockerNonUser,erpErrorMsg,라커 발급 실패시 ERP 에러 메시지
+2376,ReservationLockerNonUser,checkInType,체크인 타입(라커 발급 타입) - GPS / QR
+2377,ReservationLockerNonUser,serviceVer,"체크인 서비스 버전(1: 자동 발급 버전, 2: 수동 발급 버전)"
+2378,ReservationLockerNonUser,marketingYN,마케팅 수신 동의
+2379,ReservationMenualPurchase,seq,
+2380,ReservationMenualPurchase,golfInfoSeq,
+2381,ReservationMenualPurchase,bookDate,
+2382,ReservationMenualPurchase,bookTime,
+2383,ReservationMenualPurchase,courseSeq,
+2384,ReservationMenualPurchase,courseName,
+2385,ReservationMenualPurchase,userName,userName 암호화
+2386,ReservationMenualPurchase,purchaseFee,
+2387,ReservationMenualPurchase,remark,
+2388,ReservationMenualPurchase,regDate,
+2389,ReservationMenualPurchase,regID,
+2390,ReservationMenualPurchase,editDate,
+2391,ReservationMenualPurchase,editID,
+2392,ReservationMenualPurchase,userNameEnc,
+2393,ReservationMenualPurchase,encriptYN,
+2394,ReservationTimeInfo,seq,
+2395,ReservationTimeInfo,resSeq,예약시퀀스
+2396,ReservationTimeInfo,bookSeq,부킹타임시퀀스
+2397,ReservationTimeInfo,golfInfoSeq,골프장시퀀스
+2398,ReservationTimeInfo,golfInfoName,골프장명
+2399,ReservationTimeInfo,bookType,
+2400,ReservationTimeInfo,bookName,이벤트명
+2401,ReservationTimeInfo,bookDate,부킹일자
+2402,ReservationTimeInfo,bookTime,부킹시간
+2403,ReservationTimeInfo,CourseSeq,코스시퀀스
+2404,ReservationTimeInfo,courseName,코스명
+2405,ReservationTimeInfo,greenFeeNO,부킹 정상가
+2406,ReservationTimeInfo,greenFeeDC,부킹 할인가
+2407,ReservationTimeInfo,visitorCnt,부킹가능인원
+2408,ReservationTimeInfo,holeCnt,
+2409,ReservationTimeInfo,realVisitorCnt,실부킹인원
+2410,ReservationTimeInfo,reserveCancelDT,부킹취소 가능일
+2411,ReservationTimeInfo,isErp,ERP연동여부
+2412,ReservationTimeInfo,isReservation,"C:취소, F:실패, Y:성공"
+2413,ReservationTimeInfo,paymentOption,
+2414,ReservationTimeInfo,purchaseFee,매입금액
+2415,ReservationTimeInfo,bkNo,예약번호
+2416,ReservationTimeInfo,holeCD,
+2417,ReservationTimeInfo,caddyYN,캐디여부
+2418,ReservationTimeInfo,maxVisitorCnt,최대 내장인원(기본값 4)
+2419,ScoreRoundCourseInfo,seq,
+2420,ScoreRoundCourseInfo,roundSeq,
+2421,ScoreRoundCourseInfo,lvl,
+2422,ScoreRoundCourseInfo,scoreType,
+2423,ScoreRoundCourseInfo,courseSeq,
+2424,ScoreRoundCourseInfo,courseName,
+2425,ScoreRoundCourseInfo,holeCnt,
+2426,ScoreRoundInfo,roundSeq,
+2427,ScoreRoundInfo,userID,
+2428,ScoreRoundInfo,golfInfoSeq,
+2429,ScoreRoundInfo,roundName,
+2430,ScoreRoundInfo,bookDate,
+2431,ScoreRoundInfo,bookTime,
+2432,ScoreRoundInfo,outCourseSeq,
+2433,ScoreRoundInfo,outCourseName,
+2434,ScoreRoundInfo,inCourseSeq,
+2435,ScoreRoundInfo,inCourseName,
+2436,ScoreRoundInfo,teamSeq,
+2437,ScoreRoundInfo,status,
+2438,ScoreRoundInfo,regDate,
+2439,ScoreRoundInfo,editDate,
+2440,ScoreRoundInfo,etcParam1,
+2441,ScoreRoundInfo,etcParam2,
+2442,ScoreRoundInfo,golfInfoName,
+2443,ScoreRoundPlayerInfo,rpSeq,
+2444,ScoreRoundPlayerInfo,roundSeq,
+2445,ScoreRoundPlayerInfo,golfInfoSeq,
+2446,ScoreRoundPlayerInfo,userID,
+2447,ScoreRoundPlayerInfo,teeName,
+2448,ScoreRoundPlayerInfo,status,
+2449,ScoreRoundPlayerInfo,regDate,
+2450,ScoreRoundPlayerInfo,editDate,
+2451,ScoreRoundPlayerInfo,etcParam1,
+2452,ScoreRoundPlayerInfo,etcParam2,
+2453,ScoreRoundPlayerScoreInfo,rpsSeq,
+2454,ScoreRoundPlayerScoreInfo,roundSeq,
+2455,ScoreRoundPlayerScoreInfo,rpSeq,
+2456,ScoreRoundPlayerScoreInfo,lvl,
+2457,ScoreRoundPlayerScoreInfo,holeNo,
+2458,ScoreRoundPlayerScoreInfo,baseScore,
+2459,ScoreRoundPlayerScoreInfo,score,
+2460,ScoreRoundPlayerScoreInfo,putting,
+2461,ScoreRoundPlayerScoreInfo,fairway,
+2462,ScoreRoundPlayerScoreInfo,regDate,
+2463,ScoreRoundPlayerScoreInfo,editDate,
+2464,ScoreRoundPlayerScoreInfo,etcParam1,
+2465,ScoreRoundPlayerScoreInfo,etcParam2,
+2466,SearchMarketKeyword,seq,
+2467,SearchMarketKeyword,keyword,
+2468,SearchMarketKeyword,golfInfoSeq,골프장seq
+2469,SearchMarketKeyword,status,"0:사용중 , 1: 미사용"
+2470,SearchMarketKeyword,viewCnt,클릭수
+2471,SearchMarketKeyword,sdate,유효 시작일
+2472,SearchMarketKeyword,edate,유효 종료일
+2473,SearchMarketKeyword,regDate,
+2474,SearchMarketKeyword,regID,
+2475,SearchMarketKeyword,editDate,
+2476,SearchMarketKeyword,editID,
+2477,SearchOrdered,seq,
+2478,SearchOrdered,userID,아이디
+2479,SearchOrdered,displayName,
+2480,SearchOrdered,status,"0:사용중 , 1: 미사용"
+2481,SearchOrdered,sendDate,발송일자
+2482,SearchOrdered,searchGolfInfoSeqs,
+2483,SearchOrdered,searchName,
+2484,SearchOrdered,searchType,검색타입
+2485,SearchOrdered,searchSeq,검색seq
+2486,SearchOrdered,weekBit,요일Bit
+2487,SearchOrdered,digitTime,"수치화타임(1:새벽, 2:오전,4:오후,8:야간)"
+2488,SearchOrdered,digitGreenFee,"수치화가격(1: ~90000, 2:9~150000,4:15~200000,8:20~)"
+2489,SearchOrdered,visitorCnt,내장인원 Erp기본 4인
+2490,SearchOrdered,holeCnt,
+2491,SearchOrdered,paymentMethod,"결제방식(PP:선결제,OS:현장결제)"
+2492,SearchOrdered,paymentOption,이벤트
+2493,SearchOrdered,etc,
+2494,SearchOrdered,editDate,
+2495,SearchRelationMst,seq,
+2496,SearchRelationMst,keyword,
+2497,SearchRelationMst,status,상태 
+2498,SearchRelationMst,subCnt,하위수
+2499,SearchRelationMst,regDate,
+2500,SearchRelationMst,regID,
+2501,SearchRelationMst,editDate,
+2502,SearchRelationMst,editID,
+2503,SearchRelationSub,seq,
+2504,SearchRelationSub,MstSeq,
+2505,SearchRelationSub,relationKeyword,
+2506,SearchRelationSub,status,상태 
+2507,SearchRelationSub,viewCnt,클릭수
+2508,SearchRelationSub,url,
+2509,SettlementDay,seq,
+2510,SettlementDay,golfInfoSeq,
+2511,SettlementDay,golfInfoName,
+2512,SettlementDay,bookRange,
+2513,SettlementDay,bookDate,
+2514,SettlementDay,amount,
+2515,SettlementDay,fees,
+2516,SettlementDay,coupon,
+2517,SettlementDay,cash,
+2518,SettlementDay,settlementFee,
+2519,SettlementDay,regDate,
+2520,SettlementDay,editDate,
+2521,SettlementIssue,seq,
+2522,SettlementIssue,smSeq,
+2523,SettlementIssue,host,"'0'본사 , '1' 골프장"
+2524,SettlementIssue,contents,내용
+2525,SettlementIssue,regID,
+2526,SettlementIssue,regDate,
+2527,SettlementMonth,seq,
+2528,SettlementMonth,golfInfoSeq,
+2529,SettlementMonth,golfInfoName,
+2530,SettlementMonth,bookRange,
+2531,SettlementMonth,amount,
+2532,SettlementMonth,fees,
+2533,SettlementMonth,coupon,
+2534,SettlementMonth,cash,
+2535,SettlementMonth,settlementFee,
+2536,SettlementMonth,status,
+2537,SettlementMonth,regDate,
+2538,SettlementMonth,editDate,
+2539,SettlementMonth,editID,
+2540,SettlementStatusHistory,seq,
+2541,SettlementStatusHistory,smSeq,정산 시퀀스
+2542,SettlementStatusHistory,status,상태 변경
+2543,SettlementStatusHistory,regID,상태변경자 ID
+2544,SettlementStatusHistory,regDate,
+2545,StatisticsBookTime,seq,
+2546,StatisticsBookTime,golfInfoSeq,
+2547,StatisticsBookTime,bookMonth,
+2548,StatisticsBookTime,bookDate,
+2549,StatisticsBookTime,totalTimeCnt,
+2550,StatisticsBookTime,resTimeCnt,
+2551,StatisticsBookTime,userCnt,
+2552,StatisticsDailyBanner,seq,
+2553,StatisticsDailyBanner,bannerSeq,
+2554,StatisticsDailyBanner,bannerDate,
+2555,StatisticsDailyBanner,displayCnt,
+2556,StatisticsDailyBanner,clickCnt,
+2557,StatisticsDailyBanner,uniqueDisplayCnt,
+2558,StatisticsDailyBanner,uniqueClickCnt,
+2559,StatisticsDailyBanner,regDate,
+2560,StatisticsMonthlyBanner,seq,
+2561,StatisticsMonthlyBanner,bannerSeq,
+2562,StatisticsMonthlyBanner,bannerMonth,
+2563,StatisticsMonthlyBanner,displayCnt,
+2564,StatisticsMonthlyBanner,clickCnt,
+2565,StatisticsMonthlyBanner,uniqueDisplayCnt,
+2566,StatisticsMonthlyBanner,uniqueClickCnt,
+2567,StatisticsMonthlyBanner,regDate,
+2568,SumGolfDateFee,golfInfoSeq,
+2569,SumGolfDateFee,bookDate,
+2570,SumGolfDateFee,timeCnt,
+2571,SumGolfDateFee,specialCnt,특가 잔여타임
+2572,SumGolfDateFee,discountRate,
+2573,SumGolfDateFee,datehigh,
+2574,SumGolfDateFee,datelow,
+2575,SumGolfDateFee,time1Cnt,새벽 타임수
+2576,SumGolfDateFee,time1high,
+2577,SumGolfDateFee,time1low,
+2578,SumGolfDateFee,time2Cnt,오전 타임수
+2579,SumGolfDateFee,time2high,
+2580,SumGolfDateFee,time2low,
+2581,SumGolfDateFee,time4Cnt,오후 타임수
+2582,SumGolfDateFee,time4high,
+2583,SumGolfDateFee,time4low,
+2584,SumGolfDateFee,time8Cnt,야간 타임수
+2585,SumGolfDateFee,time8high,
+2586,SumGolfDateFee,time8low,
+2587,SumGolfDateFee,isEvent,
+2588,SumGolfDateFee,eventGC,
+2589,SumGolfDateFee,visitor3Cnt,
+2590,SumGolfDateFee,visitor4Cnt,
+2591,SumGolfDateFee,paymentOS,
+2592,SumGolfDateFee,paymentPP,
+2593,SumGolfDateFee,editDate,
+2594,SumGolfDateFee,visitor2Cnt,
+2595,SumGolfDateFee,specialFee,특가중 최저가
+2596,SumGolfDateFee,etcParam,예비컬럼
+2597,SumGolfDateFeeEarly,golfInfoSeq,얼리버드 골프장seq
+2598,SumGolfDateFeeEarly,bookDate,
+2599,SumGolfDateFeeEarly,timeCnt,
+2600,SumGolfDateFeeEarly,datelow,
+2601,SumGolfDateFeeEarly,discountRate,할인율
+2602,SumGolfDateFeeEarly,reserveCloseDT,마감일자
+2603,SumGolfDateFeeEarly,editDate,
+2604,TempBooktime1,golfInfoSeq,
+2605,TempBooktime1,golfInfoName,
+2606,TempBooktime1,bookDate,
+2607,TempBooktime1,bookTime,
+2608,TempBooktime1,CourseSeq,
+2609,TempBooktime1,CourseName,
+2610,TempBooktime1,greenFeeNO,
+2611,TempBooktime1,greenFeeDC,
+2612,TempBooktime1,reserveApplyDT,
+2613,TempBooktime1,reserveCloseDT,
+2614,TempBooktime1,reserveCancelDT,
+2615,TempBooktime1,regDate,
+2616,TempBooktime1,editDate,
+2617,TempBooktime1,etcParams,
+2618,TempBooktime1,bookName,상품명(기본 그린피)
+2619,TempBooktime1,visitorCnt,내장인원 Erp기본 4인
+2620,TempBooktime1,maxVisitorCnt,최대 내장인원(기본값 4)
+2621,TempBooktime1,holeCnt,
+2622,TempBooktime1,holeCD,
+2623,TempBooktime1,paymentMethod,"결제방식(PP:선결제,OS:현장결제)"
+2624,TempBooktime1,paymentOption,
+2625,TempBooktime1,purchaseFee,매입금액
+2626,TempBooktime1,isDisplay,
+2627,TempBooktime1,agencyCode,에이전시 코드
+2628,TempBooktime1,etcParam2,예비컬럼
+2629,TempBooktime1,caddyYN,캐디여부
+2630,TempBooktime1,isReservation,
+2631,TempBooktime2,golfInfoSeq,
+2632,TempBooktime2,golfInfoName,
+2633,TempBooktime2,bookDate,
+2634,TempBooktime2,bookTime,
+2635,TempBooktime2,CourseSeq,
+2636,TempBooktime2,CourseName,
+2637,TempBooktime2,greenFeeNO,
+2638,TempBooktime2,greenFeeDC,
+2639,TempBooktime2,reserveApplyDT,
+2640,TempBooktime2,reserveCloseDT,
+2641,TempBooktime2,reserveCancelDT,
+2642,TempBooktime2,regDate,
+2643,TempBooktime2,editDate,
+2644,TempBooktime2,etcParams,
+2645,TempBooktime2,bookName,상품명(기본 그린피)
+2646,TempBooktime2,visitorCnt,내장인원 Erp기본 4인
+2647,TempBooktime2,maxVisitorCnt,최대 내장인원(기본값 4)
+2648,TempBooktime2,holeCnt,
+2649,TempBooktime2,holeCD,
+2650,TempBooktime2,paymentMethod,"결제방식(PP:선결제,OS:현장결제)"
+2651,TempBooktime2,paymentOption,
+2652,TempBooktime2,purchaseFee,매입금액
+2653,TempBooktime2,isDisplay,
+2654,TempBooktime2,agencyCode,에이전시 코드
+2655,TempBooktime2,etcParam2,예비컬럼
+2656,TempBooktime2,caddyYN,캐디여부
+2657,TempBooktime2,isReservation,
+2658,TempBooktime3,golfInfoSeq,
+2659,TempBooktime3,golfInfoName,
+2660,TempBooktime3,bookDate,
+2661,TempBooktime3,bookTime,
+2662,TempBooktime3,CourseSeq,
+2663,TempBooktime3,CourseName,
+2664,TempBooktime3,greenFeeNO,
+2665,TempBooktime3,greenFeeDC,
+2666,TempBooktime3,reserveApplyDT,
+2667,TempBooktime3,reserveCloseDT,
+2668,TempBooktime3,reserveCancelDT,
+2669,TempBooktime3,regDate,
+2670,TempBooktime3,editDate,
+2671,TempBooktime3,etcParams,
+2672,TempBooktime3,bookName,상품명(기본 그린피)
+2673,TempBooktime3,visitorCnt,내장인원 Erp기본 4인
+2674,TempBooktime3,maxVisitorCnt,최대 내장인원(기본값 4)
+2675,TempBooktime3,holeCnt,
+2676,TempBooktime3,holeCD,
+2677,TempBooktime3,paymentMethod,"결제방식(PP:선결제,OS:현장결제)"
+2678,TempBooktime3,paymentOption,
+2679,TempBooktime3,purchaseFee,매입금액
+2680,TempBooktime3,isDisplay,
+2681,TempBooktime3,agencyCode,에이전시 코드
+2682,TempBooktime3,etcParam2,예비컬럼
+2683,TempBooktime3,caddyYN,캐디여부
+2684,TempBooktime3,isReservation,
+2685,TempBooktime4,golfInfoSeq,
+2686,TempBooktime4,golfInfoName,
+2687,TempBooktime4,bookDate,
+2688,TempBooktime4,bookTime,
+2689,TempBooktime4,CourseSeq,
+2690,TempBooktime4,CourseName,
+2691,TempBooktime4,greenFeeNO,
+2692,TempBooktime4,greenFeeDC,
+2693,TempBooktime4,reserveApplyDT,
+2694,TempBooktime4,reserveCloseDT,
+2695,TempBooktime4,reserveCancelDT,
+2696,TempBooktime4,regDate,
+2697,TempBooktime4,editDate,
+2698,TempBooktime4,etcParams,
+2699,TempBooktime4,bookName,상품명(기본 그린피)
+2700,TempBooktime4,visitorCnt,내장인원 Erp기본 4인
+2701,TempBooktime4,maxVisitorCnt,최대 내장인원(기본값 4)
+2702,TempBooktime4,holeCnt,
+2703,TempBooktime4,holeCD,
+2704,TempBooktime4,paymentMethod,"결제방식(PP:선결제,OS:현장결제)"
+2705,TempBooktime4,paymentOption,
+2706,TempBooktime4,purchaseFee,매입금액
+2707,TempBooktime4,isDisplay,
+2708,TempBooktime4,agencyCode,에이전시 코드
+2709,TempBooktime4,etcParam2,예비컬럼
+2710,TempBooktime4,caddyYN,캐디여부
+2711,TempBooktime4,isReservation,
+2712,TempBooktime5,golfInfoSeq,
+2713,TempBooktime5,golfInfoName,
+2714,TempBooktime5,bookDate,
+2715,TempBooktime5,bookTime,
+2716,TempBooktime5,CourseSeq,
+2717,TempBooktime5,CourseName,
+2718,TempBooktime5,greenFeeNO,
+2719,TempBooktime5,greenFeeDC,
+2720,TempBooktime5,reserveApplyDT,
+2721,TempBooktime5,reserveCloseDT,
+2722,TempBooktime5,reserveCancelDT,
+2723,TempBooktime5,regDate,
+2724,TempBooktime5,editDate,
+2725,TempBooktime5,etcParams,
+2726,TempBooktime5,bookName,상품명(기본 그린피)
+2727,TempBooktime5,visitorCnt,내장인원 Erp기본 4인
+2728,TempBooktime5,maxVisitorCnt,최대 내장인원(기본값 4)
+2729,TempBooktime5,holeCnt,
+2730,TempBooktime5,holeCD,
+2731,TempBooktime5,paymentMethod,"결제방식(PP:선결제,OS:현장결제)"
+2732,TempBooktime5,paymentOption,
+2733,TempBooktime5,purchaseFee,매입금액
+2734,TempBooktime5,isDisplay,
+2735,TempBooktime5,agencyCode,에이전시 코드
+2736,TempBooktime5,etcParam2,예비컬럼
+2737,TempBooktime5,caddyYN,캐디여부
+2738,TempBooktime5,isReservation,
+2739,User,userID,아이디
+2740,User,accessTokn,토큰
+2741,User,thumbnailImgUrl,썸네일
+2742,User,userName,userName 암호화
+2743,User,nickName,nickName 암호화
+2744,User,userContact,userContact 암호화
+2745,User,email,email 암호화
+2746,User,gender,성별
+2747,User,birthday,생년월일
+2748,User,status,"상태(0:정상, 1:탈퇴, 2:제재, 3:휴면)"
+2749,User,userPlatform,진입 플랫폼(CHAT / iOS / AOS)
+2750,User,marketingYN,
+2751,User,termsYN1,선택약관YN
+2752,User,termsYN2,선택약관YN
+2753,User,receiveYN,수신동의여부-사용안함(pushYN사용중)
+2754,User,receiveDate,수신동의일자
+2755,User,plusFriend,플러스친구
+2756,User,lastLoginDate,최근 로그인일
+2757,User,regDate,가입일
+2758,User,editDate,수정일
+2759,User,withdrawDate,탈퇴일
+2760,User,withdrawMemo,탈퇴사유(경로)
+2761,User,pushYN,
+2762,User,pushTokn,
+2763,User,uuids,
+2764,User,usePlatform,
+2765,User,userNameEnc,userNameEnc 암호화
+2766,User,nickNameEnc,nickNameEnc 암호화
+2767,User,userContactEnc,userContactEnc 암호화
+2768,User,emailEnc,emailEnc 암호화
+2769,User,encriptYN,암호화 여부
+2770,User,searchUserName,searchUserName 복호화불가
+2771,User,searchUserContact,searchUserContact 복호화불가
+2772,UserBookTimeConciergeInfo,seq,
+2773,UserBookTimeConciergeInfo,conType,신청타입(BT1:티타임청약)
+2774,UserBookTimeConciergeInfo,golfInfoSeq,
+2775,UserBookTimeConciergeInfo,userID,사용자 아이디
+2776,UserBookTimeConciergeInfo,bookDate,부킹일자
+2777,UserBookTimeConciergeInfo,timeBit,"시간대 bit , EtcCommonCode 참조"
+2778,UserBookTimeConciergeInfo,status,상태(0:신청/1:취소/2:기간 만료)
+2779,UserBookTimeConciergeInfo,resultApply,당첨여부(0:당첨/1:비당첨/2:대기중/3:예약진행중/4:당첨취소/5:기간만료)
+2780,UserBookTimeConciergeInfo,resSeq,가예약번소
+2781,UserBookTimeConciergeInfo,bookTimeSeq,티타임SEQ(청약 당첨시 bookTimeSeq)
+2782,UserBookTimeConciergeInfo,completeDate,완료기간(예약완료기한)
+2783,UserBookTimeConciergeInfo,completeResSeq,예약번호
+2784,UserBookTimeConciergeInfo,regDate,
+2785,UserBookTimeConciergeInfo,editDate,수정일
+2786,UserBookTimeConciergeInfo,lastPushSendDate,마지막 푸시 발송일
+2787,UserBookTimeConciergeInfoHistory,seq,
+2788,UserBookTimeConciergeInfoHistory,conType,신청타입(BT1:티타임청약)
+2789,UserBookTimeConciergeInfoHistory,golfInfoSeq,
+2790,UserBookTimeConciergeInfoHistory,userID,사용자 아이디
+2791,UserBookTimeConciergeInfoHistory,bookDate,부킹일자
+2792,UserBookTimeConciergeInfoHistory,timeBit,"시간대 bit , EtcCommonCode 참조"
+2793,UserBookTimeConciergeInfoHistory,status,상태(0:신청/1:취소/2:기간 만료/3:양도취소)
+2794,UserBookTimeConciergeInfoHistory,resultApply,당첨여부(0:당첨/1:비당첨/2:대기중/3:예약진행중/4:당첨취소/5:기간만료/ 6: 야간당첨)
+2795,UserBookTimeConciergeInfoHistory,resSeq,가예약번호
+2796,UserBookTimeConciergeInfoHistory,bookTimeSeq,티타임SEQ(청약 당첨시 bookTimeSeq)
+2797,UserBookTimeConciergeInfoHistory,completeDate,완료기간(예약완료기한)
+2798,UserBookTimeConciergeInfoHistory,completeResSeq,예약번호
+2799,UserBookTimeConciergeInfoHistory,regDate,
+2800,UserBookTimeConciergeInfoHistory,editDate,수정일
+2801,UserBookTimeConciergeInfoHistory,lastPushSendDate,마지막 푸시 발송일
+2802,UserBookTimeConciergeInfoHistory,isNewBookTime,"신규타임여부(0:신규, 1: 재오픈)"
+2803,UserBookTimeConciergeInfoHistory,isReqCallStatus,"전화 알림 여부(0:신청, 1: 미신청)"
+2804,UserBookTimeConciergeInfoHistory,bookTimeCancelDT,해당 타임 취소 가능 일자
+2805,UserBookTimeConciergeInfoHistory,digitGreenFee,"수치화가격(1: ~90000, 2:9~150000,4:15~200000,8:20~)"
+2806,UserBookTimeConciergeInfoHistory,visitorCnt,내장인원
+2807,UserBookTimeConciergeInfoHistory,etcParam1,기타1
+2808,UserBookTimeConciergeInfoHistory,etcParam2,
+2809,UserBookTimeConciergeInfoHistory,etcParam3,
+2810,UserBookTimeConciergeInfoHistory,etcParam4,
+2811,UserBookTimeConciergeInfoHistory,backupDate,
+2812,UserBookTimeConciergeInfoOption,conSeq,ConciergeSeq
+2813,UserBookTimeConciergeInfoOption,isNewBookTime,"신규타임여부(0:신규, 1: 재오픈)"
+2814,UserBookTimeConciergeInfoOption,isReqCallStatus,"전화 알림 여부(0:신청, 1: 미신청)"
+2815,UserBookTimeConciergeInfoOption,bookTimeCancelDT,해당 타임 취소 가능 일자
+2816,UserBookTimeConciergeInfoOption,digitGreenFee,"수치화가격(1: ~90000, 2:9~150000,4:15~200000,8:20~)"
+2817,UserBookTimeConciergeInfoOption,visitorCnt,내장인원
+2818,UserBookTimeConciergeInfoOption,etcParam1,기타1
+2819,UserBookTimeConciergeInfoOption,etcParam2,
+2820,UserBookTimeConciergeInfoOption,etcParam3,
+2821,UserBookTimeConciergeInfoOption,etcParam4,
+2822,UserBookTimeConciergeInfoOption,regDate,
+2823,UserBookTimeConciergeInfoOption,editDate,
+2824,UserBookTimeConciergePush,seq,
+2825,UserBookTimeConciergePush,conciergeSeq,UserBookTimeconciergeInfo.Seq
+2826,UserBookTimeConciergePush,pushType,콘시어지 메시지 타입(BT1:티타임청약)
+2827,UserBookTimeConciergePush,userID,사용자 아이디
+2828,UserBookTimeConciergePush,receiveStatus,"수신여부(0:수신, 1: 미수신)"
+2829,UserBookTimeConciergePush,resendYN,재발송 여부
+2830,UserBookTimeConciergePush,regDate,
+2831,UserBookTimeConciergePush,editDate,
+2832,UserBookTimePush,seq,
+2833,UserBookTimePush,userID,
+2834,UserBookTimePush,golfInfoSeq,
+2835,UserBookTimePush,bookDate,부킹일자
+2836,UserBookTimePush,status,"상태(0: 요청, 1: 미요청, 2: 알림완료)"
+2837,UserBookTimePush,bookTimeBit,"시간대 bit, EtcCommonCode 참조"
+2838,UserBookTimePush,regDate,
+2839,UserBookTimePush,editDate,
+2840,UserBookTimePushHistory,seq,
+2841,UserBookTimePushHistory,userID,
+2842,UserBookTimePushHistory,golfInfoSeq,
+2843,UserBookTimePushHistory,bookDate,부킹일자
+2844,UserBookTimePushHistory,status,"상태(0: 요청, 1: 미요청, 2: 알림완료)"
+2845,UserBookTimePushHistory,bookTimeBit,"시간대 bit, EtcCommonCode 참조"
+2846,UserBookTimePushHistory,regDate,
+2847,UserBookTimePushHistory,editDate,
+2848,UserBookTimePushInfo,seq,
+2849,UserBookTimePushInfo,userID,
+2850,UserBookTimePushInfo,bookSeq,티타임 seq
+2851,UserBookTimePushInfo,status,"상태(0: 알림미완료, 1: 알림완료)"
+2852,UserBookTimePushInfo,regDate,
+2853,UserBookTimePushInfo,editDate,
+2854,UserCancellation,seq,seq
+2855,UserCancellation,userID,아이디
+2856,UserCancellation,golfInfoSeq,골프장seq
+2857,UserCancellation,resTimeSeq,예약타임seq
+2858,UserCancellation,penaltyStartDate,패널티기간시작
+2859,UserCancellation,penaltyEndDate,패널티기간끝
+2860,UserCancellation,penaltyCode,"위약구분 0:무단,1:임박취소,2:매너불량,3기타"
+2861,UserCancellation,status,"0:적용,1:해지"
+2862,UserCancellation,cancelDate,
+2863,UserCancellation,cancelID,
+2864,UserCancellation,remark,비고
+2865,UserCancellation,regID,등록자아이디
+2866,UserCancellation,regDate,등록날자
+2867,UserCancellation,editID,수정자아이디
+2868,UserCancellation,editDate,수정날자
+2869,UserCancellation,userContact,
+2870,UserCancellation,searchUserContact,
+2871,UserCancellationFee,seq,seq
+2872,UserCancellationFee,userID,아이디
+2873,UserCancellationFee,golfInfoSeq,골프장seq
+2874,UserCancellationFee,resTimeSeq,예약타임seq
+2875,UserCancellationFee,cancelfee,위약금
+2876,UserCancellationFee,feestatus,"0:입금, 1:미입금"
+2877,UserCancellationFee,golfstatus,"0:처리, 1:미처리"
+2878,UserCancellationFee,feeRegDate,
+2879,UserCancellationFee,golfRegDate,
+2880,UserCancellationFee,regDate,
+2881,UserCancellationFee,regID,
+2882,UserCancellationFee,memo,
+2883,UserCancellationGolf,userID,회원번호
+2884,UserCancellationGolf,golfInfoSeq,골프장 번호
+2885,UserCancellationGolf,status,상태(0:위약 / 1: 위약 해지)
+2886,UserCancellationGolf,penaltyStartDate,패널티 시작일(최근 예약 최초 실패일)
+2887,UserCancellationGolf,penaltyEndDate,패널티 종료일(마지막 예약 성공일)
+2888,UserCancellationGolf,regDate,
+2889,UserCancellationGolf,editDate,
+2890,UserCharacter,seq,
+2891,UserCharacter,userID,
+2892,UserCharacter,characterSeq,성향코드
+2893,UserCharacter,status,"상태(0:정상,변화카운트. 3이상:변화감지..)"
+2894,UserCharacter,regDate,
+2895,UserCharacter,editDate,
+2896,UserChatStatus,userID,
+2897,UserChatStatus,isActive,
+2898,UserChatStatus,regDate,
+2899,UserChatStatus,editDate,
+2900,UserChatbotAlarm,seq,seq
+2901,UserChatbotAlarm,userID,아이디
+2902,UserChatbotAlarm,recommendReceiveYN,수신동의여부
+2903,UserChatbotAlarm,recommendReceiveDate,수신동의일자
+2904,UserChatbotAlarm,regDate,가입일
+2905,UserChatbotAlarm,editDate,수정일
+2906,UserCoupon,seq,
+2907,UserCoupon,subSeq,서브Seq
+2908,UserCoupon,userID,아이디
+2909,UserCoupon,status,"상태(0:사용가능,1:사용중지,2:사용,3:다운가능)"
+2910,UserCoupon,couponName,쿠폰명
+2911,UserCoupon,couponNotice,쿠폰 사용조건(안내)
+2912,UserCoupon,discountPay,할인금액
+2913,UserCoupon,golfInfoSeq,사용처 0:전체
+2914,UserCoupon,weekBit,유효 요일(&)
+2915,UserCoupon,sDate,유효 시작일
+2916,UserCoupon,eDate,유효 종료일
+2917,UserCoupon,isBookTime,"N:전체, Y:특정티타임조건있음"
+2918,UserCoupon,sBookTime,사용가능 시작티타임
+2919,UserCoupon,eBookTime,사용가능 종료티타임
+2920,UserCoupon,isPayMethod,K : 카카오
+2921,UserCoupon,isPaymentMethod,"PP:선결제, OS:현장결제,비었을 경우 둘다"
+2922,UserCoupon,isHost,0 본사 1 골프장
+2923,UserCoupon,isPlatform,"빈값: 전체, app: 앱전용"
+2924,UserCoupon,regDate,등록일
+2925,UserCoupon,regID,등록ID
+2926,UserCoupon,useDate,사용일
+2927,UserCoupon,sBookDate,사용가능 부킹일자 시작일
+2928,UserCoupon,eBookDate,사용가능 부킹일자
+2929,UserDeliveryAddress,seq,
+2930,UserDeliveryAddress,userID,
+2931,UserDeliveryAddress,senderName,보내는 분
+2932,UserDeliveryAddress,senderContact,보내는 분 연락처
+2933,UserDeliveryAddress,receiverName,받으실 분
+2934,UserDeliveryAddress,receiverContact,받으실 분 연락처
+2935,UserDeliveryAddress,addr1,주소
+2936,UserDeliveryAddress,addr2,상세주소
+2937,UserDeliveryAddress,zipcode,우편번호
+2938,UserDeliveryAddress,alias,배송지 별칭
+2939,UserDeliveryAddress,lvl,순서
+2940,UserDeliveryAddress,status,"상태(0: 정상, 1: 삭제, 2: 만료)"
+2941,UserDeliveryAddress,regDate,
+2942,UserDeliveryAddress,editDate,
+2943,UserDeliveryAddress,expireDate,보관만료일자
+2944,UserDeliveryAddress,event,이벤트 정보
+2945,UserDeliveryAddress,encriptYN,
+2946,UserDeliveryAddress,etc1,
+2947,UserDeliveryAddress,etc2,
+2948,UserDeliveryAddress,etc3,
+2949,UserDeparture,userID,아이디
+2950,UserDeparture,type,"(0:출발지, 1:집, 2:회사)"
+2951,UserDeparture,name,name 암호화
+2952,UserDeparture,address,address 암호화
+2953,UserDeparture,status,"상태(0:설정, 1:삭제)"
+2954,UserDeparture,latitude,latitude 암호화
+2955,UserDeparture,longitude,longitude 암호화
+2956,UserDeparture,sigunguSeq,시군구
+2957,UserDeparture,regDate,등록일
+2958,UserDeparture,editDate,수정일
+2959,UserDeparture,nameEnc,nameEnc 암호화
+2960,UserDeparture,addressEnc,addressEnc 암호화
+2961,UserDeparture,latitudeEnc,latitudeEnc 암호화
+2962,UserDeparture,longitudeEnc,longitudeEnc 암호화
+2963,UserDeparture,encriptYN,암호화 여부
+2964,UserDepartureChatbot,seq,출발지 설정
+2965,UserDepartureChatbot,botUserKey,Bot 아이디
+2966,UserDepartureChatbot,userID,appUserID
+2967,UserDepartureChatbot,type,"(0:집, 1:회사, ..)"
+2968,UserDepartureChatbot,name,주소명칭
+2969,UserDepartureChatbot,status,"상태(0:설정,1:노출,2:삭제)"
+2970,UserDepartureChatbot,locationSigunguSeq,출발지 읍면동 코드
+2971,UserDepartureChatbot,latitude,latitude 암호화
+2972,UserDepartureChatbot,longitude,longitude 암호화
+2973,UserDepartureChatbot,regDate,등록일
+2974,UserDepartureChatbot,editDate,수정일
+2975,UserDepartureChatbot,latitudeEnc,latitudeEnc 암호화
+2976,UserDepartureChatbot,longitudeEnc,longitudeEnc 암호화
+2977,UserDepartureChatbot,encriptYN,암호화 여부
+2978,UserDevice,userID,
+2979,UserDevice,deviceId,
+2980,UserDevice,cnt,
+2981,UserDevice,regDate,
+2982,UserDeviceSetting,userID,
+2983,UserDeviceSetting,autoLock,"라커 자동 발급 여부(0: 사용, 1: 사용안함)"
+2984,UserDeviceSetting,lockEditDate,라커 수정일
+2985,UserDeviceSetting,gpsAuthStatus,"GPS 위치 추적 권한 상태 값(0: 항상허용, 1: 앱사용중허용, 2:거부)"
+2986,UserDeviceSetting,etcParam2,임시2
+2987,UserDeviceSetting,etcParam3,임시3
+2988,UserDeviceSetting,etcParam4,임시3
+2989,UserDeviceSetting,etcParam5,임시4
+2990,UserDeviceSetting,regDate,등록일
+2991,UserDeviceSetting,editDate,갱신일
+2992,UserGolfBookTimePush,seq,
+2993,UserGolfBookTimePush,golfInfoSeq,
+2994,UserGolfBookTimePush,bookDate,
+2995,UserGolfBookTimePush,userID,
+2996,UserGolfBookTimePush,regDate,
+2997,UserGolfBookTimePush,editDate,
+2998,UserGolfCheckInInfo,userID,
+2999,UserGolfCheckInInfo,nameTag,사용자 네임택
+3000,UserGolfCheckInInfo,rHandCheckInYN,"손바닥체크인사용여부(Y:사용, N: 미사용)"
+3001,UserGolfCheckInInfo,rHandData,
+3002,UserGolfCheckInInfo,etcParam1,
+3003,UserGolfCheckInInfo,etcParam2,
+3004,UserGolfCheckInInfo,etcParam3,
+3005,UserGolfCheckInInfo,regDate,
+3006,UserGolfCheckInInfo,editDate,
+3007,UserGolfDiaryBackup,userID,회원번호
+3008,UserGolfDiaryBackup,email,
+3009,UserGolfDiaryBackup,termsDate,백업약관 동의일
+3010,UserGolfDiaryBackup,authKey,
+3011,UserGolfDiaryBackup,autnYN,
+3012,UserGolfDiaryBackup,regDate,
+3013,UserGolfDiaryBackup,editDate,마지막 수정일
+3014,UserGolfDiaryBackup,searchEmail,
+3015,UserGolfDiaryBackup,status,
+3016,UserGolfPointHistory,seq,
+3017,UserGolfPointHistory,userID,회원 아이디
+3018,UserGolfPointHistory,pointType,포인트타입(포인트 타입[A-L:앱방문/A-RE:예약완료/A-RF:친구초대완료/A-Q:분기지급/D-M:월차감])
+3019,UserGolfPointHistory,pointTypeName,포인트타입이름
+3020,UserGolfPointHistory,pointGubun,포인트 구분 (A:추가/D:삭제/U:사용)
+3021,UserGolfPointHistory,savePoint,골프포인트
+3022,UserGolfPointHistory,totalPoint,사용가능한 포인트
+3023,UserGolfPointHistory,saveDate,적립일
+3024,UserGolfPointHistory,status,노출상태(0:노출/1:비노출)
+3025,UserGolfPointHistory,expireDate,만료일
+3026,UserGolfPointHistory,orderNumber,사용시 주문번호
+3027,UserGolfPointHistory,pointInfo,포인트 정보
+3028,UserGolfPointHistory,regDate,
+3029,UserGolfPointHistory,regID,
+3030,UserGolfPointHistory,editDate,
+3031,UserGolfPointHistory,editID,
+3032,UserGrade,userID,아이디
+3033,UserGrade,golfInfoSeq,골프장seq
+3034,UserGrade,gradeLevel,등급
+3035,UserGrade,gradeName,등급명
+3036,UserGrade,discountPay,할인액
+3037,UserGrade,editDate,수정일
+3038,UserIdentityVerification,userID,
+3039,UserIdentityVerification,DI,
+3040,UserIdentityVerification,searchDI,
+3041,UserIdentityVerification,isUse,
+3042,UserIdentityVerification,regDate,
+3043,UserIdentityVerification,editDate,
+3044,UserIdentityVerification,authGubun,"인증매체(P:휴대폰, C:카드)"
+3045,UserIdentityVerification,authPlatform,인증한플랫폼
+3046,UserIdentityVerification,etc,기타
+3047,UserInterest,seq,
+3048,UserInterest,userID,회원ID
+3049,UserInterest,type,"관심타입(0:골프장, 1:티타임)"
+3050,UserInterest,interestSeq,골프장/티타임seq
+3051,UserInterest,status,"상태(0:정상,1:삭제)"
+3052,UserInterest,regDate,
+3053,UserInterest,editDate,
+3054,UserInvite,userID,
+3055,UserInvite,uuId,
+3056,UserInvite,receiverID,
+3057,UserInvite,status,
+3058,UserInvite,regDate,
+3059,UserInvite,editDate,
+3060,UserInviteV2,userID,초대자
+3061,UserInviteV2,uuId,초대받은 uuid
+3062,UserInviteV2,receiverID,초대받은 자
+3063,UserInviteV2,status,매핑시 0
+3064,UserInviteV2,regDate,
+3065,UserInviteV2,editDate,
+3066,UserPartnership,seq,
+3067,UserPartnership,userID,회원seq
+3068,UserPartnership,golfInfoSeq,골프장seq
+3069,UserPartnership,regDate,요청일
+3070,UserPrivateUseMessageHistory,userID,회원번호
+3071,UserPrivateUseMessageHistory,sendYear,발송연도
+3072,UserPrivateUseMessageHistory,userContact,사용자 연락처
+3073,UserPrivateUseMessageHistory,sendDate,발송일
+3074,UserPrivateUseMessageHistory,sendYN,발송여부
+3075,UserPrivateUseMessageHistory,sendType,"0:개인정보이용안내고지, 1:수집동의"
+3076,UserPrivateUseMessageHistory,sendTypeResult,발송 구분에 따른 결과값 저장
+3077,UserProfile,userID,아이디
+3078,UserProfile,status,"상태(0:조인가능, 1:조인불가능)"
+3079,UserProfile,joinPoint,개인매너
+3080,UserProfile,ageRange,연령 (10 단위)
+3081,UserProfile,strokeLow,타수
+3082,UserProfile,strokeHigh,타수
+3083,UserProfile,inviteApplyYN,초대수신 YN
+3084,UserProfile,introText,
+3085,UserProfile,area,선호지역
+3086,UserProfile,propensity,라운드성향Str
+3087,UserProfile,regDate,등록일
+3088,UserProfile,editDate,수정일
+3089,UserProfileSelect,userID,아이디
+3090,UserProfileSelect,status,"상태(0:설정, 1:삭제)"
+3091,UserProfileSelect,type,"종류(0:라운드성향, 1:학교, 2:직장 .. )"
+3092,UserProfileSelect,infoSeq,정보별마스터seq
+3093,UserProfileSelect,infoName,정보명
+3094,UserProfileSelect,orderNum,정렬번호
+3095,UserProfileSelect,regDate,등록일
+3096,UserProfileSelect,editDate,수정일
+3097,UserProhibition,userID,
+3098,UserProhibition,DI,
+3099,UserProhibition,searchDI,
+3100,UserProhibition,regDate,
+3101,UserProhibition,editDate,
+3102,UserReservationCancelStatus,userID,
+3103,UserReservationCancelStatus,resMonth,
+3104,UserReservationCancelStatus,ableCnt,
+3105,UserReservationCancelStatus,unLimitYN,
+3106,UserReservationCancelStatus,regDate,
+3107,UserReservationCancelStatus,regID,
+3108,UserReservationCancelStatus,editDate,
+3109,UserReservationCancelStatus,editID,
+3110,UserReservationCancelStatusHistory,seq,
+3111,UserReservationCancelStatusHistory,userID,
+3112,UserReservationCancelStatusHistory,resMonth,
+3113,UserReservationCancelStatusHistory,ableCnt,
+3114,UserReservationCancelStatusHistory,unLimitYN,
+3115,UserReservationCancelStatusHistory,regDate,
+3116,UserReservationCancelStatusHistory,regID,
+3117,UserReview,seq,
+3118,UserReview,status,"상태(0:노출,1:삭제)"
+3119,UserReview,userID,회원ID
+3120,UserReview,userNickName,회원 닉네임
+3121,UserReview,golfInfoSeq,골프장seq
+3122,UserReview,resSeq,예약seq
+3123,UserReview,avgStarScore,평점
+3124,UserReview,green,잔디
+3125,UserReview,scene,경치
+3126,UserReview,food,음식
+3127,UserReview,facility,시설
+3128,UserReview,caddie,캐디
+3129,UserReview,reviewTag,평가 태그seq 나열
+3130,UserReview,reviewTagName,평가 태그네임 나열
+3131,UserReview,writeTag,유저가 작성한 태그
+3132,UserReview,regDate,
+3133,UserSMSConfirm,userID,
+3134,UserSMSConfirm,randomNumber,
+3135,UserSMSConfirm,regDate,
+3136,UserSMSConfirm,editDate,
+3137,UserScore,seq,
+3138,UserScore,userID,
+3139,UserScore,golfInfoSeq,
+3140,UserScore,roundSeq,
+3141,UserScore,rpSeq,
+3142,UserScore,resSeq,
+3143,UserScore,scoreType,"S : 관제, DI : 직접입력"
+3144,UserScore,bookDate,부킹일
+3145,UserScore,bookTime,부킹시간
+3146,UserScore,outCourseName,
+3147,UserScore,inCourseName,
+3148,UserScore,baseScore,
+3149,UserScore,totalScore,총 스코어
+3150,UserScore,roundStatus,"E : 완료, I : 진행중 , H : 홀아웃"
+3151,UserScore,etcParam1,
+3152,UserScore,etcParam2,
+3153,UserScore,etcParam3,
+3154,UserScore,regDate,
+3155,UserScore,editDate,
+3156,UserScore,roundName,
+3157,UserScore,teeName,
+3158,UserScore,golfInfoName,
+3159,UserScore,outCourseSeq,
+3160,UserScore,inCourseSeq,
+3161,UserSleep,userID,아이디
+3162,UserSleep,thumbnailImgUrl,썸네일
+3163,UserSleep,userName,회원명
+3164,UserSleep,nickName,
+3165,UserSleep,userContact,핸드폰번호
+3166,UserSleep,email,이메일
+3167,UserSleep,gender,"성별(0 : 없음 , 1:남자, 2:여자)"
+3168,UserSleep,birthday,생년월일
+3169,UserSleep,pushTokn,푸시토큰
+3170,UserSleep,uuids,
+3171,UserSleep,sleepDate,
+3172,UserTag,seq,
+3173,UserTag,userID,회원ID
+3174,UserTag,tagSeq,태그seq
+3175,UserTag,regDate,
+3176,UserTemp,userID,아이디
+3177,UserTermsAgree,seq,
+3178,UserTermsAgree,userID,회원ID
+3179,UserTermsAgree,type,"약관타입(0:마케팅동의, 1:푸시동의)"
+3180,UserTermsAgree,status,"상태(0:동의,1:미동의)"
+3181,UserTermsAgree,regDate,
+3182,UserVote,seq,
+3183,UserVote,userID,회원ID
+3184,UserVote,regDate,
+3185,UserVote,status,"상태 0: 정상, 1: 종료, 2: 공유안됨"
+3186,UserVote,finishTime,마감시간
+3187,UserVote,finishDate,마감일시
+3188,UserVote,type,0: 티타임투표
+3189,UserVote,isActive,"활성화여부 0: 활성화, 1:비활성화"
+3190,UserVoteContents,seq,
+3191,UserVoteContents,voteSeq,
+3192,UserVoteContents,userID,회원ID
+3193,UserVoteContents,contentsSeq,티타임 혹은 그외 seq
+3194,UserVoteContents,voteCnt,투표수
+3195,UserVoteContents,regDate,
+3196,UserVoteContents,status,"상태 0: 정상, 1: 삭제"
+3197,User_BK,userID,아이디
+3198,User_BK,thumbnailImgUrl,썸네일
+3199,User_BK,userName,회원명
+3200,User_BK,nickName,닉네임
+3201,User_BK,userContact,userContact
+3202,User_BK,email,email
+3203,User_BK,gender,성별
+3204,User_BK,birthday,생년월일
+3205,User_BK,status,"상태(0:정상, 1:탈퇴, 2:제재, 3:휴면)"
+3206,User_BK,userPlatform,진입 플랫폼(CHAT / iOS / AOS)
+3207,User_BK,marketingYN,
+3208,User_BK,termsYN1,선택약관YN
+3209,User_BK,termsYN2,선택약관YN
+3210,User_BK,receiveYN,수신동의여부-사용안함(pushYN사용중)
+3211,User_BK,receiveDate,수신동의일자
+3212,User_BK,plusFriend,플러스친구
+3213,User_BK,lastLoginDate,최근 로그인일
+3214,User_BK,regDate,가입일
+3215,User_BK,editDate,수정일
+3216,User_BK,withdrawDate,탈퇴일
+3217,User_BK,withdrawMemo,탈퇴사유(경로)
+3218,User_BK,pushYN,
+3219,User_BK,pushTokn,
+3220,User_BK,uuids,
+3221,User_BK,usePlatform,
+3222,V_ShortUrl,shortKey,간편 URL
+3223,V_ShortUrl,shortName,간편URL이름
+3224,V_ShortUrl,memo,설명
+3225,V_ShortUrl,useLimitDate,"만료일사용여부(0-사용, 1-사용안함)"
+3226,V_ShortUrl,limitDate,만료일(YYYYMMDDHH)
+3227,V_ShortUrl,status,"상태(0-사용,1-사용안함)"
+3228,V_ShortUrl,logStatus,"로그 상태 (0-사용, 1-사용안함)"
+3229,V_ShortUrl,logType,"로그타입(D-Day of, F-Full)"
+3230,V_ShortUrl,logLevel,"로그레벨(1-보존기간30일, 2-보전기간45일,3-영구보관)"
+3231,V_ShortUrl,linkType,"링크타입(A:앱링크, W:웹링크)"
+3232,V_ShortUrl,redirectUrl,전환할 URL
+3233,V_ShortUrl,regDate,
+3234,V_ShortUrl,editDate,
+3235,V_ShortUrlHistory,seq,
+3236,V_ShortUrlHistory,shortKey,간편링크 KEY
+3237,V_ShortUrlHistory,accessDate,접속 날짜 (YYYYMMDD)
+3238,V_ShortUrlHistory,platForm,"접근플랫폼(WEB, IOS, AOS, ETC)"
+3239,V_ShortUrlHistory,accessCount,접속 카운트
+3240,V_ShortUrlHistory,regDate,
+3241,V_ShortUrlHistory,editDate,
+3242,X - tempsido,seq,
+3243,X - tempsido,sido,
+3244,X - tempsido,sigungu,
+3245,X - tempsido,latitude,
+3246,X - tempsido,longitude,
+3247,Z_ChatBotEventInfo,seq,
+3248,Z_ChatBotEventInfo,eventName,이벤트명
+3249,Z_ChatBotEventInfo,eventTagName,이벤트 태그명
+3250,Z_ChatBotEventInfo,eventStartDate,이벤트 시작일시
+3251,Z_ChatBotEventInfo,eventEndDate,이벤트 종료 일시
+3252,Z_ChatBotEventInfo,isUserName,"사용자 이름 입력(0:사용, 1:비사용)"
+3253,Z_ChatBotEventInfo,isContact,"사용자 연락처 입력(0:사용, 1:비사용)"
+3254,Z_ChatBotEventInfo,isAddress,"사용자 주소 입력(0: 사용, 1:비사용)"
+3255,Z_ChatBotEventInfo,regDate,
+3256,Z_ChatBotEventInfo,editDate,
+3257,Z_ChatBotEventUserInfo,seq,
+3258,Z_ChatBotEventUserInfo,eventInfoSeq,이벤트 정보 SEQ
+3259,Z_ChatBotEventUserInfo,marketingYN,마켓팅 정보 동의 여부
+3260,Z_ChatBotEventUserInfo,botUserId,Bot User Key
+3261,Z_ChatBotEventUserInfo,userID,사용자 아이디
+3262,Z_ChatBotEventUserInfo,userName,사용자 이름
+3263,Z_ChatBotEventUserInfo,userContact,사용자 연락처
+3264,Z_ChatBotEventUserInfo,address1,사용자 주소 1
+3265,Z_ChatBotEventUserInfo,address2,사용자 주소 2(상세)
+3266,Z_ChatBotEventUserInfo,zipcode,우편번호
+3267,Z_ChatBotEventUserInfo,deliveryYN,"배송상태(Y:배송, N: 대기)"
+3268,Z_ChatBotEventUserInfo,regDate,
+3269,Z_ChatBotEventUserInfo,editDate,
+3270,Z_ChatbotProductTalk,seq,시퀀스
+3271,Z_ChatbotProductTalk,golfInfoSeq,골프장 SEQ
+3272,Z_ChatbotProductTalk,golfInfoName,골프장명
+3273,Z_ChatbotProductTalk,orderNumber,정렬순서
+3274,Z_ChatbotProductTalk,productName,화면에서 출력할 이름
+3275,Z_ChatbotProductTalk,tagName,플친톡 태그명
+3276,Z_ChatbotProductTalk,contentSummary,플친톡 간략
+3277,Z_ChatbotProductTalk,contentDetails,플친톡 상세내용
+3278,Z_ChatbotProductTalk,tagetSidoName,권역코드(콤마로 구분)
+3279,Z_ChatbotProductTalk,greenFeeNO,
+3280,Z_ChatbotProductTalk,greenFeeDC,
+3281,Z_ChatbotProductTalk,timeZone,"수치화타임(1:새벽, 2:오전,4:오후,8:야간)"
+3282,Z_ChatbotProductTalk,digitWeekDay,"1:주중,2:주말, 3: 주중+주말"
+3283,Z_ChatbotProductTalk,isPeriod,"특정기간 노출여부(0:사용, 1:미사용)"
+3284,Z_ChatbotProductTalk,startDay,특정기간 노출 시작일
+3285,Z_ChatbotProductTalk,endDay,특정기간 노출 종료일
+3286,Z_ChatbotProductTalk,isCoupon,"쿠폰발급사용여부(0:사용, 1: 미사용)"
+3287,Z_ChatbotProductTalk,coupons,쿠폰 시퀀스(콤마로 구분)
+3288,Z_ChatbotProductTalk,isStatus,"사용여부(0:노출, 1:미노출)"
+3289,Z_ChatbotProductTalk,regDate,등록일
+3290,Z_ChatbotProductTalk,editDate,수정일
+3291,Z_ChatbotProductTalk,regID,등록자
+3292,Z_ChatbotProductTalk,editID,수정자
+3293,Z_ChatbotProductTalk,isVisitor,"인원필수여부(0:사용,1:미사용)"
+3294,Z_ChatbotProductTalk,visitorCnt,인원
+3295,Z_ChatbotProductTalk,paymentOption,이벤트타입
+3296,aa_test11,aaa,
+3297,aa_test11,aas,
+3298,aa_test11,aad,
+3299,aa_test11,aad1,
+3300,golfdiary_temp,seq,
+3301,golfdiary_temp,golfname_diary,
+3302,golfdiary_temp,coursename_diary,
+3303,golfdiary_temp,golfname_booking,
+3304,golfdiary_temp,coursename_booking,
+3305,shcho_test,id,
+3306,tempDestPhone,phone,
+3307,tempUser1,userID,
+3308,tempUser2,userID,
+3309,tempUserInfo,userID,
+3310,tempUserInfo,userContact,
+3311,tempUserInfo,seq,
+3312,viewBookTimeSales,golfInfoSeq,골프장시퀀스
+3313,viewBookTimeSales,golfInfoName,골프장명
+3314,viewBookTimeSales,bookName,상품명(기본 그린피)
+3315,viewBookTimeSales,bookDate,
+3316,viewBookTimeSales,bookTime,부킹타임
+3317,viewBookTimeSales,CourseName,부킹코스
+3318,viewBookTimeSales,CourseSeq,부킹코스시퀀스
+3319,viewBookTimeSales,greenFeeNo,상품 정가
+3320,viewBookTimeSales,greenFeeDC,상품 판매가
+3321,viewBookTimeSales,reserveApplyDT,
+3322,viewBookTimeSales,reserveCloseDT,
+3323,viewBookTimeSales,paymentMethod,
+3324,viewBookTimeSales,regdate,등록일
+3325,viewBookTimeSales,isReserved,
+3326,viewBookTimeSales,reserveDate,
+3327,viewBookTimeSales,area1,대표권역1
+3328,viewBookTimeSales,area2,대표권역2
+3329,viewBookTimeSales,week,
+3330,viewBookTimeSales,holiday,
+3331,viewBookTimeSales,productType,
+3332,viewCashHistory,userID,
+3333,viewCashHistory,actionType,
+3334,viewCashHistory,orderNumber,
+3335,viewCashHistory,cash,
+3336,viewCashHistory,regDate,
+3337,viewCashHistory,date,
+3338,vw_cash_match_daily,dt,
+3339,vw_cash_match_daily,fromnm,
+3340,vw_cash_match_daily,kakaokeyid,
+3341,vw_cash_match_daily,orderid,
+3342,vw_cash_match_daily,cashpoint,
+3343,vw_cash_match_daily,eventflag,
+3344,vw_cash_match_daily,actiontype,
+3345,vw_cash_match_daily,createdt,
